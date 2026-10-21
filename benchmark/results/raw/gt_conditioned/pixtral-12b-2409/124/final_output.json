@@ -1,0 +1,124 @@
+{
+  "image_stem": "124",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T22:57:59.799299+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Feminist",
+          "Anti feminist"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\"Feminist\", \"Anti feminist\"]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 23,
+          "prompt_tokens": 1629,
+          "total_tokens": 1652,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "anti-feminist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "feminist",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"anti-feminist\", \"viewpoint\": \"ingroup\"},\n    {\"identity\": \"feminist\", \"viewpoint\": \"outgroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 42,
+          "prompt_tokens": 1308,
+          "total_tokens": 1350,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "anti-feminist",
+          "roles": [
+            "Fool"
+          ]
+        },
+        {
+          "identity": "feminist",
+          "roles": [
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"anti-feminist\",\n    \"roles\": [\"Fool\"]\n  },\n  {\n    \"identity\": \"feminist\",\n    \"roles\": [\"Villain\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 51,
+          "prompt_tokens": 1530,
+          "total_tokens": 1581,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Feminist",
+      "Anti feminist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "anti-feminist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "feminist",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "anti-feminist",
+      "roles": [
+        "Fool"
+      ]
+    },
+    {
+      "identity": "feminist",
+      "roles": [
+        "Villain"
+      ]
+    }
+  ]
+}

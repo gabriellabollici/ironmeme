@@ -1,0 +1,150 @@
+{
+  "image_stem": "23",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T15:12:21.949478+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Voter",
+          "Politically disillusioned",
+          "Politicians/government"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Voter\",\n    \"Politically disillusioned\",\n    \"Politicians/government\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 41,
+          "prompt_tokens": 1686,
+          "total_tokens": 2055,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Voter",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "Politically disillusioned",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "Politicians/government",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Voter\",\n    \"viewpoint\": \"ingroup\"\n  },\n  {\n    \"identity\": \"Politically disillusioned\",\n    \"viewpoint\": \"ingroup\"\n  },\n  {\n    \"identity\": \"Politicians/government\",\n    \"viewpoint\": \"outgroup\"\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 86,
+          "prompt_tokens": 1418,
+          "total_tokens": 2011,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Voter",
+          "roles": [
+            "Victim",
+            "Loser"
+          ]
+        },
+        {
+          "identity": "Politically disillusioned",
+          "roles": [
+            "Victim"
+          ]
+        },
+        {
+          "identity": "Politicians/government",
+          "roles": [
+            "Fool",
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Voter\",\n    \"roles\": [\n      \"Victim\",\n      \"Loser\"\n    ]\n  },\n  {\n    \"identity\": \"Politically disillusioned\",\n    \"roles\": [\n      \"Victim\"\n    ]\n  },\n  {\n    \"identity\": \"Politicians/government\",\n    \"roles\": [\n      \"Fool\",\n      \"Villain\"\n    ]\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 112,
+          "prompt_tokens": 1602,
+          "total_tokens": 3072,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Voter",
+      "Politically disillusioned",
+      "Politicians/government"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Voter",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "Politically disillusioned",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "Politicians/government",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Voter",
+      "roles": [
+        "Victim",
+        "Loser"
+      ]
+    },
+    {
+      "identity": "Politically disillusioned",
+      "roles": [
+        "Victim"
+      ]
+    },
+    {
+      "identity": "Politicians/government",
+      "roles": [
+        "Fool",
+        "Villain"
+      ]
+    }
+  ]
+}

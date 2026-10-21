@@ -1,0 +1,130 @@
+{
+  "image_stem": "396",
+  "model": "qwen3-vl-8b-instruct",
+  "timestamp": "2026-08-20T23:31:58.753336+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "White people",
+          "Left wing",
+          "Climate activist",
+          "Anti LGTBQ+"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"White people\",\"Left wing\",\"Climate activist\",\"Anti LGTBQ+\"]}",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 21,
+          "prompt_tokens": 1113,
+          "total_tokens": 1134,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 4
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "climate activist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "men",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"climate activist\", \"viewpoint\": \"ingroup\"}, {\"identity\": \"men\", \"viewpoint\": \"outgroup\"}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 31,
+          "prompt_tokens": 808,
+          "total_tokens": 839,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "climate activist",
+          "roles": [
+            "Hero",
+            "Sage"
+          ]
+        },
+        {
+          "identity": "men",
+          "roles": [
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "[{\"identity\": \"climate activist\", \"roles\": [\"Hero\", \"Sage\"]}, {\"identity\": \"men\", \"roles\": [\"Villain\"]}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 35,
+          "prompt_tokens": 1003,
+          "total_tokens": 1038,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "White people",
+      "Left wing",
+      "Climate activist",
+      "Anti LGTBQ+"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "climate activist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "men",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "climate activist",
+      "roles": [
+        "Hero",
+        "Sage"
+      ]
+    },
+    {
+      "identity": "men",
+      "roles": [
+        "Villain"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "image_stem": "361",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T15:57:30.873037+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Democrat",
+          "Republican"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Democrat\",\n    \"Republican\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 31,
+          "prompt_tokens": 1686,
+          "total_tokens": 2046,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Democrat",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "Republican",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[\n  {\n    \"identity\": \"Democrat\",\n    \"viewpoint\": \"ingroup\"\n  },\n  {\n    \"identity\": \"Republican\",\n    \"viewpoint\": \"outgroup\"\n  }\n]",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 52,
+          "prompt_tokens": 1402,
+          "total_tokens": 1752,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Democrat",
+          "roles": [
+            "Hero",
+            "Sage",
+            "Winner"
+          ]
+        },
+        {
+          "identity": "Republican",
+          "roles": [
+            "Fool",
+            "Loser"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Democrat\",\n    \"roles\": [\n      \"Hero\",\n      \"Sage\",\n      \"Winner\"\n    ]\n  },\n  {\n    \"identity\": \"Republican\",\n    \"roles\": [\n      \"Fool\",\n      \"Loser\"\n    ]\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 81,
+          "prompt_tokens": 1583,
+          "total_tokens": 2217,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Democrat",
+      "Republican"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Democrat",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "Republican",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Democrat",
+      "roles": [
+        "Hero",
+        "Sage",
+        "Winner"
+      ]
+    },
+    {
+      "identity": "Republican",
+      "roles": [
+        "Fool",
+        "Loser"
+      ]
+    }
+  ]
+}

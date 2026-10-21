@@ -1,0 +1,126 @@
+{
+  "image_stem": "1066",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T22:56:14.419890+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Men",
+          "Women"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Men\",\n    \"Women\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 25,
+          "prompt_tokens": 2739,
+          "total_tokens": 2764,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "men",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "women",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"men\", \"viewpoint\": \"outgroup\"},\n    {\"identity\": \"women\", \"viewpoint\": \"ingroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 38,
+          "prompt_tokens": 2410,
+          "total_tokens": 2448,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "men",
+          "roles": [
+            "Victim"
+          ]
+        },
+        {
+          "identity": "women",
+          "roles": [
+            "Hero",
+            "Winner"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"men\",\n    \"roles\": [\"Victim\"]\n  },\n  {\n    \"identity\": \"women\",\n    \"roles\": [\"Hero\", \"Winner\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 48,
+          "prompt_tokens": 2636,
+          "total_tokens": 2684,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Men",
+      "Women"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "men",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "women",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "men",
+      "roles": [
+        "Victim"
+      ]
+    },
+    {
+      "identity": "women",
+      "roles": [
+        "Hero",
+        "Winner"
+      ]
+    }
+  ]
+}

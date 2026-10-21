@@ -1,0 +1,102 @@
+{
+  "image_stem": "23",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T23:00:33.909875+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Politicians/government"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\"Politicians/government\"]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 20,
+          "prompt_tokens": 890,
+          "total_tokens": 910,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "voter",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"voter\", \"viewpoint\": \"outgroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 23,
+          "prompt_tokens": 555,
+          "total_tokens": 578,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "voter",
+          "roles": [
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n    {\n        \"identity\": \"voter\",\n        \"roles\": [\"Victim\"]\n    }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 27,
+          "prompt_tokens": 773,
+          "total_tokens": 800,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Politicians/government"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "voter",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "voter",
+      "roles": [
+        "Victim"
+      ]
+    }
+  ]
+}

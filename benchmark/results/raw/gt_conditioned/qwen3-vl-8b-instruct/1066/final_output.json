@@ -1,0 +1,128 @@
+{
+  "image_stem": "1066",
+  "model": "qwen3-vl-8b-instruct",
+  "timestamp": "2026-08-20T23:28:01.855384+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Women",
+          "Men"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Women\",\"Men\"]}",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 10,
+          "prompt_tokens": 1122,
+          "total_tokens": 1132,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "men",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "women",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"men\", \"viewpoint\": \"ingroup\"}, {\"identity\": \"women\", \"viewpoint\": \"outgroup\"}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 30,
+          "prompt_tokens": 815,
+          "total_tokens": 845,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "men",
+          "roles": [
+            "Victim",
+            "Loser"
+          ]
+        },
+        {
+          "identity": "women",
+          "roles": [
+            "Hero",
+            "Sage"
+          ]
+        }
+      ],
+      "raw_text": "[{\"identity\": \"men\", \"roles\": [\"Victim\", \"Loser\"]}, {\"identity\": \"women\", \"roles\": [\"Hero\", \"Sage\"]}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 37,
+          "prompt_tokens": 1011,
+          "total_tokens": 1048,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Women",
+      "Men"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "men",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "women",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "men",
+      "roles": [
+        "Victim",
+        "Loser"
+      ]
+    },
+    {
+      "identity": "women",
+      "roles": [
+        "Hero",
+        "Sage"
+      ]
+    }
+  ]
+}

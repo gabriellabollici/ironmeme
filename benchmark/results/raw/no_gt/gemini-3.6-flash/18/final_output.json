@@ -1,0 +1,120 @@
+{
+  "image_stem": "18",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T14:59:08.904587+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Men",
+          "Women"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Men\",\n    \"Women\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 30,
+          "prompt_tokens": 1695,
+          "total_tokens": 2328,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Men",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "Women",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "```json\n[\n  {\"identity\": \"Men\", \"viewpoint\": \"ingroup\"},\n  {\"identity\": \"Women\", \"viewpoint\": \"outgroup\"}\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 40,
+          "prompt_tokens": 1409,
+          "total_tokens": 2191,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Men",
+          "roles": [
+            "Hero"
+          ]
+        },
+        {
+          "identity": "Women",
+          "roles": []
+        }
+      ],
+      "raw_text": "[\n  {\n    \"identity\": \"Men\",\n    \"roles\": [\n      \"Hero\"\n    ]\n  },\n  {\n    \"identity\": \"Women\",\n    \"roles\": []\n  }\n]",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 51,
+          "prompt_tokens": 1591,
+          "total_tokens": 2617,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Men",
+      "Women"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Men",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "Women",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Men",
+      "roles": [
+        "Hero"
+      ]
+    },
+    {
+      "identity": "Women",
+      "roles": []
+    }
+  ]
+}

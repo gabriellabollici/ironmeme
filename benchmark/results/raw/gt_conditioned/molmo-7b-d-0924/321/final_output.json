@@ -1,0 +1,150 @@
+{
+  "image_stem": "321",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T16:26:23.777691+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Anti nuclear",
+          "Nuclear energy advocate",
+          " right wing",
+          "Progressive"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \"Anti nuclear\",\n    \"Nuclear energy advocate\",\n    \" right wing\",\n    \"Progressive\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 34,
+          "prompt_tokens": 1208,
+          "total_tokens": 1242,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 4
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "climate activist",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "nuclear power supporter",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"climate activist\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"nuclear power supporter\", \"viewpoint\": \"ingroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 36,
+          "prompt_tokens": 897,
+          "total_tokens": 933,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "nuclear power critic",
+            "roles": [
+              "Villain",
+              "Inferior/Negative"
+            ]
+          },
+          {
+            "identity": "climate activist",
+            "roles": [
+              "Sage",
+              "Superior/Positive"
+            ]
+          },
+          {
+            "identity": "general public",
+            "roles": [
+              "Victim",
+              "Inferior/Negative"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"nuclear power critic\",\n      \"roles\": [\"Villain\", \"Inferior/Negative\"]\n    },\n    {\n      \"identity\": \"climate activist\",\n      \"roles\": [\"Sage\", \"Superior/Positive\"]\n    },\n    {\n      \"identity\": \"general public\",\n      \"roles\": [\"Victim\", \"Inferior/Negative\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 94,
+          "prompt_tokens": 1084,
+          "total_tokens": 1178,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Anti nuclear",
+      "Nuclear energy advocate",
+      " right wing",
+      "Progressive"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "climate activist",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "nuclear power supporter",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "nuclear power critic",
+        "roles": [
+          "Villain",
+          "Inferior/Negative"
+        ]
+      },
+      {
+        "identity": "climate activist",
+        "roles": [
+          "Sage",
+          "Superior/Positive"
+        ]
+      },
+      {
+        "identity": "general public",
+        "roles": [
+          "Victim",
+          "Inferior/Negative"
+        ]
+      }
+    ]
+  }
+}

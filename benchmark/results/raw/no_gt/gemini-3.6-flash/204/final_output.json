@@ -1,0 +1,124 @@
+{
+  "image_stem": "204",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T15:05:09.362650+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Republican",
+          "Democrat"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Republican\",\n    \"Democrat\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 31,
+          "prompt_tokens": 1670,
+          "total_tokens": 2066,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Republican",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Democrat",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[\n  {\n    \"identity\": \"Republican\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"Democrat\",\n    \"viewpoint\": \"outgroup\"\n  }\n]",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 52,
+          "prompt_tokens": 1386,
+          "total_tokens": 1925,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Republican",
+          "roles": [
+            "Villain"
+          ]
+        },
+        {
+          "identity": "Democrat",
+          "roles": [
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Republican\",\n    \"roles\": [\n      \"Villain\"\n    ]\n  },\n  {\n    \"identity\": \"Democrat\",\n    \"roles\": [\n      \"Villain\"\n    ]\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 67,
+          "prompt_tokens": 1567,
+          "total_tokens": 2105,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Republican",
+      "Democrat"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Republican",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Democrat",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Republican",
+      "roles": [
+        "Villain"
+      ]
+    },
+    {
+      "identity": "Democrat",
+      "roles": [
+        "Villain"
+      ]
+    }
+  ]
+}

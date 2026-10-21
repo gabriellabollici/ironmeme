@@ -1,0 +1,152 @@
+{
+  "image_stem": "32",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T15:42:29.778203+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Right wing",
+          "Politicians/government",
+          "Liberal"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Right wing\",\n    \"Politicians/government\",\n    \"Liberal\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 39,
+          "prompt_tokens": 1695,
+          "total_tokens": 2528,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Right wing",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Politicians/government",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Liberal",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Right wing\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"Politicians/government\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"Liberal\",\n    \"viewpoint\": \"ingroup\"\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 84,
+          "prompt_tokens": 1423,
+          "total_tokens": 2238,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Right wing",
+          "roles": [
+            "Villain",
+            "Fool"
+          ]
+        },
+        {
+          "identity": "Politicians/government",
+          "roles": [
+            "Villain",
+            "Fool"
+          ]
+        },
+        {
+          "identity": "Liberal",
+          "roles": [
+            "Sage",
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Right wing\",\n    \"roles\": [\n      \"Villain\",\n      \"Fool\"\n    ]\n  },\n  {\n    \"identity\": \"Politicians/government\",\n    \"roles\": [\n      \"Villain\",\n      \"Fool\"\n    ]\n  },\n  {\n    \"identity\": \"Liberal\",\n    \"roles\": [\n      \"Sage\",\n      \"Victim\"\n    ]\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 114,
+          "prompt_tokens": 1609,
+          "total_tokens": 2885,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Right wing",
+      "Politicians/government",
+      "Liberal"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Right wing",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Politicians/government",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Liberal",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Right wing",
+      "roles": [
+        "Villain",
+        "Fool"
+      ]
+    },
+    {
+      "identity": "Politicians/government",
+      "roles": [
+        "Villain",
+        "Fool"
+      ]
+    },
+    {
+      "identity": "Liberal",
+      "roles": [
+        "Sage",
+        "Victim"
+      ]
+    }
+  ]
+}

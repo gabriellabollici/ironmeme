@@ -1,0 +1,104 @@
+{
+  "image_stem": "51",
+  "model": "qwen2.5-vl-7b-instruct",
+  "timestamp": "2026-08-25T21:13:30.620952+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Voter",
+          "Abstentionist"
+        ]
+      },
+      "raw_text": "{\"social_identities\": [\"Voter\", \"Abstentionist\"]}",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 16,
+          "prompt_tokens": 708,
+          "total_tokens": 724,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "voter",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"voter\", \"viewpoint\": \"ingroup\"}]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 17,
+          "prompt_tokens": 397,
+          "total_tokens": 414,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "voter",
+          "roles": [
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"voter\",     \"roles\": [\"Victim\"]   } ]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 23,
+          "prompt_tokens": 584,
+          "total_tokens": 607,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Voter",
+      "Abstentionist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "voter",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "voter",
+      "roles": [
+        "Victim"
+      ]
+    }
+  ]
+}

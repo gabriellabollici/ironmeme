@@ -1,0 +1,164 @@
+{
+  "image_stem": "369",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T16:44:32.394814+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Capitalist",
+          "Left wing",
+          " right wing",
+          "Liberal",
+          " right-wing",
+          "Progressive",
+          "Anti-capitalist",
+          "Anti-racist",
+          "LGBTQ+ rights supporter",
+          "Voter",
+          "Politicians/government",
+          "Media elites",
+          "Celebrity",
+          "Green party supporter",
+          "Libertarian",
+          "Citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \"Capitalist\",\n    \"Left wing\",\n    \" right wing\",\n    \"Liberal\",\n    \" right-wing\",\n    \"Progressive\",\n    \"Anti-capitalist\",\n    \"Anti-racist\",\n    \"LGBTQ+ rights supporter\",\n    \"Voter\",\n    \"Politicians/government\",\n    \"Media elites\",\n    \"Celebrity\",\n    \"Green party supporter\",\n    \"Libertarian\",\n    \"Citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 102,
+          "prompt_tokens": 1376,
+          "total_tokens": 1478,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 16
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "corporativist/capitalist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "laborer/worker",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"corporativist/capitalist\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"laborer/worker\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 43,
+          "prompt_tokens": 1077,
+          "total_tokens": 1120,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "corporativist/capitalist",
+            "roles": [
+              "Hero",
+              "Winner"
+            ]
+          },
+          {
+            "identity": "worker",
+            "roles": [
+              " Victim"
+            ]
+          }
+        ],
+        "viewpoints": {
+          "corporativist/capitalist": "outgroup"
+        }
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"corporativist/capitalist\",\n      \"roles\": [\"Hero\", \"Winner\"]\n    },\n    {\n      \"identity\": \"worker\",\n      \"roles\": [\" Victim\"]\n    }\n  ],\n  \"viewpoints\": {\n    \"corporativist/capitalist\": \"outgroup\"\n  }\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 80,
+          "prompt_tokens": 1259,
+          "total_tokens": 1339,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Capitalist",
+      "Left wing",
+      " right wing",
+      "Liberal",
+      " right-wing",
+      "Progressive",
+      "Anti-capitalist",
+      "Anti-racist",
+      "LGBTQ+ rights supporter",
+      "Voter",
+      "Politicians/government",
+      "Media elites",
+      "Celebrity",
+      "Green party supporter",
+      "Libertarian",
+      "Citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "corporativist/capitalist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "laborer/worker",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "corporativist/capitalist",
+        "roles": [
+          "Hero",
+          "Winner"
+        ]
+      },
+      {
+        "identity": "worker",
+        "roles": [
+          " Victim"
+        ]
+      }
+    ],
+    "viewpoints": {
+      "corporativist/capitalist": "outgroup"
+    }
+  }
+}

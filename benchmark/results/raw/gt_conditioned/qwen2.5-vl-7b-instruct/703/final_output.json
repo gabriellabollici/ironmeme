@@ -1,0 +1,108 @@
+{
+  "image_stem": "703",
+  "model": "qwen2.5-vl-7b-instruct",
+  "timestamp": "2026-08-25T21:15:49.077093+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Right wing",
+          "Racist"
+        ]
+      },
+      "raw_text": "{\"social_identities\": [\"Right wing\", \"Racist\"]}",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 14,
+          "prompt_tokens": 1406,
+          "total_tokens": 1420,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "national identity",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "national identity",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[\n    {\n        \"identity\": \"national identity\",\n        \"viewpoint\": \"ingroup\"\n    },\n    {\n        \"identity\": \"national identity\",\n        \"viewpoint\": \"outgroup\"\n    }\n]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 44,
+          "prompt_tokens": 1095,
+          "total_tokens": 1139,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identity": "national identity",
+        "roles": [
+          "Villain"
+        ]
+      },
+      "raw_text": "[{\"identity\": \"national identity\", \"roles\": [\"Villain\"]}]\"",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 18,
+          "prompt_tokens": 1283,
+          "total_tokens": 1301,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Right wing",
+      "Racist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "national identity",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "national identity",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identity": "national identity",
+    "roles": [
+      "Villain"
+    ]
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "image_stem": "756",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T18:44:42.178584+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "White people",
+          "Anti feminist",
+          "LGBTQ+ rights supporter",
+          "Anti LGTBQ+",
+          "Misogynist/male supremacist",
+          "Voter",
+          "Politicians/government",
+          "Media elites",
+          "Celebrity",
+          "Green party supporter",
+          "Libertarian",
+          "Citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \"White people\",\n    \"Anti feminist\",\n    \"LGBTQ+ rights supporter\",\n    \"Anti LGTBQ+\",\n    \"Misogynist/male supremacist\",\n    \"Voter\",\n    \"Politicians/government\",\n    \"Media elites\",\n    \"Celebrity\",\n    \"Green party supporter\",\n    \"Libertarian\",\n    \"Citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 88,
+          "prompt_tokens": 1376,
+          "total_tokens": 1464,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 12
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "women",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "men",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"women\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"men\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 32,
+          "prompt_tokens": 1063,
+          "total_tokens": 1095,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "men",
+            "roles": [
+              "Hero",
+              "Winner"
+            ]
+          },
+          {
+            "identity": "women",
+            "roles": [
+              " Victim"
+            ]
+          }
+        ],
+        "viewpoints": {
+          "men": "outgroup"
+        }
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"men\",\n      \"roles\": [\"Hero\", \"Winner\"]\n    },\n    {\n      \"identity\": \"women\",\n      \"roles\": [\" Victim\"]\n    }\n  ],\n  \"viewpoints\": {\n    \"men\": \"outgroup\"\n  }\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 66,
+          "prompt_tokens": 1252,
+          "total_tokens": 1318,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "White people",
+      "Anti feminist",
+      "LGBTQ+ rights supporter",
+      "Anti LGTBQ+",
+      "Misogynist/male supremacist",
+      "Voter",
+      "Politicians/government",
+      "Media elites",
+      "Celebrity",
+      "Green party supporter",
+      "Libertarian",
+      "Citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "women",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "men",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "men",
+        "roles": [
+          "Hero",
+          "Winner"
+        ]
+      },
+      {
+        "identity": "women",
+        "roles": [
+          " Victim"
+        ]
+      }
+    ],
+    "viewpoints": {
+      "men": "outgroup"
+    }
+  }
+}

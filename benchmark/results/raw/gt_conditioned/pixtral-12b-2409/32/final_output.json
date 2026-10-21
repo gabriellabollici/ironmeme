@@ -1,0 +1,122 @@
+{
+  "image_stem": "32",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T23:02:46.497813+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Right wing"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\"Right wing\"]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 18,
+          "prompt_tokens": 1319,
+          "total_tokens": 1337,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "conservative",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "progressive",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"conservative\", \"viewpoint\": \"ingroup\"},\n    {\"identity\": \"progressive\", \"viewpoint\": \"outgroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 40,
+          "prompt_tokens": 994,
+          "total_tokens": 1034,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "conservative",
+          "roles": [
+            "Villain"
+          ]
+        },
+        {
+          "identity": "progressive",
+          "roles": [
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"conservative\",\n    \"roles\": [\"Villain\"]\n  },\n  {\n    \"identity\": \"progressive\",\n    \"roles\": [\"Victim\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 49,
+          "prompt_tokens": 1218,
+          "total_tokens": 1267,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Right wing"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "conservative",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "progressive",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "conservative",
+      "roles": [
+        "Villain"
+      ]
+    },
+    {
+      "identity": "progressive",
+      "roles": [
+        "Victim"
+      ]
+    }
+  ]
+}

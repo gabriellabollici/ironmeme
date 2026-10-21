@@ -1,0 +1,128 @@
+{
+  "image_stem": "657",
+  "model": "qwen3-vl-8b-instruct",
+  "timestamp": "2026-08-20T23:35:10.546598+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "White people",
+          "Anti racist"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"White people\",\"Anti racist\"]}",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 12,
+          "prompt_tokens": 1054,
+          "total_tokens": 1066,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "anti-racist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "white people",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"anti-racist\", \"viewpoint\": \"ingroup\"}, {\"identity\": \"white people\", \"viewpoint\": \"outgroup\"}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 33,
+          "prompt_tokens": 753,
+          "total_tokens": 786,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "anti-racist",
+          "roles": [
+            "Villain",
+            "Fool"
+          ]
+        },
+        {
+          "identity": "white people",
+          "roles": [
+            "Victim",
+            "Loser"
+          ]
+        }
+      ],
+      "raw_text": "[{\"identity\": \"anti-racist\", \"roles\": [\"Villain\", \"Fool\"]}, {\"identity\": \"white people\", \"roles\": [\"Victim\", \"Loser\"]}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 42,
+          "prompt_tokens": 946,
+          "total_tokens": 988,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "White people",
+      "Anti racist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "anti-racist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "white people",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "anti-racist",
+      "roles": [
+        "Villain",
+        "Fool"
+      ]
+    },
+    {
+      "identity": "white people",
+      "roles": [
+        "Victim",
+        "Loser"
+      ]
+    }
+  ]
+}

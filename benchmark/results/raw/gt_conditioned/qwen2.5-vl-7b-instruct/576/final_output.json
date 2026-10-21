@@ -1,0 +1,110 @@
+{
+  "image_stem": "576",
+  "model": "qwen2.5-vl-7b-instruct",
+  "timestamp": "2026-08-25T21:14:16.733494+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "American people",
+          "Conservative"
+        ]
+      },
+      "raw_text": "{\"social_identities\": [\"American people\", \"Conservative\"]}",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 14,
+          "prompt_tokens": 702,
+          "total_tokens": 716,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "American people",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "American people",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"American people\", \"viewpoint\": \"ingroup\"}, {\"identity\": \"American people\", \"viewpoint\": \"outgroup\"}]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 32,
+          "prompt_tokens": 391,
+          "total_tokens": 423,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identity": "American People",
+        "roles": [
+          "Victim",
+          "Loser"
+        ]
+      },
+      "raw_text": "[{\"identity\": \"American People\", \"roles\": [\"Victim\", \"Loser\"]}]\n\nThe meme portrays the \"American People\" as victims of election fraud, both illegal and legal, indicating they are negatively impacted and at a disadvantage. This aligns with the \"Victim\" and \"Loser\" roles under the Moral and Power dimensions respectively.",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 73,
+          "prompt_tokens": 578,
+          "total_tokens": 651,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "American people",
+      "Conservative"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "American people",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "American people",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identity": "American People",
+    "roles": [
+      "Victim",
+      "Loser"
+    ]
+  }
+}

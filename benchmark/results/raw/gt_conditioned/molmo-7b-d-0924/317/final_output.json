@@ -1,0 +1,178 @@
+{
+  "image_stem": "317",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T16:25:21.560985+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          " left wing",
+          " right wing",
+          " liberal",
+          " conservative",
+          " anti-racist",
+          " climate activist",
+          " vegan",
+          " citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \" left wing\",\n    \" right wing\",\n    \" liberal\",\n    \" conservative\",\n    \" anti-racist\",\n    \" climate activist\",\n    \" vegan\",\n    \" citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 49,
+          "prompt_tokens": 1376,
+          "total_tokens": 1425,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 8
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "politicians/government",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "politicians/government",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"politicians/government\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"politicians/government\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 38,
+          "prompt_tokens": 1069,
+          "total_tokens": 1107,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "politicians/government",
+            "roles": [
+              "Villain",
+              "Outgroup"
+            ]
+          },
+          {
+            "identity": "short-term job losses",
+            "roles": [
+              "Outgroup"
+            ]
+          },
+          {
+            "identity": "long-term job losses",
+            "roles": [
+              "Ingroup"
+            ]
+          },
+          {
+            "identity": "angry people",
+            "roles": [
+              "Outgroup"
+            ]
+          },
+          {
+            "identity": "living beings",
+            "roles": [
+              "Ingroup"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"politicians/government\",\n      \"roles\": [\"Villain\", \"Outgroup\"]\n    },\n    {\n      \"identity\": \"short-term job losses\",\n      \"roles\": [\"Outgroup\"]\n    },\n    {\n      \"identity\": \"long-term job losses\",\n      \"roles\": [\"Ingroup\"]\n    },\n    {\n      \"identity\": \"angry people\",\n      \"roles\": [\"Outgroup\"]\n    },\n    {\n      \"identity\": \"living beings\",\n      \"roles\": [\"Ingroup\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 123,
+          "prompt_tokens": 1255,
+          "total_tokens": 1378,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 5
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      " left wing",
+      " right wing",
+      " liberal",
+      " conservative",
+      " anti-racist",
+      " climate activist",
+      " vegan",
+      " citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "politicians/government",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "politicians/government",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "politicians/government",
+        "roles": [
+          "Villain",
+          "Outgroup"
+        ]
+      },
+      {
+        "identity": "short-term job losses",
+        "roles": [
+          "Outgroup"
+        ]
+      },
+      {
+        "identity": "long-term job losses",
+        "roles": [
+          "Ingroup"
+        ]
+      },
+      {
+        "identity": "angry people",
+        "roles": [
+          "Outgroup"
+        ]
+      },
+      {
+        "identity": "living beings",
+        "roles": [
+          "Ingroup"
+        ]
+      }
+    ]
+  }
+}

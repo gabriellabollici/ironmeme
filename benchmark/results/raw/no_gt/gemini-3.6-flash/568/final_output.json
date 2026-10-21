@@ -1,0 +1,160 @@
+{
+  "image_stem": "568",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T17:22:00.450794+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Politicians/government",
+          "Media elites",
+          "Republican",
+          "Democrat"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Politicians/government\",\n    \"Media elites\",\n    \"Republican\",\n    \"Democrat\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 45,
+          "prompt_tokens": 1713,
+          "total_tokens": 2225,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 4
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Politicians/government",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Media elites",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Republican",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Democrat",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Politicians/government\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"Media elites\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"Republican\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"Democrat\",\n    \"viewpoint\": \"ingroup\"\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 109,
+          "prompt_tokens": 1449,
+          "total_tokens": 3354,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 4
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Politicians/government",
+          "roles": []
+        },
+        {
+          "identity": "Media elites",
+          "roles": []
+        },
+        {
+          "identity": "Republican",
+          "roles": [
+            "Fool"
+          ]
+        },
+        {
+          "identity": "Democrat",
+          "roles": [
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Politicians/government\",\n    \"roles\": []\n  },\n  {\n    \"identity\": \"Media elites\",\n    \"roles\": []\n  },\n  {\n    \"identity\": \"Republican\",\n    \"roles\": [\n      \"Fool\"\n    ]\n  },\n  {\n    \"identity\": \"Democrat\",\n    \"roles\": [\n      \"Victim\"\n    ]\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 110,
+          "prompt_tokens": 1642,
+          "total_tokens": 2713,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 4
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Politicians/government",
+      "Media elites",
+      "Republican",
+      "Democrat"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Politicians/government",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Media elites",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Republican",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Democrat",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Politicians/government",
+      "roles": []
+    },
+    {
+      "identity": "Media elites",
+      "roles": []
+    },
+    {
+      "identity": "Republican",
+      "roles": [
+        "Fool"
+      ]
+    },
+    {
+      "identity": "Democrat",
+      "roles": [
+        "Victim"
+      ]
+    }
+  ]
+}

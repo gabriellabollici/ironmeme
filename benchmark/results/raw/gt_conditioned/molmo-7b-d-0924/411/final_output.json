@@ -1,0 +1,180 @@
+{
+  "image_stem": "411",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T17:01:22.850278+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Women",
+          "Anti feminist",
+          "LGBTQ+ rights supporter",
+          "Anti LGTBQ+",
+          "Misogynist/male supremacist",
+          "Politicians/government",
+          "World leaders/elites",
+          "Media elites",
+          "Celebrity",
+          "Green party supporter",
+          "Libertarian",
+          "Citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \"Women\",\n    \"Anti feminist\",\n    \"LGBTQ+ rights supporter\",\n    \"Anti LGTBQ+\",\n    \"Misogynist/male supremacist\",\n    \"Politicians/government\",\n    \"World leaders/elites\",\n    \"Media elites\",\n    \"Celebrity\",\n    \"Green party supporter\",\n    \"Libertarian\",\n    \"Citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 89,
+          "prompt_tokens": 1368,
+          "total_tokens": 1457,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 12
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "women",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "women",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"women\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"women\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 32,
+          "prompt_tokens": 1061,
+          "total_tokens": 1093,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "women",
+            "roles": [
+              "outgroup"
+            ]
+          },
+          {
+            "identity": "Rich",
+            "roles": [
+              "outgroup"
+            ]
+          }
+        ],
+        "narrativeRoles": [
+          {
+            "identity": "women",
+            "roles": [
+              "Hero",
+              "Winner"
+            ]
+          },
+          {
+            "identity": "Rich",
+            "roles": [
+              "Villain",
+              "Loser"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"women\",\n      \"roles\": [\"outgroup\"]\n    },\n    {\n      \"identity\": \"Rich\",\n      \"roles\": [\"outgroup\"]\n    }\n  ],\n  \"narrativeRoles\": [\n    {\n      \"identity\": \"women\",\n      \"roles\": [\"Hero\", \"Winner\"]\n    },\n    {\n      \"identity\": \"Rich\",\n      \"roles\": [\"Villain\", \"Loser\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 104,
+          "prompt_tokens": 1258,
+          "total_tokens": 1362,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Women",
+      "Anti feminist",
+      "LGBTQ+ rights supporter",
+      "Anti LGTBQ+",
+      "Misogynist/male supremacist",
+      "Politicians/government",
+      "World leaders/elites",
+      "Media elites",
+      "Celebrity",
+      "Green party supporter",
+      "Libertarian",
+      "Citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "women",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "women",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "women",
+        "roles": [
+          "outgroup"
+        ]
+      },
+      {
+        "identity": "Rich",
+        "roles": [
+          "outgroup"
+        ]
+      }
+    ],
+    "narrativeRoles": [
+      {
+        "identity": "women",
+        "roles": [
+          "Hero",
+          "Winner"
+        ]
+      },
+      {
+        "identity": "Rich",
+        "roles": [
+          "Villain",
+          "Loser"
+        ]
+      }
+    ]
+  }
+}

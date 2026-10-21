@@ -1,0 +1,166 @@
+{
+  "image_stem": "1108",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T15:32:32.542841+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Women",
+          "Men",
+          "Anti feminist",
+          "LGBTQ+ rights supporter",
+          "Anti LGTBQ+",
+          "Misogynist/male supremacist",
+          "Voter",
+          "Politicians/government",
+          "Media elites",
+          "Celebrity",
+          "Green party supporter",
+          "Libertarian",
+          "Citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \"Women\",\n    \"Men\",\n    \"Anti feminist\",\n    \"LGBTQ+ rights supporter\",\n    \"Anti LGTBQ+\",\n    \"Misogynist/male supremacist\",\n    \"Voter\",\n    \"Politicians/government\",\n    \"Media elites\",\n    \"Celebrity\",\n    \"Green party supporter\",\n    \"Libertarian\",\n    \"Citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 91,
+          "prompt_tokens": 1824,
+          "total_tokens": 1915,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 13
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "men",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "men",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "women",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"men\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"men\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"women\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 47,
+          "prompt_tokens": 1523,
+          "total_tokens": 1570,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "men",
+            "roles": [
+              "outgroup",
+              "outgroup"
+            ]
+          },
+          {
+            "identity": "women",
+            "roles": [
+              "outgroup"
+            ]
+          }
+        ],
+        "viewpoints": {
+          "women": "choosing death over being sad"
+        }
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"men\",\n      \"roles\": [\"outgroup\", \"outgroup\"]\n    },\n    {\n      \"identity\": \"women\",\n      \"roles\": [\"outgroup\"]\n    }\n  ],\n  \"viewpoints\": {\n    \"women\": \"choosing death over being sad\"\n  }\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 73,
+          "prompt_tokens": 1727,
+          "total_tokens": 1800,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Women",
+      "Men",
+      "Anti feminist",
+      "LGBTQ+ rights supporter",
+      "Anti LGTBQ+",
+      "Misogynist/male supremacist",
+      "Voter",
+      "Politicians/government",
+      "Media elites",
+      "Celebrity",
+      "Green party supporter",
+      "Libertarian",
+      "Citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "men",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "men",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "women",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "men",
+        "roles": [
+          "outgroup",
+          "outgroup"
+        ]
+      },
+      {
+        "identity": "women",
+        "roles": [
+          "outgroup"
+        ]
+      }
+    ],
+    "viewpoints": {
+      "women": "choosing death over being sad"
+    }
+  }
+}

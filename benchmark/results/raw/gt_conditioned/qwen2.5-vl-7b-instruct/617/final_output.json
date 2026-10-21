@@ -1,0 +1,100 @@
+{
+  "image_stem": "617",
+  "model": "qwen2.5-vl-7b-instruct",
+  "timestamp": "2026-08-25T21:14:46.972873+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Anti racist"
+        ]
+      },
+      "raw_text": "{\"social_identities\": [\"Anti racist\"]}",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 10,
+          "prompt_tokens": 1600,
+          "total_tokens": 1610,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "racist",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"racist\", \"viewpoint\": \"outgroup\"}]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 18,
+          "prompt_tokens": 1289,
+          "total_tokens": 1307,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identity": "racist",
+        "roles": [
+          "Villain",
+          "Loser"
+        ]
+      },
+      "raw_text": "[{\"identity\": \"racist\", \"roles\": [\"Villain\", \"Loser\"]}]\"",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 22,
+          "prompt_tokens": 1476,
+          "total_tokens": 1498,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Anti racist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "racist",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identity": "racist",
+    "roles": [
+      "Villain",
+      "Loser"
+    ]
+  }
+}

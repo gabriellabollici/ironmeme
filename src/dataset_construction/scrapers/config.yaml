@@ -1,0 +1,32 @@
+# Simple test configuration for the meme scrapers.
+# Downloads 5 memes for each scraper. Toggle each scraper on/off with `enabled`.
+# Run with: python -m dataset_construction.scrapers
+
+reddit:
+  enabled: true
+  # List each subreddit to scrape together with the number of memes to download.
+  subreddits:
+    - name: TrollXChromosomes
+      count: 5
+
+imgflip:
+  enabled: true
+  # Path to a parquet file containing a `template_link` column.
+  # May be absolute or relative to the project root.
+  template_source: benchmark/source_datasets/memes/template_sources/meme_template_links.parquet
+  # Number of templates to download.
+  count: 5
+  # Random delay (seconds) between template downloads to stay polite to imgflip.
+  min_delay: 2
+  max_delay: 4
+
+kym:
+  enabled: true
+  # Path to a Know Your Meme JSON export.
+  # May be absolute or relative to the project root.
+  template_source: benchmark/source_datasets/memes/template_sources/kym.json
+  # Number of templates to download.
+  count: 5
+  # Random delay (seconds) between template downloads to stay polite to KYM.
+  min_delay: 2
+  max_delay: 4

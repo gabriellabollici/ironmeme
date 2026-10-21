@@ -1,0 +1,160 @@
+{
+  "image_stem": "685",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T18:22:20.077506+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          " right wing",
+          "Liberal",
+          "Anti LGTBQ+",
+          "Voter",
+          "Politicians/government",
+          "Media elites",
+          "Celebrity",
+          "Green party supporter",
+          "Libertarian",
+          "Citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \" right wing\",\n    \"Liberal\",\n    \"Anti LGTBQ+\",\n    \"Voter\",\n    \"Politicians/government\",\n    \"Media elites\",\n    \"Celebrity\",\n    \"Green party supporter\",\n    \"Libertarian\",\n    \"Citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 69,
+          "prompt_tokens": 1824,
+          "total_tokens": 1893,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 10
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "republican",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "democrat",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"republican\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"democrat\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 35,
+          "prompt_tokens": 1515,
+          "total_tokens": 1550,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "republican",
+            "roles": [
+              "Hero",
+              "Winner"
+            ]
+          },
+          {
+            "identity": " democRAT",
+            "roles": [
+              "Villain",
+              "Monster"
+            ]
+          },
+          {
+            "identity": "president",
+            "roles": [
+              "Hero"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"republican\",\n      \"roles\": [\"Hero\", \"Winner\"]\n    },\n    {\n      \"identity\": \" democRAT\",\n      \"roles\": [\"Villain\", \"Monster\"]\n    },\n    {\n      \"identity\": \"president\",\n      \"roles\": [\"Hero\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 79,
+          "prompt_tokens": 1702,
+          "total_tokens": 1781,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      " right wing",
+      "Liberal",
+      "Anti LGTBQ+",
+      "Voter",
+      "Politicians/government",
+      "Media elites",
+      "Celebrity",
+      "Green party supporter",
+      "Libertarian",
+      "Citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "republican",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "democrat",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "republican",
+        "roles": [
+          "Hero",
+          "Winner"
+        ]
+      },
+      {
+        "identity": " democRAT",
+        "roles": [
+          "Villain",
+          "Monster"
+        ]
+      },
+      {
+        "identity": "president",
+        "roles": [
+          "Hero"
+        ]
+      }
+    ]
+  }
+}

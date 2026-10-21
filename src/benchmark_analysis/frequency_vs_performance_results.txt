@@ -1,0 +1,90 @@
+Frequency vs. performance -- Pooled Spearman correlations
+============================================================
+
+Each point is one (model, entity) pair -- a template/identity/role's
+ground-truth frequency in the benchmark, repeated once per model and
+paired with that model's own score (Jaccard for templates, F1 for
+identity/role labels). This matches the 'Pooled Spearman' statistics
+reported in the paper text (as opposed to correlating frequency
+against each entity's mean score across models).
+
+1. Meme template frequency vs. per-image Jaccard (n=9971, model x image pairs)
+   Spearman rho = -0.0069, p = 0.4886
+
+2. Social identity frequency vs. F1 (n=369, model x label pairs)
+   Spearman rho = 0.3521, p = 3.291e-12
+
+3. Narrative role frequency vs. F1 (n=81, model x label pairs)
+   Spearman rho = 0.2940, p = 0.007726
+
+------------------------------------------------------------
+Social identity labels, sorted by frequency (desc) -- mean F1 across models:
+------------------------------------------------------------
+  Women                        freq=  290  mean_f1=0.655
+  Climate activist             freq=  198  mean_f1=0.528
+  Men                          freq=  112  mean_f1=0.479
+  Corporativist/capitalist     freq=  105  mean_f1=0.488
+  Democrat                     freq=   88  mean_f1=0.547
+  Republican                   freq=   66  mean_f1=0.463
+  Feminist                     freq=   54  mean_f1=0.608
+  National identity            freq=   46  mean_f1=0.242
+  Climate change skeptic/denier freq=   38  mean_f1=0.366
+  Climate disengaged           freq=   37  mean_f1=0.186
+  Politicians/government       freq=   35  mean_f1=0.354
+  Sex worker                   freq=   26  mean_f1=0.523
+  Liberal                      freq=   21  mean_f1=0.506
+  Left wing                    freq=   21  mean_f1=0.382
+  LGTBQ+ rights supporter      freq=   19  mean_f1=0.305
+  Anticapitalist               freq=   18  mean_f1=0.222
+  Citizens                     freq=   16  mean_f1=0.079
+  Media elites                 freq=   14  mean_f1=0.587
+  people of color              freq=   13  mean_f1=0.275
+  Conservative                 freq=   12  mean_f1=0.301
+  Green party supporter        freq=   11  mean_f1=0.617
+  Anti LGTBQ+                  freq=   10  mean_f1=0.200
+  World leaders/elites         freq=    9  mean_f1=0.312
+  Right wing                   freq=    8  mean_f1=0.206
+  Nuclear energy advocate      freq=    8  mean_f1=0.309
+  Plant based/vegan            freq=    8  mean_f1=0.445
+  Libertarian                  freq=    8  mean_f1=0.595
+  Clean energy advocate        freq=    7  mean_f1=0.121
+  Misogynist/male supremacist  freq=    7  mean_f1=0.103
+  Progressive                  freq=    7  mean_f1=0.117
+  White people                 freq=    6  mean_f1=0.415
+  Conspiracy theorist          freq=    6  mean_f1=0.434
+  Politically disillusioned    freq=    5  mean_f1=0.040
+  Racist                       freq=    5  mean_f1=0.219
+  Anti feminist                freq=    5  mean_f1=0.142
+  Voter                        freq=    5  mean_f1=0.288
+  Anti racist                  freq=    3  mean_f1=0.132
+  Celebrity                    freq=    2  mean_f1=0.283
+  Nationalist/regionalist      freq=    2  mean_f1=0.126
+  Authoritarian                freq=    1  mean_f1=0.031
+  Abstentionist                freq=    1  mean_f1=0.615
+
+------------------------------------------------------------
+Narrative role labels, sorted by frequency (desc) -- mean F1 across models:
+------------------------------------------------------------
+  villain                      freq=  362  mean_f1=0.624
+  loser                        freq=  257  mean_f1=0.338
+  fool                         freq=  231  mean_f1=0.401
+  sage                         freq=  201  mean_f1=0.523
+  victim                       freq=  170  mean_f1=0.455
+  winner                       freq=   73  mean_f1=0.315
+  hero                         freq=   46  mean_f1=0.272
+  monster                      freq=   45  mean_f1=0.336
+  charmer                      freq=   22  mean_f1=0.396
+
+------------------------------------------------------------
+Meme templates: 348 total, top 10 most frequent -- mean Jaccard across models:
+------------------------------------------------------------
+  Drakeposting                                  freq= 28  mean_jaccard=0.450
+  Steven Crowder's "Change My Mind" Campus Sign freq= 28  mean_jaccard=0.416
+  Distracted Boyfriend                          freq= 26  mean_jaccard=0.422
+  Socially Awesome Awkward Penguin              freq= 25  mean_jaccard=0.460
+  Confession Bear                               freq= 25  mean_jaccard=0.478
+  Angry NPC Wojak                               freq= 25  mean_jaccard=0.357
+  Expanding Brain                               freq= 17  mean_jaccard=0.296
+  This Is Fine                                  freq= 17  mean_jaccard=0.454
+  My Parents Are Dead / Batman Slapping Robin   freq= 15  mean_jaccard=0.353
+  Two Buttons                                   freq= 14  mean_jaccard=0.401

@@ -1,0 +1,112 @@
+{
+  "image_stem": "241",
+  "model": "deepseek-vl2",
+  "timestamp": "2026-08-21T12:46:57.472432+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Men",
+          "Green party supporter"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Men\",\"Green party supporter\"]}",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 15,
+          "prompt_tokens": 1059,
+          "total_tokens": 1074,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "people of color",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "people of color",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"people of color\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"people of color\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 36,
+          "prompt_tokens": 747,
+          "total_tokens": 783,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "people of color",
+          "roles": [
+            "outgroup"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"people of color\",     \"roles\": [\"outgroup\"]   } ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 24,
+          "prompt_tokens": 945,
+          "total_tokens": 969,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Men",
+      "Green party supporter"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "people of color",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "people of color",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "people of color",
+      "roles": [
+        "outgroup"
+      ]
+    }
+  ]
+}

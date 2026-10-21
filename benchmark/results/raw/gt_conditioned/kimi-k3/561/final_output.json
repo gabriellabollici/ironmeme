@@ -1,0 +1,153 @@
+{
+  "image_stem": "561",
+  "model": "kimi-k3",
+  "timestamp": "2026-08-22T01:12:52.651747+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Green party supporter",
+          "Conservative",
+          "Voter"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Green party supporter\",\"Conservative\",\"Voter\"]}",
+      "metadata": {
+        "model": "kimi-k3",
+        "usage": {
+          "completion_tokens": 277,
+          "prompt_tokens": 816,
+          "total_tokens": 1093,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 246,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 512,
+            "image_tokens": null,
+            "text_tokens": null
+          },
+          "cached_tokens": 512
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "conservative",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "green party supporter",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[{\"identity\":\"conservative\",\"viewpoint\":\"outgroup\"},{\"identity\":\"green party supporter\",\"viewpoint\":\"ingroup\"}]",
+      "metadata": {
+        "model": "kimi-k3",
+        "usage": {
+          "completion_tokens": 179,
+          "prompt_tokens": 496,
+          "total_tokens": 675,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 140,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "conservative",
+          "roles": [
+            "Loser"
+          ]
+        },
+        {
+          "identity": "green party supporter",
+          "roles": [
+            "Charmer",
+            "Winner"
+          ]
+        }
+      ],
+      "raw_text": "[\n  {\n    \"identity\": \"conservative\",\n    \"roles\": [\"Loser\"]\n  },\n  {\n    \"identity\": \"green party supporter\",\n    \"roles\": [\"Charmer\", \"Winner\"]\n  }\n]",
+      "metadata": {
+        "model": "kimi-k3",
+        "usage": {
+          "completion_tokens": 468,
+          "prompt_tokens": 691,
+          "total_tokens": 1159,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 407,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Green party supporter",
+      "Conservative",
+      "Voter"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "conservative",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "green party supporter",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "conservative",
+      "roles": [
+        "Loser"
+      ]
+    },
+    {
+      "identity": "green party supporter",
+      "roles": [
+        "Charmer",
+        "Winner"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "image_stem": "836",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T19:12:26.379869+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          " right wing",
+          " climate change skeptic/denier"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \" right wing\",\n    \" climate change skeptic/denier\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 26,
+          "prompt_tokens": 1600,
+          "total_tokens": 1626,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "climate change skeptic/denier",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "environmentalist",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "scientific community",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "public",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "governments",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "media",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "skeptical scientists",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"climate change skeptic/denier\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"environmentalist\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"scientific community\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"public\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"governments\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"media\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"skeptical scientists\", \"viewpoint\": \"ingroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 118,
+          "prompt_tokens": 1297,
+          "total_tokens": 1415,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 7
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "climate change skeptic/denier",
+            "roles": [
+              "outgroup",
+              "villain"
+            ]
+          },
+          {
+            "identity": "skepticism/denial",
+            "roles": [
+              "outgroup",
+              "villain"
+            ]
+          }
+        ],
+        "viewpoints": {
+          "outgroup": "superior",
+          "villain": "superior"
+        }
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"climate change skeptic/denier\",\n      \"roles\": [\"outgroup\", \"villain\"]\n    },\n    {\n      \"identity\": \"skepticism/denial\",\n      \"roles\": [\"outgroup\", \"villain\"]\n    }\n  ],\n  \"viewpoints\": {\n    \"outgroup\": \"superior\",\n    \"villain\": \"superior\"\n  }\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 97,
+          "prompt_tokens": 1481,
+          "total_tokens": 1578,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      " right wing",
+      " climate change skeptic/denier"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "climate change skeptic/denier",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "environmentalist",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "scientific community",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "public",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "governments",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "media",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "skeptical scientists",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "climate change skeptic/denier",
+        "roles": [
+          "outgroup",
+          "villain"
+        ]
+      },
+      {
+        "identity": "skepticism/denial",
+        "roles": [
+          "outgroup",
+          "villain"
+        ]
+      }
+    ],
+    "viewpoints": {
+      "outgroup": "superior",
+      "villain": "superior"
+    }
+  }
+}

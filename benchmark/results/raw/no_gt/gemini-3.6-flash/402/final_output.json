@@ -1,0 +1,144 @@
+{
+  "image_stem": "402",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T16:12:09.505489+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Republican",
+          "Conservative",
+          "Media elites"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Republican\",\n    \"Conservative\",\n    \"Media elites\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 36,
+          "prompt_tokens": 1706,
+          "total_tokens": 2200,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Republican",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "Conservative",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "Media elites",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Republican\",\n    \"viewpoint\": \"ingroup\"\n  },\n  {\n    \"identity\": \"Conservative\",\n    \"viewpoint\": \"ingroup\"\n  },\n  {\n    \"identity\": \"Media elites\",\n    \"viewpoint\": \"outgroup\"\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 80,
+          "prompt_tokens": 1428,
+          "total_tokens": 2691,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Republican",
+          "roles": [
+            "Victim"
+          ]
+        },
+        {
+          "identity": "Conservative",
+          "roles": []
+        },
+        {
+          "identity": "Media elites",
+          "roles": [
+            "Fool",
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Republican\",\n    \"roles\": [\"Victim\"]\n  },\n  {\n    \"identity\": \"Conservative\",\n    \"roles\": []\n  },\n  {\n    \"identity\": \"Media elites\",\n    \"roles\": [\"Fool\", \"Villain\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 78,
+          "prompt_tokens": 1617,
+          "total_tokens": 3059,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Republican",
+      "Conservative",
+      "Media elites"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Republican",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "Conservative",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "Media elites",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Republican",
+      "roles": [
+        "Victim"
+      ]
+    },
+    {
+      "identity": "Conservative",
+      "roles": []
+    },
+    {
+      "identity": "Media elites",
+      "roles": [
+        "Fool",
+        "Villain"
+      ]
+    }
+  ]
+}

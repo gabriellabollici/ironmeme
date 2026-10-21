@@ -1,0 +1,122 @@
+{
+  "image_stem": "667",
+  "model": "deepseek-vl2",
+  "timestamp": "2026-08-21T12:59:48.138279+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "LGTBQ+ rights supporter",
+          "Anti LGTBQ+"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"LGTBQ+ rights supporter\",\"Anti LGTBQ+\"]}",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 24,
+          "prompt_tokens": 2655,
+          "total_tokens": 2679,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "LGBTQ+ rights supporter",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "Transgender people",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "Non-transgender people",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"LGBTQ+ rights supporter\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"Transgender people\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"Non-transgender people\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 56,
+          "prompt_tokens": 2351,
+          "total_tokens": 2407,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "LGBTQ+ rights supporter",
+          "roles": [
+            "Hero",
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"LGBTQ+ rights supporter\",     \"roles\": [\"Hero\", \"Victim\"]   } ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 30,
+          "prompt_tokens": 2544,
+          "total_tokens": 2574,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "LGTBQ+ rights supporter",
+      "Anti LGTBQ+"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "LGBTQ+ rights supporter",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "Transgender people",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "Non-transgender people",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "LGBTQ+ rights supporter",
+      "roles": [
+        "Hero",
+        "Victim"
+      ]
+    }
+  ]
+}

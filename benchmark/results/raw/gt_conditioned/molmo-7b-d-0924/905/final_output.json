@@ -1,0 +1,158 @@
+{
+  "image_stem": "905",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T19:40:57.398693+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "White people",
+          " right wing",
+          "Republican",
+          "Voter",
+          "Politicians/government"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \"White people\",\n    \" right wing\",\n    \"Republican\",\n    \"Voter\",\n    \"Politicians/government\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 38,
+          "prompt_tokens": 944,
+          "total_tokens": 982,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 5
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "republican",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": " democRAT",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"republican\", \"viewpoint\": \"ingroup\"},   {\"identity\": \" democRAT\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 37,
+          "prompt_tokens": 635,
+          "total_tokens": 672,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "rich",
+            "roles": [
+              "Ingroup"
+            ]
+          },
+          {
+            "identity": "Republican",
+            "roles": [
+              "Outgroup"
+            ]
+          },
+          {
+            "identity": "people",
+            "roles": [
+              "Ingroup"
+            ]
+          }
+        ],
+        "narrativeFramework": {
+          "moralDimension": "Moral",
+          "intellectualDimension": "Moral",
+          "physicalDimension": "Moral",
+          "powerDimension": "Moral"
+        }
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"rich\",\n      \"roles\": [\"Ingroup\"]\n    },\n    {\n      \"identity\": \"Republican\",\n      \"roles\": [\"Outgroup\"]\n    },\n    {\n      \"identity\": \"people\",\n      \"roles\": [\"Ingroup\"]\n    }\n  ],\n  \"narrativeFramework\": {\n    \"moralDimension\": \"Moral\",\n    \"intellectualDimension\": \"Moral\",\n    \"physicalDimension\": \"Moral\",\n    \"powerDimension\": \"Moral\"\n  }\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 116,
+          "prompt_tokens": 822,
+          "total_tokens": 938,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "White people",
+      " right wing",
+      "Republican",
+      "Voter",
+      "Politicians/government"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "republican",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": " democRAT",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "rich",
+        "roles": [
+          "Ingroup"
+        ]
+      },
+      {
+        "identity": "Republican",
+        "roles": [
+          "Outgroup"
+        ]
+      },
+      {
+        "identity": "people",
+        "roles": [
+          "Ingroup"
+        ]
+      }
+    ],
+    "narrativeFramework": {
+      "moralDimension": "Moral",
+      "intellectualDimension": "Moral",
+      "physicalDimension": "Moral",
+      "powerDimension": "Moral"
+    }
+  }
+}

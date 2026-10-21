@@ -1,0 +1,104 @@
+{
+  "image_stem": "51",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T23:08:01.292489+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Men",
+          "Voter"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\"Men\", \"Voter\"]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 21,
+          "prompt_tokens": 890,
+          "total_tokens": 911,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "voter",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"voter\", \"viewpoint\": \"ingroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 23,
+          "prompt_tokens": 555,
+          "total_tokens": 578,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "voter",
+          "roles": [
+            "Hero"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"voter\",\n    \"roles\": [\"Hero\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 26,
+          "prompt_tokens": 773,
+          "total_tokens": 799,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Men",
+      "Voter"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "voter",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "voter",
+      "roles": [
+        "Hero"
+      ]
+    }
+  ]
+}

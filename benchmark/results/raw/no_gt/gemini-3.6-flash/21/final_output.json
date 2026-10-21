@@ -1,0 +1,124 @@
+{
+  "image_stem": "21",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T15:06:21.552773+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Racist",
+          "Republican"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Racist\",\n    \"Republican\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 31,
+          "prompt_tokens": 1679,
+          "total_tokens": 1930,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Racist",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Republican",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[\n  {\n    \"identity\": \"Racist\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"Republican\",\n    \"viewpoint\": \"outgroup\"\n  }\n]",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 52,
+          "prompt_tokens": 1395,
+          "total_tokens": 1785,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Racist",
+          "roles": [
+            "Villain"
+          ]
+        },
+        {
+          "identity": "Republican",
+          "roles": [
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Racist\",\n    \"roles\": [\n      \"Villain\"\n    ]\n  },\n  {\n    \"identity\": \"Republican\",\n    \"roles\": [\n      \"Villain\"\n    ]\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 67,
+          "prompt_tokens": 1576,
+          "total_tokens": 2296,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Racist",
+      "Republican"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Racist",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Republican",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Racist",
+      "roles": [
+        "Villain"
+      ]
+    },
+    {
+      "identity": "Republican",
+      "roles": [
+        "Villain"
+      ]
+    }
+  ]
+}

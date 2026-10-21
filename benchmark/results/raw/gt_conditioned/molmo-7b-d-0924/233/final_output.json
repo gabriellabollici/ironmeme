@@ -1,0 +1,182 @@
+{
+  "image_stem": "233",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T16:04:40.371090+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Women",
+          "Men",
+          "Anti feminist",
+          "LGBTQ+ rights supporter",
+          "Anti LGTBQ+",
+          "Misogynist/male supremacist",
+          "Voter",
+          "Politicians/government",
+          "Media elites",
+          "Celebrity",
+          "Green party supporter",
+          "Libertarian",
+          "Citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \"Women\",\n    \"Men\",\n    \"Anti feminist\",\n    \"LGBTQ+ rights supporter\",\n    \"Anti LGTBQ+\",\n    \"Misogynist/male supremacist\",\n    \"Voter\",\n    \"Politicians/government\",\n    \"Media elites\",\n    \"Celebrity\",\n    \"Green party supporter\",\n    \"Libertarian\",\n    \"Citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 91,
+          "prompt_tokens": 1600,
+          "total_tokens": 1691,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 13
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "misogynist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "male supremacist",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"misogynist\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"male supremacist\", \"viewpoint\": \"ingroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 35,
+          "prompt_tokens": 1299,
+          "total_tokens": 1334,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "misogynist/male supremacist",
+            "roles": [
+              "Outgroup",
+              "Villain"
+            ]
+          },
+          {
+            "identity": "all women",
+            "roles": [
+              "Ingroup",
+              "Victim"
+            ]
+          },
+          {
+            "identity": "Sabin women",
+            "roles": [
+              "Ingroup",
+              "Victim"
+            ]
+          },
+          {
+            "identity": "MGTOW",
+            "roles": [
+              "Outgroup",
+              "Sage"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"misogynist/male supremacist\",\n      \"roles\": [\"Outgroup\", \"Villain\"]\n    },\n    {\n      \"identity\": \"all women\",\n      \"roles\": [\"Ingroup\", \"Victim\"]\n    },\n    {\n      \"identity\": \"Sabin women\",\n      \"roles\": [\"Ingroup\", \"Victim\"]\n    },\n    {\n      \"identity\": \"MGTOW\",\n      \"roles\": [\"Outgroup\", \"Sage\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 115,
+          "prompt_tokens": 1482,
+          "total_tokens": 1597,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 4
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Women",
+      "Men",
+      "Anti feminist",
+      "LGBTQ+ rights supporter",
+      "Anti LGTBQ+",
+      "Misogynist/male supremacist",
+      "Voter",
+      "Politicians/government",
+      "Media elites",
+      "Celebrity",
+      "Green party supporter",
+      "Libertarian",
+      "Citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "misogynist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "male supremacist",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "misogynist/male supremacist",
+        "roles": [
+          "Outgroup",
+          "Villain"
+        ]
+      },
+      {
+        "identity": "all women",
+        "roles": [
+          "Ingroup",
+          "Victim"
+        ]
+      },
+      {
+        "identity": "Sabin women",
+        "roles": [
+          "Ingroup",
+          "Victim"
+        ]
+      },
+      {
+        "identity": "MGTOW",
+        "roles": [
+          "Outgroup",
+          "Sage"
+        ]
+      }
+    ]
+  }
+}

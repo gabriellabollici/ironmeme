@@ -1,0 +1,146 @@
+{
+  "image_stem": "561",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T17:20:10.161308+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Green party supporter",
+          "Conservative",
+          "Voter"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Green party supporter\",\n    \"Conservative\",\n    \"Voter\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 38,
+          "prompt_tokens": 1713,
+          "total_tokens": 2269,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Green party supporter",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "Conservative",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Voter",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[\n  {\n    \"identity\": \"Green party supporter\",\n    \"viewpoint\": \"ingroup\"\n  },\n  {\n    \"identity\": \"Conservative\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"Voter\",\n    \"viewpoint\": \"ingroup\"\n  }\n]",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 78,
+          "prompt_tokens": 1439,
+          "total_tokens": 2066,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Green party supporter",
+          "roles": [
+            "Charmer"
+          ]
+        },
+        {
+          "identity": "Conservative",
+          "roles": [
+            "Loser"
+          ]
+        },
+        {
+          "identity": "Voter",
+          "roles": [
+            "Sage"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Green party supporter\",\n    \"roles\": [\n      \"Charmer\"\n    ]\n  },\n  {\n    \"identity\": \"Conservative\",\n    \"roles\": [\n      \"Loser\"\n    ]\n  },\n  {\n    \"identity\": \"Voter\",\n    \"roles\": [\n      \"Sage\"\n    ]\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 97,
+          "prompt_tokens": 1626,
+          "total_tokens": 2751,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Green party supporter",
+      "Conservative",
+      "Voter"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Green party supporter",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "Conservative",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Voter",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Green party supporter",
+      "roles": [
+        "Charmer"
+      ]
+    },
+    {
+      "identity": "Conservative",
+      "roles": [
+        "Loser"
+      ]
+    },
+    {
+      "identity": "Voter",
+      "roles": [
+        "Sage"
+      ]
+    }
+  ]
+}

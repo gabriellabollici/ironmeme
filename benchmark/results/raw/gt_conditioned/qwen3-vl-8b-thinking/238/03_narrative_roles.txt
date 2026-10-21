@@ -1,0 +1,86 @@
+Got it, let's analyze this meme. First, the identities given are "men" (ingroup) and "women" (outgroup) twice. Wait, the input has two entries for women as outgroup. Let's check the meme.
+
+The meme's text: "WHY DO WE EVACUATE WOMAN AND CHILDREN FIRST IN A DISASTER? SO MEN CAN THINK OF A SOLUTION IN SILENCE". The image is a man (Black man, probably) with a smug expression, pointing to his head.
+
+First, identify the social identities: men (ingroup), women (outgroup), women (outgroup). Wait, the input has two "women" with outgroup. So we need to handle each identity instance.
+
+For "men" (ingroup): The meme's message is that men are the ones who can think of solutions in silence, implying they are the ones who can solve problems. So in the narrative, men are portrayed as the ones who can think, so maybe Sage (Intellectual) or Winner (Power). Let's see.
+
+The question is "why do we evacuate women and children first?" implying that women are the ones who need protection, so women are portrayed as vulnerable (Victim, Moral). But the identity is women (outgroup), so for the two women entries, they are both outgroup.
+
+Wait, the meme's structure: The question is about evacuating women first, so women are the ones being evacuated, so they are the victims. But the identity is women (outgroup), so in the narrative, women are portrayed as victims (Moral, Inferior/Positive). But wait, the roles: Victim is Inferior/Positive, which is for ingroup. Wait, but here women are outgroup. Wait, the annotation rules say "victims usually correspond to ingroup viewpoints". So if women are outgroup, can they be victims? Hmm, maybe the meme is using the outgroup as victims, but the framework says victims are for ingroup. Wait, the framework says "Victim (Inferior/Positive): Harmed, oppressed, unfairly treated, vulnerable, deserving sympathy. Note that victims usually correspond to ingroup viewpoints."
+
+So if women are outgroup, but the meme is saying they are evacuated first (so they are the ones being protected), so they are portrayed as vulnerable. But since they are outgroup, maybe the role is Victim, but the framework says victims are usually ingroup. Wait, maybe the meme is using the outgroup as the victims, but the role is still Victim. Let's check.
+
+For "women" (outgroup): The text says "evacuate woman and children first", so they are the ones being evacuated, so they are the victims. So Moral dimension: Victim (Inferior/Positive). But since they are outgroup, but the role is Victim. Wait, the framework says "victims usually correspond to ingroup", but maybe in this case, the meme is portraying women as victims, even if they are outgroup. Let's see.
+
+For "men" (ingroup): The text says "so men can think of a solution in silence". So men are the ones who can solve problems, so they are the ones with the ability to think, so Intellectual dimension: Sage (Superior/Positive). Also, maybe Power dimension: Winner (Superior/Positive) because they are the ones who can solve the problem.
+
+Wait, let's break down each identity:
+
+1. Identity: "men", viewpoint: "ingroup"
+   - The meme's message: Men are the ones who can think of a solution in silence. So they are portrayed as the ones with the ability to solve problems. So Intellectual dimension: Sage (Superior/Positive). Also, Power dimension: Winner (Superior/Positive) because they are the successful ones who can solve the problem.
+
+2. Identity: "women", viewpoint: "outgroup" (first instance)
+   - The text says "evacuate woman and children first", so women are the ones being evacuated, implying they are vulnerable. So Moral dimension: Victim (Inferior/Positive). But since they are outgroup, but the framework says victims usually correspond to ingroup. Wait, but the meme is using women as the ones who need protection, so they are the victims. So maybe Victim is the role here.
+
+3. Identity: "women", viewpoint: "outgroup" (second instance)
+   - Same as above, since it's "woman and children", so women are the same as the first instance. So same role: Victim.
+
+Wait, but the framework says "victims usually correspond to ingroup viewpoints". So if women are outgroup, can they be victims? Maybe the meme is using the outgroup as victims, but the role is still Victim. Let's check the example. The framework says "Victim (Inferior/Positive): Harmed, oppressed, unfairly treated, vulnerable, deserving sympathy. Note that victims usually correspond to ingroup viewpoints." So if the identity is outgroup, but the portrayal is as victim, is that allowed? The annotation rules say "assign roles only when supported by the meme's text, imagery, or framing". The meme's text says "evacuate woman and children first", so they are the ones being evacuated, so they are the victims. So even if they are outgroup, the role is Victim.
+
+Now, for men: "men can think of a solution in silence" – so they are the ones who can solve problems, so Sage (Intellectual) and Winner (Power).
+
+Let's check the roles:
+
+- Men (ingroup): Sage (Intellectual, Superior/Positive), Winner (Power, Superior/Positive)
+- Women (outgroup): Victim (Moral, Inferior/Positive) for both instances.
+
+Wait, but the input has two "women" with outgroup. So we need to list each identity instance.
+
+Wait, the input is [{"identity": "men", "viewpoint": "ingroup"}, {"identity": "women", "viewpoint": "outgroup"}, {"identity": "women", "viewpoint": "outgroup"}]
+
+So three entries. So we need to process each.
+
+First entry: identity "men", viewpoint "ingroup"
+
+- The meme's text: "so men can think of a solution in silence" – so men are portrayed as the ones who can solve problems. So Intellectual dimension: Sage (Superior/Positive). Power dimension: Winner (Superior/Positive) because they are the ones who can solve the problem.
+
+Second entry: identity "women", viewpoint "outgroup"
+
+- The text: "evacuate woman and children first" – so women are the ones being evacuated, implying they are vulnerable. So Moral dimension: Victim (Inferior/Positive).
+
+Third entry: identity "women", viewpoint "outgroup"
+
+- Same as second entry, so Victim (Inferior/Positive).
+
+Now, check if there are other roles. For men, is there a role in Physical? The image is a man, but the text is about thinking, so probably not. So men: Sage, Winner.
+
+Women: Victim.
+
+Now, confirm the roles:
+
+- Sage: Intellectual, Superior/Positive – men are portrayed as knowledgeable (can think of solutions)
+- Winner: Power, Superior/Positive – men are the ones who can solve the problem, so successful
+- Victim: Moral, Inferior/Positive – women are the ones being evacuated, so vulnerable
+
+Yes, that makes sense.
+
+Now, format as JSON array:
+
+[
+
+  {"identity": "men", "roles": ["Sage", "Winner"]},
+
+  {"identity": "women", "roles": ["Victim"]},
+
+  {"identity": "women", "roles": ["Victim"]}
+
+]
+
+Wait, but the problem says "assign roles to social identities, not individuals". So each identity instance is separate. The input has two women entries, so two separate objects for women.
+
+Yes, that's correct.
+</think>
+
+[{"identity": "men", "roles": ["Sage", "Winner"]}, {"identity": "women", "roles": ["Victim"]}, {"identity": "women", "roles": ["Victim"]}]

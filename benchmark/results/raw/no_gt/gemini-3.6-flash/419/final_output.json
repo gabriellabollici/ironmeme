@@ -1,0 +1,124 @@
+{
+  "image_stem": "419",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T16:16:21.528628+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Green party supporter",
+          "Liberal"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Green party supporter\",\n    \"Liberal\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 32,
+          "prompt_tokens": 1695,
+          "total_tokens": 2234,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Green party supporter",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "Liberal",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[\n  {\"identity\": \"Green party supporter\", \"viewpoint\": \"ingroup\"},\n  {\"identity\": \"Liberal\", \"viewpoint\": \"outgroup\"}\n]",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 37,
+          "prompt_tokens": 1413,
+          "total_tokens": 1793,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Green party supporter",
+          "roles": [
+            "Hero"
+          ]
+        },
+        {
+          "identity": "Liberal",
+          "roles": [
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Green party supporter\",\n    \"roles\": [\n      \"Hero\"\n    ]\n  },\n  {\n    \"identity\": \"Liberal\",\n    \"roles\": [\n      \"Villain\"\n    ]\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 67,
+          "prompt_tokens": 1593,
+          "total_tokens": 2351,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Green party supporter",
+      "Liberal"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Green party supporter",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "Liberal",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Green party supporter",
+      "roles": [
+        "Hero"
+      ]
+    },
+    {
+      "identity": "Liberal",
+      "roles": [
+        "Villain"
+      ]
+    }
+  ]
+}

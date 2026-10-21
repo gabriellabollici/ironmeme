@@ -1,0 +1,232 @@
+{
+  "image_stem": "1102",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T15:31:27.367778+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          " right wing",
+          "Republican",
+          "Conservative",
+          "Liberal",
+          " left wing",
+          "Democrat",
+          "Anticapitalist",
+          "Voter",
+          "Politicians/government",
+          "World leaders/elites",
+          "Media elites",
+          "Celebrity",
+          "Green party supporter",
+          "Libertarian",
+          "Citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \" right wing\",\n    \"Republican\",\n    \"Conservative\",\n    \"Liberal\",\n    \" left wing\",\n    \"Democrat\",\n    \"Anticapitalist\",\n    \"Voter\",\n    \"Politicians/government\",\n    \"World leaders/elites\",\n    \"Media elites\",\n    \"Celebrity\",\n    \"Green party supporter\",\n    \"Libertarian\",\n    \"Citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 94,
+          "prompt_tokens": 1208,
+          "total_tokens": 1302,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 15
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "democrat",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "republican",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "republican",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"democrat\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"republican\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"republican\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 52,
+          "prompt_tokens": 917,
+          "total_tokens": 969,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "democrat",
+            "roles": [
+              "outgroup"
+            ]
+          },
+          {
+            "identity": "republican",
+            "roles": [
+              "ingroup",
+              "outgroup"
+            ]
+          }
+        ],
+        "narrative_framework": {
+          "moral_dimension": {
+            "hero": [
+              "republican"
+            ],
+            "villain": [
+              "democrat"
+            ]
+          },
+          "intellectual_dimension": {
+            "sage": [
+              "republican"
+            ],
+            "fool": [
+              "democrat"
+            ]
+          },
+          "physical_dimension": {
+            "charmer": [
+              "republican"
+            ],
+            "monster": [
+              "democrat"
+            ]
+          },
+          "power_dimension": {
+            "winner": [
+              "republican"
+            ],
+            "loser": [
+              "democrat"
+            ]
+          }
+        }
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"democrat\",\n      \"roles\": [\"outgroup\"]\n    },\n    {\n      \"identity\": \"republican\",\n      \"roles\": [\"ingroup\", \"outgroup\"]\n    }\n  ],\n  \"narrative_framework\": {\n    \"moral_dimension\": {\n      \"hero\": [\"republican\"],\n      \"villain\": [\"democrat\"]\n    },\n    \"intellectual_dimension\": {\n      \"sage\": [\"republican\"],\n      \"fool\": [\"democrat\"]\n    },\n    \"physical_dimension\": {\n      \"charmer\": [\"republican\"],\n      \"monster\": [\"democrat\"]\n    },\n    \"power_dimension\": {\n      \"winner\": [\"republican\"],\n      \"loser\": [\"democrat\"]\n    }\n  }\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 172,
+          "prompt_tokens": 1115,
+          "total_tokens": 1287,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      " right wing",
+      "Republican",
+      "Conservative",
+      "Liberal",
+      " left wing",
+      "Democrat",
+      "Anticapitalist",
+      "Voter",
+      "Politicians/government",
+      "World leaders/elites",
+      "Media elites",
+      "Celebrity",
+      "Green party supporter",
+      "Libertarian",
+      "Citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "democrat",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "republican",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "republican",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "democrat",
+        "roles": [
+          "outgroup"
+        ]
+      },
+      {
+        "identity": "republican",
+        "roles": [
+          "ingroup",
+          "outgroup"
+        ]
+      }
+    ],
+    "narrative_framework": {
+      "moral_dimension": {
+        "hero": [
+          "republican"
+        ],
+        "villain": [
+          "democrat"
+        ]
+      },
+      "intellectual_dimension": {
+        "sage": [
+          "republican"
+        ],
+        "fool": [
+          "democrat"
+        ]
+      },
+      "physical_dimension": {
+        "charmer": [
+          "republican"
+        ],
+        "monster": [
+          "democrat"
+        ]
+      },
+      "power_dimension": {
+        "winner": [
+          "republican"
+        ],
+        "loser": [
+          "democrat"
+        ]
+      }
+    }
+  }
+}

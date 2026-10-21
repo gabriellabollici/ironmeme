@@ -1,0 +1,164 @@
+{
+  "image_stem": "936",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T19:50:21.562477+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "White people",
+          "Men",
+          " right wing",
+          "Liberal",
+          " left wing",
+          "Politicians/government",
+          "World leaders/elites",
+          "Media elites",
+          "Celebrity",
+          "Green party supporter",
+          "Libertarian",
+          "Citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \"White people\",\n    \"Men\",\n    \" right wing\",\n    \"Liberal\",\n    \" left wing\",\n    \"Politicians/government\",\n    \"World leaders/elites\",\n    \"Media elites\",\n    \"Celebrity\",\n    \"Green party supporter\",\n    \"Libertarian\",\n    \"Citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 77,
+          "prompt_tokens": 1368,
+          "total_tokens": 1445,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 12
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "world leaders/elites",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "common people",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"world leaders/elites\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"common people\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 36,
+          "prompt_tokens": 1061,
+          "total_tokens": 1097,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "world leaders/elites",
+            "roles": [
+              "Moral",
+              "Intellectual",
+              "Power"
+            ]
+          },
+          {
+            "identity": "Americans",
+            "roles": [
+              "Ingroup"
+            ]
+          },
+          {
+            "identity": "planting trees",
+            "roles": [
+              "Intellectual"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"world leaders/elites\",\n      \"roles\": [\"Moral\", \"Intellectual\", \"Power\"]\n    },\n    {\n      \"identity\": \"Americans\",\n      \"roles\": [\"Ingroup\"]\n    },\n    {\n      \"identity\": \"planting trees\",\n      \"roles\": [\"Intellectual\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 80,
+          "prompt_tokens": 1247,
+          "total_tokens": 1327,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "White people",
+      "Men",
+      " right wing",
+      "Liberal",
+      " left wing",
+      "Politicians/government",
+      "World leaders/elites",
+      "Media elites",
+      "Celebrity",
+      "Green party supporter",
+      "Libertarian",
+      "Citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "world leaders/elites",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "common people",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "world leaders/elites",
+        "roles": [
+          "Moral",
+          "Intellectual",
+          "Power"
+        ]
+      },
+      {
+        "identity": "Americans",
+        "roles": [
+          "Ingroup"
+        ]
+      },
+      {
+        "identity": "planting trees",
+        "roles": [
+          "Intellectual"
+        ]
+      }
+    ]
+  }
+}

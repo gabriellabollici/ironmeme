@@ -1,0 +1,196 @@
+{
+  "image_stem": "352",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T16:37:57.615245+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Left wing",
+          " right wing",
+          "Liberal",
+          "Conservative",
+          "Voter",
+          "Politicians/government",
+          "Media elites",
+          "Celebrity",
+          "Green party supporter",
+          "Libertarian",
+          "Citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \"Left wing\",\n    \" right wing\",\n    \"Liberal\",\n    \"Conservative\",\n    \"Voter\",\n    \"Politicians/government\",\n    \"Media elites\",\n    \"Celebrity\",\n    \"Green party supporter\",\n    \"Libertarian\",\n    \"Citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 71,
+          "prompt_tokens": 1208,
+          "total_tokens": 1279,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 11
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "left-wing",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "right-wing",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "conservative",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "liberal",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": " democ rati c",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": " republi can",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": " Demo crat",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": " republi can",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"left-wing\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"right-wing\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"conservative\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"liberal\", \"viewpoint\": \"outgroup\"},   {\"identity\": \" democ rati c\", \"viewpoint\": \"outgroup\"},   {\"identity\": \" republi can\", \"viewpoint\": \"ingroup\"},   {\"identity\": \" Demo crat\", \"viewpoint\": \"outgroup\"},   {\"identity\": \" republi can\", \"viewpoint\": \"ingroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 135,
+          "prompt_tokens": 897,
+          "total_tokens": 1032,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 8
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "left-wing",
+            "roles": [
+              "outgroup"
+            ]
+          },
+          {
+            "identity": "Donald Trump",
+            "roles": [
+              "villain",
+              "winner"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"left-wing\",\n      \"roles\": [\"outgroup\"]\n    },\n    {\n      \"identity\": \"Donald Trump\",\n      \"roles\": [\"villain\", \"winner\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 55,
+          "prompt_tokens": 1085,
+          "total_tokens": 1140,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Left wing",
+      " right wing",
+      "Liberal",
+      "Conservative",
+      "Voter",
+      "Politicians/government",
+      "Media elites",
+      "Celebrity",
+      "Green party supporter",
+      "Libertarian",
+      "Citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "left-wing",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "right-wing",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "conservative",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "liberal",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": " democ rati c",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": " republi can",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": " Demo crat",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": " republi can",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "left-wing",
+        "roles": [
+          "outgroup"
+        ]
+      },
+      {
+        "identity": "Donald Trump",
+        "roles": [
+          "villain",
+          "winner"
+        ]
+      }
+    ]
+  }
+}

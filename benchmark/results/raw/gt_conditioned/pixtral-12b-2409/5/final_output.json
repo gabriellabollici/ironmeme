@@ -1,0 +1,124 @@
+{
+  "image_stem": "5",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T23:07:42.427678+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Men",
+          "Feminist"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\"Men\", \"Feminist\"]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 22,
+          "prompt_tokens": 1776,
+          "total_tokens": 1798,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "feminist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "men",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"feminist\", \"viewpoint\": \"ingroup\"},\n    {\"identity\": \"men\", \"viewpoint\": \"outgroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 39,
+          "prompt_tokens": 1449,
+          "total_tokens": 1488,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "feminist",
+          "roles": [
+            "Villain"
+          ]
+        },
+        {
+          "identity": "men",
+          "roles": [
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"feminist\",\n    \"roles\": [\"Villain\"]\n  },\n  {\n    \"identity\": \"men\",\n    \"roles\": [\"Victim\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 48,
+          "prompt_tokens": 1674,
+          "total_tokens": 1722,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Men",
+      "Feminist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "feminist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "men",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "feminist",
+      "roles": [
+        "Villain"
+      ]
+    },
+    {
+      "identity": "men",
+      "roles": [
+        "Victim"
+      ]
+    }
+  ]
+}

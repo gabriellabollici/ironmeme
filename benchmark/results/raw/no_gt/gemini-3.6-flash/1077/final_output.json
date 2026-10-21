@@ -1,0 +1,126 @@
+{
+  "image_stem": "1077",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T14:31:51.179691+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Politicians/government",
+          "Women"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Politicians/government\",\n    \"Women\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 33,
+          "prompt_tokens": 1686,
+          "total_tokens": 2364,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Politicians/government",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Women",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[\n  {\n    \"identity\": \"Politicians/government\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"Women\",\n    \"viewpoint\": \"ingroup\"\n  }\n]",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 54,
+          "prompt_tokens": 1406,
+          "total_tokens": 1953,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Politicians/government",
+          "roles": [
+            "Fool",
+            "Villain"
+          ]
+        },
+        {
+          "identity": "Women",
+          "roles": [
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "[\n  {\n    \"identity\": \"Politicians/government\",\n    \"roles\": [\n      \"Fool\",\n      \"Villain\"\n    ]\n  },\n  {\n    \"identity\": \"Women\",\n    \"roles\": [\n      \"Victim\"\n    ]\n  }\n]",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 69,
+          "prompt_tokens": 1585,
+          "total_tokens": 2456,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Politicians/government",
+      "Women"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Politicians/government",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Women",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Politicians/government",
+      "roles": [
+        "Fool",
+        "Villain"
+      ]
+    },
+    {
+      "identity": "Women",
+      "roles": [
+        "Victim"
+      ]
+    }
+  ]
+}

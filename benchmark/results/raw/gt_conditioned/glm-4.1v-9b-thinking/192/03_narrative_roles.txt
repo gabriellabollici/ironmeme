@@ -1,0 +1,25 @@
+<think>Got it, let's analyze the meme. The meme has text: "WOMEN WHO DATE AND MARRY FOR MONEY ARE JUST MORE COMPLICATED PROSTITUTE'S". The social identity here is "women" with viewpoint "outgroup" (as given in the input). 
+
+First, identify the evaluative dimension. The statement is making a moral judgment, so Moral dimension. Then determine if it's Superior/Positive or Inferior/Negative. The meme is portraying women who date/marry for money as "more complicated prostitutes", which is a negative evaluation, so Inferior/Negative.
+
+Now, assign narrative roles. For Moral dimension, the role would be Villain (since it's morally bad, harmful, etc.) or Victim? Wait, the viewpoint is outgroup, and the portrayal is negative. Villain is Inferior/Negative, Victim is Inferior/Positive (but Victim is usually ingroup). Wait, the meme is framing women in this category as villains, so Villain. Let's check the roles:
+
+Moral dimension roles: Hero (Superior/Positive), Victim (Inferior/Positive), Villain (Inferior/Negative). The meme is criticizing them, so Villain. 
+
+Intellectual dimension: Fool (Inferior/Negative) – if they're portrayed as uninformed, but the meme doesn't explicitly say about intellect, maybe not. Physical dimension: Monster (Inferior/Negative) – not about appearance. Power dimension: Loser (Inferior/Negative) – if they're not empowered. 
+
+So the identity is "women" (with viewpoint "outgroup"), and the role is Villain. Wait, but let's check the steps. Step 1: evaluative dimension is Moral. Step 2: portrayal is Inferior/Negative. Then assign role from Moral dimension: Villain. 
+
+So the JSON would be:
+
+[{"identity": "women", "roles": ["Villain"]}]
+
+Wait, but there are two entries in the input: [{"identity": "women", "viewpoint": "outgroup"}, {"identity": "women", "viewpoint": "outgroup"}] – wait, maybe a typo, but both are women with outgroup viewpoint. So each would have the same roles. 
+
+Let me confirm. The meme's message is about women who date/marry for money being "more complicated prostitutes", which is a pejorative comparison. So the portrayal is negative, so Inferior/Negative. Moral dimension, so Villain. 
+
+So the JSON array would have each identity with roles. Since both identities are the same, the result is:
+
+[{"identity": "women", "roles": ["Villain"]}, {"identity": "women", "roles": ["Villain"]}]
+
+Wait, but let me check if there are other roles. Could it be Victim? But Victim is usually for those who are oppressed, not the one doing the action. The meme is criticizing them, so they're portrayed as villains, not victims. So Villain is correct.</think><answer>[{"identity": "women", "roles": ["Villain"]}, {"identity": "women", "roles": ["Villain"]}]

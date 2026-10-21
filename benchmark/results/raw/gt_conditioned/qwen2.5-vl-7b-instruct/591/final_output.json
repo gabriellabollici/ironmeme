@@ -1,0 +1,124 @@
+{
+  "image_stem": "591",
+  "model": "qwen2.5-vl-7b-instruct",
+  "timestamp": "2026-08-25T21:14:27.532007+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Climate activist",
+          "Climate change skeptic/denier"
+        ]
+      },
+      "raw_text": "{\"social_identities\": [\"Climate activist\", \"Climate change skeptic/denier\"]}",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 18,
+          "prompt_tokens": 1078,
+          "total_tokens": 1096,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "climate activist",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "media elites",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"climate activist\", \"viewpoint\": \"outgroup\"}, {\"identity\": \"media elites\", \"viewpoint\": \"ingroup\"}]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 32,
+          "prompt_tokens": 775,
+          "total_tokens": 807,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "climate activist",
+          "roles": [
+            "Victim"
+          ]
+        },
+        {
+          "identity": "media elites",
+          "roles": [
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"climate activist\",     \"roles\": [\"Victim\"]   },   {     \"identity\": \"media elites\",     \"roles\": [\"Villain\"]   } ]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 44,
+          "prompt_tokens": 969,
+          "total_tokens": 1013,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Climate activist",
+      "Climate change skeptic/denier"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "climate activist",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "media elites",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "climate activist",
+      "roles": [
+        "Victim"
+      ]
+    },
+    {
+      "identity": "media elites",
+      "roles": [
+        "Villain"
+      ]
+    }
+  ]
+}

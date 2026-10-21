@@ -1,0 +1,148 @@
+{
+  "image_stem": "914",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T19:00:22.535567+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Politicians/government",
+          "Green party supporter",
+          "Politically disillusioned"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Politicians/government\",\n    \"Green party supporter\",\n    \"Politically disillusioned\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 42,
+          "prompt_tokens": 1708,
+          "total_tokens": 2118,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Politicians/government",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Green party supporter",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "Politically disillusioned",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Politicians/government\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"Green party supporter\",\n    \"viewpoint\": \"ingroup\"\n  },\n  {\n    \"identity\": \"Politically disillusioned\",\n    \"viewpoint\": \"ingroup\"\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 87,
+          "prompt_tokens": 1442,
+          "total_tokens": 1994,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Politicians/government",
+          "roles": [
+            "Villain"
+          ]
+        },
+        {
+          "identity": "Green party supporter",
+          "roles": [
+            "Hero"
+          ]
+        },
+        {
+          "identity": "Politically disillusioned",
+          "roles": [
+            "Victim",
+            "Sage"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Politicians/government\",\n    \"roles\": [\n      \"Villain\"\n    ]\n  },\n  {\n    \"identity\": \"Green party supporter\",\n    \"roles\": [\n      \"Hero\"\n    ]\n  },\n  {\n    \"identity\": \"Politically disillusioned\",\n    \"roles\": [\n      \"Victim\",\n      \"Sage\"\n    ]\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 106,
+          "prompt_tokens": 1625,
+          "total_tokens": 2382,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Politicians/government",
+      "Green party supporter",
+      "Politically disillusioned"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Politicians/government",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Green party supporter",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "Politically disillusioned",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Politicians/government",
+      "roles": [
+        "Villain"
+      ]
+    },
+    {
+      "identity": "Green party supporter",
+      "roles": [
+        "Hero"
+      ]
+    },
+    {
+      "identity": "Politically disillusioned",
+      "roles": [
+        "Victim",
+        "Sage"
+      ]
+    }
+  ]
+}

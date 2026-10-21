@@ -1,0 +1,154 @@
+{
+  "image_stem": "665",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T18:14:38.305055+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          " right wing",
+          "Liberal",
+          " left wing",
+          "Progressive",
+          "Anti racist",
+          "Voter",
+          "Politicians/government",
+          "World leaders/elites",
+          "Media elites",
+          "Celebrity",
+          "Green party supporter",
+          "Libertarian",
+          "Citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \" right wing\",\n    \"Liberal\",\n    \" left wing\",\n    \"Progressive\",\n    \"Anti racist\",\n    \"Voter\",\n    \"Politicians/government\",\n    \"World leaders/elites\",\n    \"Media elites\",\n    \"Celebrity\",\n    \"Green party supporter\",\n    \"Libertarian\",\n    \"Citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 83,
+          "prompt_tokens": 1600,
+          "total_tokens": 1683,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 13
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "citizens",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "corporativist/capitalist",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"citizens\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"corporativist/capitalist\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 40,
+          "prompt_tokens": 1309,
+          "total_tokens": 1349,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "citizens",
+            "roles": [
+              "ingroup",
+              "hero"
+            ]
+          },
+          {
+            "identity": "corporativist/capitalist",
+            "roles": [
+              "outgroup",
+              "villain"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"citizens\",\n      \"roles\": [\"ingroup\", \"hero\"]\n    },\n    {\n      \"identity\": \"corporativist/capitalist\",\n      \"roles\": [\"outgroup\", \"villain\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 65,
+          "prompt_tokens": 1497,
+          "total_tokens": 1562,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      " right wing",
+      "Liberal",
+      " left wing",
+      "Progressive",
+      "Anti racist",
+      "Voter",
+      "Politicians/government",
+      "World leaders/elites",
+      "Media elites",
+      "Celebrity",
+      "Green party supporter",
+      "Libertarian",
+      "Citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "citizens",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "corporativist/capitalist",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "citizens",
+        "roles": [
+          "ingroup",
+          "hero"
+        ]
+      },
+      {
+        "identity": "corporativist/capitalist",
+        "roles": [
+          "outgroup",
+          "villain"
+        ]
+      }
+    ]
+  }
+}

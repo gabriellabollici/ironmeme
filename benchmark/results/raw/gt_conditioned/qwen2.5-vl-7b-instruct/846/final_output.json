@@ -1,0 +1,128 @@
+{
+  "image_stem": "846",
+  "model": "qwen2.5-vl-7b-instruct",
+  "timestamp": "2026-08-25T21:17:31.870510+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Climate activist",
+          "Climate change skeptic/denier"
+        ]
+      },
+      "raw_text": "{\"social_identities\": [\"Climate activist\", \"Climate change skeptic/denier\"]}",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 18,
+          "prompt_tokens": 1754,
+          "total_tokens": 1772,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "climate activist",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "climate disengaged",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"climate activist\", \"viewpoint\": \"outgroup\"}, {\"identity\": \"climate disengaged\", \"viewpoint\": \"ingroup\"}]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 34,
+          "prompt_tokens": 1455,
+          "total_tokens": 1489,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "climate activist",
+          "roles": [
+            "Villain",
+            "Loser"
+          ]
+        },
+        {
+          "identity": "climate disengaged",
+          "roles": [
+            "Hero",
+            "Winner"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"climate activist\",     \"roles\": [\"Villain\", \"Loser\"]   },   {     \"identity\": \"climate disengaged\",     \"roles\": [\"Hero\", \"Winner\"]   } ]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 52,
+          "prompt_tokens": 1647,
+          "total_tokens": 1699,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Climate activist",
+      "Climate change skeptic/denier"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "climate activist",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "climate disengaged",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "climate activist",
+      "roles": [
+        "Villain",
+        "Loser"
+      ]
+    },
+    {
+      "identity": "climate disengaged",
+      "roles": [
+        "Hero",
+        "Winner"
+      ]
+    }
+  ]
+}

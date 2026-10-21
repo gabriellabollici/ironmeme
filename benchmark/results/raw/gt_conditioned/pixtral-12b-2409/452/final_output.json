@@ -1,0 +1,122 @@
+{
+  "image_stem": "452",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T23:06:23.616108+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Politicians/government"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\"Politicians/government\"]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 20,
+          "prompt_tokens": 885,
+          "total_tokens": 905,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "citizens",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "media elites",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"citizens\", \"viewpoint\": \"outgroup\"},\n    {\"identity\": \"media elites\", \"viewpoint\": \"ingroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 40,
+          "prompt_tokens": 560,
+          "total_tokens": 600,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "citizens",
+          "roles": [
+            "Victim"
+          ]
+        },
+        {
+          "identity": "media elites",
+          "roles": [
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"citizens\",\n    \"roles\": [\"Victim\"]\n  },\n  {\n    \"identity\": \"media elites\",\n    \"roles\": [\"Villain\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 49,
+          "prompt_tokens": 784,
+          "total_tokens": 833,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Politicians/government"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "citizens",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "media elites",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "citizens",
+      "roles": [
+        "Victim"
+      ]
+    },
+    {
+      "identity": "media elites",
+      "roles": [
+        "Villain"
+      ]
+    }
+  ]
+}

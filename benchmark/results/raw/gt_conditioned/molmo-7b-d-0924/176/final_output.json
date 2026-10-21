@@ -1,0 +1,134 @@
+{
+  "image_stem": "176",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T15:48:46.709878+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          " right wing",
+          " climate change skeptic/denier",
+          " left wing"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \" right wing\",\n    \" climate change skeptic/denier\",\n    \" left wing\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 31,
+          "prompt_tokens": 1832,
+          "total_tokens": 1863,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "climate change skeptic/denier",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "climate change denier",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"climate change skeptic/denier\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"climate change denier\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 41,
+          "prompt_tokens": 1529,
+          "total_tokens": 1570,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "climate change skeptic/denier",
+            "roles": [
+              "outgroup",
+              "villain"
+            ]
+          },
+          {
+            "identity": "climate change believer",
+            "roles": [
+              "ingroup",
+              "hero"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"climate change skeptic/denier\",\n      \"roles\": [\"outgroup\", \"villain\"]\n    },\n    {\n      \"identity\": \"climate change believer\",\n      \"roles\": [\"ingroup\", \"hero\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 63,
+          "prompt_tokens": 1713,
+          "total_tokens": 1776,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      " right wing",
+      " climate change skeptic/denier",
+      " left wing"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "climate change skeptic/denier",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "climate change denier",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "climate change skeptic/denier",
+        "roles": [
+          "outgroup",
+          "villain"
+        ]
+      },
+      {
+        "identity": "climate change believer",
+        "roles": [
+          "ingroup",
+          "hero"
+        ]
+      }
+    ]
+  }
+}

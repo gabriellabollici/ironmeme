@@ -1,0 +1,164 @@
+{
+  "image_stem": "477",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T17:19:08.650815+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Sex worker",
+          "LGBTQ+ rights supporter",
+          "Anti LGTBQ+",
+          "Misogynist/male supremacist",
+          " right wing",
+          "Liberal",
+          "Anticapitalist",
+          "Politicians/government",
+          "Media elites",
+          "Celebrity",
+          "Green party supporter",
+          "Libertarian",
+          "Citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \"Sex worker\",\n    \"LGBTQ+ rights supporter\",\n    \"Anti LGTBQ+\",\n    \"Misogynist/male supremacist\",\n    \" right wing\",\n    \"Liberal\",\n    \"Anticapitalist\",\n    \"Politicians/government\",\n    \"Media elites\",\n    \"Celebrity\",\n    \"Green party supporter\",\n    \"Libertarian\",\n    \"Citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 95,
+          "prompt_tokens": 1368,
+          "total_tokens": 1463,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 13
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "sex-worker",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "men",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "women",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"sex-worker\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"men\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"women\", \"viewpoint\": \"ingroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 47,
+          "prompt_tokens": 1057,
+          "total_tokens": 1104,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "hooker",
+            "roles": [
+              "outgroup"
+            ]
+          },
+          {
+            "identity": "men",
+            "roles": [
+              "ingroup"
+            ]
+          }
+        ],
+        "viewpoints": {
+          "hooker": "outgroup"
+        }
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"hooker\",\n      \"roles\": [\"outgroup\"]\n    },\n    {\n      \"identity\": \"men\",\n      \"roles\": [\"ingroup\"]\n    }\n  ],\n  \"viewpoints\": {\n    \"hooker\": \"outgroup\"\n  }\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 67,
+          "prompt_tokens": 1245,
+          "total_tokens": 1312,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Sex worker",
+      "LGBTQ+ rights supporter",
+      "Anti LGTBQ+",
+      "Misogynist/male supremacist",
+      " right wing",
+      "Liberal",
+      "Anticapitalist",
+      "Politicians/government",
+      "Media elites",
+      "Celebrity",
+      "Green party supporter",
+      "Libertarian",
+      "Citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "sex-worker",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "men",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "women",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "hooker",
+        "roles": [
+          "outgroup"
+        ]
+      },
+      {
+        "identity": "men",
+        "roles": [
+          "ingroup"
+        ]
+      }
+    ],
+    "viewpoints": {
+      "hooker": "outgroup"
+    }
+  }
+}

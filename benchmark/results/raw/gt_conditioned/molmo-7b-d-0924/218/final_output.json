@@ -1,0 +1,184 @@
+{
+  "image_stem": "218",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T15:59:00.101444+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Women",
+          "Men",
+          "LGBTQ+ rights supporter",
+          "Anti LGTBQ+",
+          "Misogynist/male supremacist",
+          "National identity",
+          "Progressive",
+          "Conservative",
+          "Left wing",
+          "Right wing",
+          "Liberal",
+          "Authoritarian",
+          "Voter",
+          "Abstentionist",
+          "Politicians/government",
+          "Media elites",
+          "Celebrity",
+          "Green party supporter",
+          "Libertarian",
+          "Citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \"Women\",\n    \"Men\",\n    \"LGBTQ+ rights supporter\",\n    \"Anti LGTBQ+\",\n    \"Misogynist/male supremacist\",\n    \"National identity\",\n    \"Progressive\",\n    \"Conservative\",\n    \"Left wing\",\n    \"Right wing\",\n    \"Liberal\",\n    \"Authoritarian\",\n    \"Voter\",\n    \"Abstentionist\",\n    \"Politicians/government\",\n    \"Media elites\",\n    \"Celebrity\",\n    \"Green party supporter\",\n    \"Libertarian\",\n    \"Citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 128,
+          "prompt_tokens": 1368,
+          "total_tokens": 1496,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 20
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "women",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "breast",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "thighs",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"women\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"breast\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"thighs\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 50,
+          "prompt_tokens": 1055,
+          "total_tokens": 1105,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "women",
+            "roles": [
+              "outgroup"
+            ]
+          },
+          {
+            "identity": "men",
+            "roles": [
+              "ingroup"
+            ]
+          }
+        ],
+        "narrative_framework": {
+          "moral_dimension": "Moral",
+          "intellectual_dimension": "Intellectual",
+          "physical_dimension": "Physical",
+          "power_dimension": "Power"
+        }
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"women\",\n      \"roles\": [\"outgroup\"]\n    },\n    {\n      \"identity\": \"men\",\n      \"roles\": [\"ingroup\"]\n    }\n  ],\n  \"narrative_framework\": {\n    \"moral_dimension\": \"Moral\",\n    \"intellectual_dimension\": \"Intellectual\",\n    \"physical_dimension\": \"Physical\",\n    \"power_dimension\": \"Power\"\n  }\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 95,
+          "prompt_tokens": 1244,
+          "total_tokens": 1339,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Women",
+      "Men",
+      "LGBTQ+ rights supporter",
+      "Anti LGTBQ+",
+      "Misogynist/male supremacist",
+      "National identity",
+      "Progressive",
+      "Conservative",
+      "Left wing",
+      "Right wing",
+      "Liberal",
+      "Authoritarian",
+      "Voter",
+      "Abstentionist",
+      "Politicians/government",
+      "Media elites",
+      "Celebrity",
+      "Green party supporter",
+      "Libertarian",
+      "Citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "women",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "breast",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "thighs",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "women",
+        "roles": [
+          "outgroup"
+        ]
+      },
+      {
+        "identity": "men",
+        "roles": [
+          "ingroup"
+        ]
+      }
+    ],
+    "narrative_framework": {
+      "moral_dimension": "Moral",
+      "intellectual_dimension": "Intellectual",
+      "physical_dimension": "Physical",
+      "power_dimension": "Power"
+    }
+  }
+}

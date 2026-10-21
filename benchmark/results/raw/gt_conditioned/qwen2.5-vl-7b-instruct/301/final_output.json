@@ -1,0 +1,132 @@
+{
+  "image_stem": "301",
+  "model": "qwen2.5-vl-7b-instruct",
+  "timestamp": "2026-08-25T21:10:59.349358+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Feminist",
+          "Anti feminist"
+        ]
+      },
+      "raw_text": "{\"social_identities\": [\"Feminist\", \"Anti feminist\"]}",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 15,
+          "prompt_tokens": 1075,
+          "total_tokens": 1090,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "men",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "women",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "women",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"men\", \"viewpoint\": \"outgroup\"}, {\"identity\": \"women\", \"viewpoint\": \"ingroup\"}, {\"identity\": \"women\", \"viewpoint\": \"ingroup\"}]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 43,
+          "prompt_tokens": 774,
+          "total_tokens": 817,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "women",
+          "roles": [
+            "Villain"
+          ]
+        },
+        {
+          "identity": "men",
+          "roles": [
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"women\",     \"roles\": [\"Villain\"]   },   {     \"identity\": \"men\",     \"roles\": [\"Victim\"]   } ]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 42,
+          "prompt_tokens": 978,
+          "total_tokens": 1020,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Feminist",
+      "Anti feminist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "men",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "women",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "women",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "women",
+      "roles": [
+        "Villain"
+      ]
+    },
+    {
+      "identity": "men",
+      "roles": [
+        "Victim"
+      ]
+    }
+  ]
+}

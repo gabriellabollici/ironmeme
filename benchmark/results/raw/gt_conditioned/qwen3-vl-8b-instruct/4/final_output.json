@@ -1,0 +1,128 @@
+{
+  "image_stem": "4",
+  "model": "qwen3-vl-8b-instruct",
+  "timestamp": "2026-08-20T23:32:01.439714+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Men",
+          "Women"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Men\",\"Women\"]}",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 10,
+          "prompt_tokens": 918,
+          "total_tokens": 928,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "men",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "women",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"men\", \"viewpoint\": \"ingroup\"}, {\"identity\": \"women\", \"viewpoint\": \"outgroup\"}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 30,
+          "prompt_tokens": 611,
+          "total_tokens": 641,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "men",
+          "roles": [
+            "Hero",
+            "Winner"
+          ]
+        },
+        {
+          "identity": "women",
+          "roles": [
+            "Villain",
+            "Loser"
+          ]
+        }
+      ],
+      "raw_text": "[{\"identity\": \"men\", \"roles\": [\"Hero\", \"Winner\"]}, {\"identity\": \"women\", \"roles\": [\"Villain\", \"Loser\"]}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 37,
+          "prompt_tokens": 807,
+          "total_tokens": 844,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Men",
+      "Women"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "men",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "women",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "men",
+      "roles": [
+        "Hero",
+        "Winner"
+      ]
+    },
+    {
+      "identity": "women",
+      "roles": [
+        "Villain",
+        "Loser"
+      ]
+    }
+  ]
+}

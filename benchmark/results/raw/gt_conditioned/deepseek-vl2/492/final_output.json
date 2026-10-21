@@ -1,0 +1,114 @@
+{
+  "image_stem": "492",
+  "model": "deepseek-vl2",
+  "timestamp": "2026-08-21T12:54:30.613065+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Democrat",
+          "White people"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Democrat\",\"White people\"]}",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 15,
+          "prompt_tokens": 1059,
+          "total_tokens": 1074,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "democrat",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "nationalist/regionalist",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"democrat\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"nationalist/regionalist\", \"viewpoint\": \"ingroup\"} ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 37,
+          "prompt_tokens": 759,
+          "total_tokens": 796,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "democrat",
+          "roles": [
+            "fool",
+            "villain"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"democrat\",     \"roles\": [\"fool\", \"villain\"]   } ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 27,
+          "prompt_tokens": 961,
+          "total_tokens": 988,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Democrat",
+      "White people"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "democrat",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "nationalist/regionalist",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "democrat",
+      "roles": [
+        "fool",
+        "villain"
+      ]
+    }
+  ]
+}

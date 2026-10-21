@@ -1,0 +1,169 @@
+{
+  "image_stem": "640",
+  "model": "kimi-k3",
+  "timestamp": "2026-08-22T02:09:20.256648+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Men",
+          "Feminist",
+          "Misogynist/male supremacist"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Men\",\"Feminist\",\"Misogynist/male supremacist\"]}",
+      "metadata": {
+        "model": "kimi-k3",
+        "usage": {
+          "completion_tokens": 263,
+          "prompt_tokens": 1229,
+          "total_tokens": 1492,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 226,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 512,
+            "image_tokens": null,
+            "text_tokens": null
+          },
+          "cached_tokens": 512
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "feminist",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "men",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "misogynist/male supremacist",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[{\"identity\":\"feminist\",\"viewpoint\":\"outgroup\"},{\"identity\":\"men\",\"viewpoint\":\"ingroup\"},{\"identity\":\"misogynist/male supremacist\",\"viewpoint\":\"ingroup\"}]",
+      "metadata": {
+        "model": "kimi-k3",
+        "usage": {
+          "completion_tokens": 269,
+          "prompt_tokens": 929,
+          "total_tokens": 1198,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 214,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "feminist",
+          "roles": []
+        },
+        {
+          "identity": "men",
+          "roles": [
+            "Victim"
+          ]
+        },
+        {
+          "identity": "misogynist/male supremacist",
+          "roles": [
+            "Fool",
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "[\n  {\n    \"identity\": \"feminist\",\n    \"roles\": []\n  },\n  {\n    \"identity\": \"men\",\n    \"roles\": [\"Victim\"]\n  },\n  {\n    \"identity\": \"misogynist/male supremacist\",\n    \"roles\": [\"Fool\", \"Villain\"]\n  }\n]",
+      "metadata": {
+        "model": "kimi-k3",
+        "usage": {
+          "completion_tokens": 438,
+          "prompt_tokens": 1124,
+          "total_tokens": 1562,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": null,
+            "reasoning_tokens": 353,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Men",
+      "Feminist",
+      "Misogynist/male supremacist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "feminist",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "men",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "misogynist/male supremacist",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "feminist",
+      "roles": []
+    },
+    {
+      "identity": "men",
+      "roles": [
+        "Victim"
+      ]
+    },
+    {
+      "identity": "misogynist/male supremacist",
+      "roles": [
+        "Fool",
+        "Villain"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "image_stem": "518",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T17:30:40.128538+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          " right wing",
+          " left wing",
+          " feminist",
+          " anti-feminist",
+          " climate activist",
+          " anti-climate activist",
+          " vegan",
+          " clean energy advocate",
+          " plant based",
+          " citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \" right wing\",\n    \" left wing\",\n    \" feminist\",\n    \" anti-feminist\",\n    \" climate activist\",\n    \" anti-climate activist\",\n    \" vegan\",\n    \" clean energy advocate\",\n    \" plant based\",\n    \" citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 64,
+          "prompt_tokens": 1832,
+          "total_tokens": 1896,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 10
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "citizens",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "corporativist/capitalist",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"citizens\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"corporativist/capitalist\", \"viewpoint\": \"ingroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 40,
+          "prompt_tokens": 1541,
+          "total_tokens": 1581,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "Plastics Industry",
+            "roles": [
+              "Villain"
+            ]
+          },
+          {
+            "identity": "Citizens",
+            "roles": [
+              "Ingroup",
+              "Hero"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"Plastics Industry\",\n      \"roles\": [\"Villain\"]\n    },\n    {\n      \"identity\": \"Citizens\",\n      \"roles\": [\"Ingroup\", \"Hero\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 56,
+          "prompt_tokens": 1729,
+          "total_tokens": 1785,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      " right wing",
+      " left wing",
+      " feminist",
+      " anti-feminist",
+      " climate activist",
+      " anti-climate activist",
+      " vegan",
+      " clean energy advocate",
+      " plant based",
+      " citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "citizens",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "corporativist/capitalist",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "Plastics Industry",
+        "roles": [
+          "Villain"
+        ]
+      },
+      {
+        "identity": "Citizens",
+        "roles": [
+          "Ingroup",
+          "Hero"
+        ]
+      }
+    ]
+  }
+}

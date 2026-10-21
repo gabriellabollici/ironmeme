@@ -1,0 +1,124 @@
+{
+  "image_stem": "331",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T15:45:15.518203+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Conspiracy theorist",
+          "Politicians/government"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Conspiracy theorist\",\n    \"Politicians/government\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 35,
+          "prompt_tokens": 1695,
+          "total_tokens": 2144,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Conspiracy theorist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "Politicians/government",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[\n  {\n    \"identity\": \"Conspiracy theorist\",\n    \"viewpoint\": \"ingroup\"\n  },\n  {\n    \"identity\": \"Politicians/government\",\n    \"viewpoint\": \"outgroup\"\n  }\n]",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 56,
+          "prompt_tokens": 1419,
+          "total_tokens": 1926,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Conspiracy theorist",
+          "roles": [
+            "Sage"
+          ]
+        },
+        {
+          "identity": "Politicians/government",
+          "roles": [
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "[\n  {\n    \"identity\": \"Conspiracy theorist\",\n    \"roles\": [\n      \"Sage\"\n    ]\n  },\n  {\n    \"identity\": \"Politicians/government\",\n    \"roles\": [\n      \"Villain\"\n    ]\n  }\n]",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 65,
+          "prompt_tokens": 1596,
+          "total_tokens": 2148,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Conspiracy theorist",
+      "Politicians/government"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Conspiracy theorist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "Politicians/government",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Conspiracy theorist",
+      "roles": [
+        "Sage"
+      ]
+    },
+    {
+      "identity": "Politicians/government",
+      "roles": [
+        "Villain"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+<think>Got it, let's analyze the meme. The meme has Kermit the Frog drinking tea, with text "IT'S NOT EASY BEING GREEN PARTY" and "BUT I COULDN'T LIVE WITH NEOLIBERAL AND CORRUPT". 
+
+First, the identities: "green party supporter" (ingroup) and "liberal" (outgroup, but wait, the meme mentions "neoliberal" which is a type of liberal economic policy, so maybe the outgroup is neoliberal/corrupt, while the ingroup is green party). 
+
+For "green party supporter" (identity: green party supporter, viewpoint: ingroup):
+- Evaluative dimension: Moral (since it's about being green party, which is often associated with environmental ethics, moral stance against neoliberal/corrupt). 
+- Portrayal: Superior/Positive. 
+- Narrative roles: Hero (since they're portrayed as having a moral stance, not easy but justified), Victim (maybe? But the text says "couldn't live with neoliberal and corrupt", so maybe they're standing against something, so Hero is better). Wait, the meme shows the green party supporter (Kermit) as someone who finds it hard but can't accept the alternatives, so maybe Hero (moral) and Victim (if they're suffering for their beliefs). But let's check the dimensions. 
+
+For "liberal" (identity: liberal, viewpoint: outgroup, but the meme mentions "neoliberal and corrupt" which are associated with some liberals, so maybe the outgroup here is neoliberal/corrupt liberals). 
+- Evaluative dimension: Moral (since neoliberal/corrupt are negative moral stances). 
+- Portrayal: Inferior/Negative. 
+- Narrative roles: Villain (moral dimension, since they're corrupt), Loser (power dimension, since they're defeated by the green party's stance). 
+
+Wait, let's break down each identity:
+
+First identity: "green party supporter" (ingroup). The meme shows them as someone who has a difficult position but is morally superior because they can't accept the corrupt/neoliberal alternatives. So:
+- Evaluative dimension: Moral
+- Portrayal: Superior/Positive
+- Roles: Hero (Moral dimension, Superior/Positive), Victim (Moral dimension, Inferior/Positive? Wait, no. Wait, Hero is Superior/Positive, Victim is Inferior/Positive. The green party supporter is in a difficult position (Victim) but also has a moral stance (Hero). Wait, the text says "it's not easy" so maybe Victim (since they're suffering), but also Hero (because they're standing for what's right). 
+
+Second identity: "liberal" (outgroup, but the meme refers to "neoliberal and corrupt" which are associated with liberals, so maybe the outgroup here is neoliberal liberals). 
+- Evaluative dimension: Moral
+- Portrayal: Inferior/Negative
+- Roles: Villain (Moral dimension, Inferior/Negative), Loser (Power dimension, Inferior/Negative)
+
+Wait, let's check the meme's message. The meme is about the green party supporter's struggle but their moral superiority over the neoliberal/corrupt alternatives. So for "green party supporter" (identity):
+- Roles: ["Hero", "Victim"] (since they're morally good but in a difficult position)
+For "liberal" (identity, referring to neoliberal/corrupt liberals):
+- Roles: ["Villain", "Loser"] (morally bad and in a losing position)
+
+Wait, but the viewpoint for "liberal" is "outgroup". So let's confirm each step.
+
+Step 1: Evaluative dimension. For green party supporter, the dimension is Moral (since it's about being green party, which is about moral/ethical stance). For liberal (neoliberal/corrupt), also Moral (since neoliberal and corrupt are moral evaluations). 
+
+Step 2: Superior/Positive or Inferior/Negative. Green party supporter: Superior/Positive (because they're against corrupt, so morally good). Liberal (neoliberal/corrupt): Inferior/Negative (morally bad). 
+
+Narrative roles:
+For green party supporter (Moral dimension, Superior/Positive): Hero
+For green party supporter (Moral dimension, Inferior/Positive? Wait, Victim is Inferior/Positive. If they're suffering (it's not easy), then Victim. So maybe ["Hero", "Victim"].
+For liberal (Moral dimension, Inferior/Negative): Villain
+For liberal (Power dimension, Inferior/Negative): Loser (since they're corrupt and neoliberal, maybe losing power)
+
+Now, let's structure the JSON.
+
+First identity: "green party supporter"
+roles: ["Hero", "Victim"]
+
+Second identity: "liberal"
+roles: ["Villain", "Loser"]
+
+Wait, but need to make sure each role is supported by the meme. The meme says "I couldn't live with neoliberal and corrupt" – so the green party supporter is against those, so they're Hero (morally good) and Victim (suffering for their beliefs). The liberals (neoliberal/corrupt) are Villain (morally bad) and Loser (powerless). 
+
+So the JSON array would be:
+
+[
+  {
+    "identity": "green party supporter",
+    "roles": ["Hero", "Victim"]
+  },
+  {
+    "identity": "liberal",
+    "roles": ["Villain", "Loser"]
+  }
+]
+
+Wait, but let's check if "liberal" is the outgroup. The viewpoint for "liberal" is "outgroup", so the meme portrays them as the outgroup (neoliberal/corrupt), so their roles are Villain and Loser. 
+
+Yes, that makes sense.</think><answer>[
+  {
+    "identity": "green party supporter",
+    "roles": ["Hero", "Victim"]
+  },
+  {
+    "identity": "liberal",
+    "roles": ["Villain", "Loser"]
+  }
+]

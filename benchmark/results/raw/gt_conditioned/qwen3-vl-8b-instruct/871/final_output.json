@@ -1,0 +1,128 @@
+{
+  "image_stem": "871",
+  "model": "qwen3-vl-8b-instruct",
+  "timestamp": "2026-08-20T23:37:53.405973+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Climate activist",
+          "Climate change skeptic/denier"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Climate activist\",\"Climate change skeptic/denier\"]}",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 16,
+          "prompt_tokens": 1964,
+          "total_tokens": 1980,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "climate activist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "climate disengaged",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"climate activist\", \"viewpoint\": \"ingroup\"}, {\"identity\": \"climate disengaged\", \"viewpoint\": \"outgroup\"}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 34,
+          "prompt_tokens": 1665,
+          "total_tokens": 1699,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "climate activist",
+          "roles": [
+            "Sage",
+            "Victim"
+          ]
+        },
+        {
+          "identity": "climate disengaged",
+          "roles": [
+            "Fool",
+            "Monster"
+          ]
+        }
+      ],
+      "raw_text": "[{\"identity\": \"climate activist\", \"roles\": [\"Sage\", \"Victim\"]}, {\"identity\": \"climate disengaged\", \"roles\": [\"Fool\", \"Monster\"]}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 41,
+          "prompt_tokens": 1857,
+          "total_tokens": 1898,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Climate activist",
+      "Climate change skeptic/denier"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "climate activist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "climate disengaged",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "climate activist",
+      "roles": [
+        "Sage",
+        "Victim"
+      ]
+    },
+    {
+      "identity": "climate disengaged",
+      "roles": [
+        "Fool",
+        "Monster"
+      ]
+    }
+  ]
+}

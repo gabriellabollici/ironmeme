@@ -1,0 +1,124 @@
+{
+  "image_stem": "1098",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T22:57:15.727764+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Men",
+          "Women"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\"Men\", \"Women\"]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 20,
+          "prompt_tokens": 1821,
+          "total_tokens": 1841,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "men",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "women",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"men\", \"viewpoint\": \"outgroup\"},\n    {\"identity\": \"women\", \"viewpoint\": \"ingroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 38,
+          "prompt_tokens": 1492,
+          "total_tokens": 1530,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "men",
+          "roles": [
+            "Fool"
+          ]
+        },
+        {
+          "identity": "women",
+          "roles": [
+            "Sage"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"men\",\n    \"roles\": [\"Fool\"]\n  },\n  {\n    \"identity\": \"women\",\n    \"roles\": [\"Sage\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 46,
+          "prompt_tokens": 1718,
+          "total_tokens": 1764,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Men",
+      "Women"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "men",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "women",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "men",
+      "roles": [
+        "Fool"
+      ]
+    },
+    {
+      "identity": "women",
+      "roles": [
+        "Sage"
+      ]
+    }
+  ]
+}

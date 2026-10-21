@@ -1,0 +1,122 @@
+{
+  "image_stem": "488",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T23:07:24.347383+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Democrat"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\"Democrat\"]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 18,
+          "prompt_tokens": 4381,
+          "total_tokens": 4399,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "democrat",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "libertarian",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"democrat\", \"viewpoint\": \"outgroup\"},\n    {\"identity\": \"libertarian\", \"viewpoint\": \"ingroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 40,
+          "prompt_tokens": 4056,
+          "total_tokens": 4096,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "democrat",
+          "roles": [
+            "Villain"
+          ]
+        },
+        {
+          "identity": "libertarian",
+          "roles": [
+            "Hero"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"democrat\",\n    \"roles\": [\"Villain\"]\n  },\n  {\n    \"identity\": \"libertarian\",\n    \"roles\": [\"Hero\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 48,
+          "prompt_tokens": 4280,
+          "total_tokens": 4328,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Democrat"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "democrat",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "libertarian",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "democrat",
+      "roles": [
+        "Villain"
+      ]
+    },
+    {
+      "identity": "libertarian",
+      "roles": [
+        "Hero"
+      ]
+    }
+  ]
+}

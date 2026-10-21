@@ -1,0 +1,172 @@
+{
+  "image_stem": "472",
+  "model": "qwen3-vl-8b-instruct",
+  "timestamp": "2026-08-20T23:32:56.935198+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Right wing",
+          "Liberal",
+          "Left wing"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Right wing\",\"Liberal\",\"Left wing\"]}",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 15,
+          "prompt_tokens": 702,
+          "total_tokens": 717,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "green party supporter",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "left-wing",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "left-wing",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "liberal",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "right-wing",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"green party supporter\", \"viewpoint\": \"ingroup\"}, {\"identity\": \"left-wing\", \"viewpoint\": \"ingroup\"}, {\"identity\": \"left-wing\", \"viewpoint\": \"ingroup\"}, {\"identity\": \"liberal\", \"viewpoint\": \"ingroup\"}, {\"identity\": \"right-wing\", \"viewpoint\": \"outgroup\"}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 75,
+          "prompt_tokens": 425,
+          "total_tokens": 500,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 5
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "green party supporter",
+          "roles": []
+        },
+        {
+          "identity": "left-wing",
+          "roles": [
+            "Victim"
+          ]
+        },
+        {
+          "identity": "liberal",
+          "roles": [
+            "Victim"
+          ]
+        },
+        {
+          "identity": "right-wing",
+          "roles": [
+            "Villain",
+            "Winner"
+          ]
+        }
+      ],
+      "raw_text": "[{\"identity\": \"green party supporter\", \"roles\": []}, {\"identity\": \"left-wing\", \"roles\": [\"Victim\"]}, {\"identity\": \"liberal\", \"roles\": [\"Victim\"]}, {\"identity\": \"right-wing\", \"roles\": [\"Villain\", \"Winner\"]}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 64,
+          "prompt_tokens": 638,
+          "total_tokens": 702,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 4
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Right wing",
+      "Liberal",
+      "Left wing"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "green party supporter",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "left-wing",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "left-wing",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "liberal",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "right-wing",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "green party supporter",
+      "roles": []
+    },
+    {
+      "identity": "left-wing",
+      "roles": [
+        "Victim"
+      ]
+    },
+    {
+      "identity": "liberal",
+      "roles": [
+        "Victim"
+      ]
+    },
+    {
+      "identity": "right-wing",
+      "roles": [
+        "Villain",
+        "Winner"
+      ]
+    }
+  ]
+}

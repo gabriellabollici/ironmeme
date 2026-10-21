@@ -1,0 +1,114 @@
+{
+  "image_stem": "866",
+  "model": "deepseek-vl2",
+  "timestamp": "2026-08-21T13:05:42.508982+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Climate activists",
+          "Communists"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Climate activists\",\"Communists\"]}",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 15,
+          "prompt_tokens": 2053,
+          "total_tokens": 2068,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "climate activist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "left-wing",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"climate activist\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"left-wing\", \"viewpoint\": \"ingroup\"} ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 33,
+          "prompt_tokens": 1747,
+          "total_tokens": 1780,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Climate activists",
+          "roles": [
+            "Hero",
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"Climate activists\",     \"roles\": [\"Hero\", \"Victim\"]   } ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 26,
+          "prompt_tokens": 1951,
+          "total_tokens": 1977,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Climate activists",
+      "Communists"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "climate activist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "left-wing",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Climate activists",
+      "roles": [
+        "Hero",
+        "Victim"
+      ]
+    }
+  ]
+}

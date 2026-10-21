@@ -1,0 +1,124 @@
+{
+  "image_stem": "438",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T23:06:01.249125+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Feminist",
+          "Republican"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\"Feminist\", \"Republican\"]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 22,
+          "prompt_tokens": 1829,
+          "total_tokens": 1851,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "feminist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "republican",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"feminist\", \"viewpoint\": \"ingroup\"},\n    {\"identity\": \"republican\", \"viewpoint\": \"outgroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 41,
+          "prompt_tokens": 1506,
+          "total_tokens": 1547,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "feminist",
+          "roles": [
+            "Victim"
+          ]
+        },
+        {
+          "identity": "republican",
+          "roles": [
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"feminist\",\n    \"roles\": [\"Victim\"]\n  },\n  {\n    \"identity\": \"republican\",\n    \"roles\": [\"Villain\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 50,
+          "prompt_tokens": 1729,
+          "total_tokens": 1779,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Feminist",
+      "Republican"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "feminist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "republican",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "feminist",
+      "roles": [
+        "Victim"
+      ]
+    },
+    {
+      "identity": "republican",
+      "roles": [
+        "Villain"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "image_stem": "1089",
+  "model": "qwen3-vl-8b-thinking",
+  "timestamp": "2026-08-21T01:26:37.798471+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Men",
+          "Women"
+        ]
+      },
+      "raw_text": "Got it, let's analyze this meme. The meme has two panels. Top panel: a pool scene with a girl labeled \"BEARS\" and a woman labeled \"WOMEN\". The text says \"Men who don't get 'choosing the bear'\". Bottom panel: a skeleton in a wheelchair labeled \"Women who didn't get to choose\". \n\nFirst, check the evaluative stance. The meme is making a comparison between men and women in terms of \"choosing the bear\" (a reference to a game where you choose a bear, maybe implying a choice related to gender roles or something). The top panel's text is about men not getting the choice, and the bottom is women not getting to choose. \n\nNow, looking at the approved labels. The meme is about gender roles, so \"Women\" and \"Men\" are identities. But we need to check if there's an evaluative stance. The meme is implying that men are in a position where they don't get to choose (maybe a negative implication), and women are in a position where they didn't get to choose (also negative). So the identities here are \"Women\" and \"Men\". \n\nWait, the labels must be from the approved list. The approved list has \"Women\" and \"Men\". Let's confirm. The meme labels \"BEARS\" (which is a play on \"bears\" as in the game, but the identity here is \"Men\" as per the text \"Men who don't get...\"). The other label is \"WOMEN\" for the woman in the pool. So the identities being evaluated are \"Men\" and \"Women\". \n\nCheck if the meme expresses an evaluative stance toward them. The text \"Men who don't get 'choosing the bear'\" implies a negative stance (maybe men are being criticized for not understanding or not having choice), and \"Women who didn't get to choose\" also implies a negative stance. So both \"Men\" and \"Women\" are evaluated here. \n\nAre there other identities? Let's see. The approved list has \"Women\" and \"Men\" as separate labels. So the social identities here are \"Men\" and \"Women\".\n</think>\n\n{\"social_identities\":[\"Men\",\"Women\"]}",
+      "metadata": {
+        "model": "qwen3-vl-8b-thinking",
+        "usage": {
+          "completion_tokens": 460,
+          "prompt_tokens": 3840,
+          "total_tokens": 4300,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "men",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "men",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "women",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "Got it, let's analyze this meme. The meme has two panels. Top panel: a woman and a child in a pool, labeled \"BEARS\" and \"WOMEN\". The text says \"Men who don't get 'choosing the bear'\". Bottom panel: a skeleton in a wheelchair, labeled \"Women who didn't get to choose\".\n\nFirst, identify the social identities: the input list is [\"men\", \"men\", \"women\"]. Wait, the input has two \"men\" entries. So we need to handle each occurrence.\n\nLooking at the meme:\n\n- The top panel has \"Men who don't get 'choosing the bear'\". The \"Men\" here is the subject of the criticism. The meme is saying that these men are the ones who don't get it, so they are being criticized. So for the first \"men\" (first entry), the viewpoint is outgroup because they're being mocked.\n\n- The second \"men\" entry: same as the first? Wait, the input list has two \"men\" and one \"women\". Let's check the meme again. The text \"Men who don't get 'choosing the bear'\" refers to men as the outgroup. The \"Women who didn't get to choose\" is about women, so women are also being criticized. Wait, but the input list has two \"men\" and one \"women\".\n\nWait, the input list is [\"men\", \"men\", \"women\"]. So three identities: two instances of \"men\" and one \"women\".\n\nNow, for each identity:\n\nFirst \"men\": the meme says \"Men who don't get 'choosing the bear'\". The meme is criticizing these men, so they are the outgroup.\n\nSecond \"men\": same as first? Wait, is there another \"men\" in the meme? The top panel has \"BEARS\" (which is a label for the child, but the text is about men). Wait, the text \"Men who don't get 'choosing the bear'\" is the only mention of men. But the input has two \"men\" entries. Maybe the meme has two references to men? Wait, no. Wait, the input list is given as [\"men\", \"men\", \"women\"], so we have to assign viewpoints to each of these three entries, even if the meme references men once. Wait, but the problem says \"evaluate and return a viewpoint entry for EVERY single identity listed in [\"men\", \"men\", \"women\"]\".\n\nSo for each of the three identities (two men, one women), we need to assign ingroup or outgroup.\n\nNow, the meme's perspective: the meme is making a joke about men not getting \"choosing the bear\" (a reference to the game where you choose a bear, but the meme is about men not understanding it, and women not getting to choose). The \"Men who don't get 'choosing the bear'\" is presented as a negative thing (the crying child), so men are being criticized. The \"Women who didn't get to choose\" is also presented as a negative (skeleton in wheelchair), so women are also being criticized.\n\nWait, but the ingroup is the perspective expressed by the meme. So who is the meme supporting? The meme is making fun of both men and women who don't get it. Wait, but maybe the meme is from a perspective that the \"choosing the bear\" is a thing that men should get, but they don't, and women also didn't get to choose. Wait, but the meme's viewpoint: the meme is likely criticizing both groups, but which is the ingroup?\n\nWait, the ingroup is the social identity whose perspective is expressed. Let's see: the meme is using the \"choosing the bear\" as a metaphor. The \"Men who don't get 'choosing the bear'\" is the crying child, which is a negative portrayal. The \"Women who didn't get to choose\" is the skeleton, also negative. So the meme is criticizing both men and women. But the ingroup would be the group that the meme is supporting. Wait, maybe the meme is from a perspective that the \"choosing the bear\" is a positive thing, but men and women are failing. Wait, but the meme is probably a joke about men not understanding a concept (like \"choosing the bear\" as a metaphor for something), and women not having the choice. So the meme is critical of both, but which is the ingroup?\n\nWait, the problem says: \"The ingroup is the social identity whose perspective, beliefs, values, actions, or position are expressed, supported, normalized, defended, or endorsed by the meme. The outgroup is the social identity that is criticized, mocked, blamed, rejected, attacked, negatively portrayed, or positioned as opposed to the meme's perspective.\"\n\nSo the meme's perspective: the meme is making a joke about men not getting \"choosing the bear\" (so men are the outgroup), and women not getting to choose (women are also outgroup). But is there an ingroup? Wait, maybe the meme is from the perspective of someone who does get \"choosing the bear\" and does get to choose, but the meme doesn't explicitly show that. Wait, the top panel has a woman and a child (labeled \"BEARS\"), but the text is about men. Wait, the \"BEARS\" label is on the child, but the text is \"Men who don't get 'choosing the bear'\".\n\nWait, maybe the meme is a reference to the \"choosing the bear\" game where you have to choose between two options, and the meme is saying that men don't understand it, and women didn't get to choose. So the meme is critical of both men and women. But the ingroup would be the group that the meme is supporting. Wait, maybe the meme is from the perspective of the person who does get it, but the meme doesn't show that. Alternatively, maybe the meme is a joke where the \"choosing the bear\" is a positive thing, and the men who don't get it are the outgroup, and women who didn't get to choose are also outgroup. But the ingroup would be the group that the meme is endorsing. Wait, perhaps the meme is from the perspective of the \"BEARS\" (the child), but the child is labeled \"BEARS\", which is a play on \"bears\" as in the game. Wait, maybe the meme is a reference to the \"choosing the bear\" as a metaphor for something, and the meme is saying that men are the ones who don't get it (so they are the outgroup), and women are the ones who didn't get to choose (so they are also outgroup). But then, is there an ingroup? Wait, the problem says the ingroup is the social identity whose perspective is expressed. If the meme is criticizing both, then maybe the ingroup is not present, but the problem requires assigning to each identity. Wait, no, the problem says \"the viewpoint expressed by the meme toward ALL of the following identified social identities\".\n\nWait, the meme's viewpoint: the meme is making fun of men who don't get \"choosing the bear\" (so men are outgroup), and women who didn't get to choose (women are outgroup). But the input has two \"men\" entries. So for each \"men\" entry, the viewpoint is outgroup. For \"women\", also outgroup.\n\nWait, but let's check the meme again. The top panel: the child is labeled \"BEARS\", the woman is \"WOMEN\". The text says \"Men who don't get 'choosing the bear'\". So the men are the ones being criticized. The bottom panel: \"Women who didn't get to choose\" is criticized. So both men and women are outgroup. But the input has two \"men\" entries. So for each \"men\" in the input list, the viewpoint is outgroup. For \"women\", also outgroup.\n\nWait, but the problem says \"the viewpoint expressed by the meme toward ALL of the following identified social identities\". So for each identity in the list, determine if the meme's viewpoint is ingroup or outgroup for that identity.\n\nSo the list is [\"men\", \"men\", \"women\"].\n\nFor the first \"men\": the meme says \"Men who don't get 'choosing the bear'\", which is a negative portrayal, so men are outgroup.\n\nSecond \"men\": same as first, so outgroup.\n\n\"Women\": the meme says \"Women who didn't get to choose\", which is a negative portrayal (skeleton in wheelchair), so women are outgroup.\n\nWait, but is there an ingroup? The meme is critical of both, so maybe the ingroup is not present, but the problem requires assigning to each identity. Wait, the problem says \"the viewpoint expressed by the meme toward ALL of the following identified social identities\". So for each identity, the meme's stance towards that identity.\n\nIf the meme is criticizing both men and women, then both are outgroup. But the input has two \"men\" entries, so both are outgroup.\n\nWait, but let's think again. The ingroup is the group that the meme supports. If the meme is making fun of men and women, then the meme's perspective is not supporting either, but the problem requires assigning to each identity. Wait, no, the definition says: \"The ingroup is the social identity whose perspective, beliefs, values, actions, or position are expressed, supported, normalized, defended, or endorsed by the meme. The outgroup is the social identity that is criticized, mocked, blamed, rejected, attacked, negatively portrayed, or positioned as opposed to the meme's perspective.\"\n\nSo if the meme is criticizing men, then men are outgroup. If the meme is criticizing women, women are outgroup. If the meme is supporting a group, that's ingroup.\n\nIn this meme, the text is \"Men who don't get 'choosing the bear'\" (negative) and \"Women who didn't get to choose\" (negative). So both men and women are being criticized. Therefore, for both \"men\" entries, the viewpoint is outgroup, and for \"women\", also outgroup.\n\nWait, but is there a possibility that the meme is from the perspective of the \"BEARS\" (the child), but the child is labeled \"BEARS\", which is a play on \"bears\" as in the game. Maybe the meme is saying that men don't get the game (so they are outgroup), and women didn't get to choose (so they are outgroup). So all three identities are outgroup.\n\nBut the problem says \"the viewpoint expressed by the meme toward ALL of the following identified social identities\". So for each identity, the meme's stance.\n\nSo for each \"men\" in the list, the meme's viewpoint is outgroup. For \"women\", also outgroup.\n\nWait, but let's check the meme's structure. The top panel: the child is crying, labeled \"BEARS\", and the text is \"Men who don't get 'choosing the bear'\". So the crying child is the \"men\" who don't get it. So men are the ones being criticized. The bottom panel: the skeleton is \"Women who didn't get to choose\", so women are criticized.\n\nTherefore, for both \"men\" entries, the viewpoint is outgroup. For \"women\", also outgroup.\n\nSo the JSON array would be:\n\n[\n\n{\"identity\": \"men\", \"viewpoint\": \"outgroup\"},\n\n{\"identity\": \"men\", \"viewpoint\": \"outgroup\"},\n\n{\"identity\": \"women\", \"viewpoint\": \"outgroup\"}\n\n]\n\nWait, but is there an ingroup? The meme is critical of both, so no ingroup. But the problem requires assigning to each identity. So all three are outgroup.\n</think>\n\n[{\"identity\": \"men\", \"viewpoint\": \"outgroup\"}, {\"identity\": \"men\", \"viewpoint\": \"outgroup\"}, {\"identity\": \"women\", \"viewpoint\": \"outgroup\"}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-thinking",
+        "usage": {
+          "completion_tokens": 2524,
+          "prompt_tokens": 3539,
+          "total_tokens": 6063,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "men",
+          "roles": [
+            "Fool"
+          ]
+        },
+        {
+          "identity": "men",
+          "roles": [
+            "Fool"
+          ]
+        },
+        {
+          "identity": "women",
+          "roles": [
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "Got it, let's analyze this meme step by step. First, the meme has two panels. The top panel shows a pool scene with a woman and a child labeled \"BEARS\" and \"WOMEN\". The text says \"Men who don't get 'choosing the bear'\". The bottom panel is a skeleton in a wheelchair labeled \"Women who didn't get to choose\".\n\nFirst, identify the social identities and viewpoints. The input says: [{\"identity\": \"men\", \"viewpoint\": \"outgroup\"}, {\"identity\": \"men\", \"viewpoint\": \"outgroup\"}, {\"identity\": \"women\", \"viewpoint\": \"ingroup\"}]. Wait, there are two \"men\" as outgroup and one \"women\" as ingroup.\n\nNow, for each identity, assign roles based on the meme's content.\n\nStarting with \"men\" (outgroup). The text says \"Men who don't get 'choosing the bear'\". The top panel shows a crying child (labeled \"BEARS\") which is a metaphor for men. The crying child is a common meme image for being upset or wrong. So for men (outgroup), the portrayal: they are the ones who don't get the choice, so maybe they are portrayed as victims? Wait, but the moral dimension: Victim is for ingroup. Wait, the men are outgroup here. Let's check the roles.\n\nWait, the meme is about \"choosing the bear\" which is a reference to a game where you choose between a bear and a person, but the context here is likely about gender roles or choices. The top panel: men (labeled as \"BEARS\") are crying, so they are the ones who didn't get to choose. The bottom panel: women (labeled \"WOMEN\") are the ones who didn't get to choose, but the skeleton is in a wheelchair, which is a negative portrayal.\n\nWait, the input says the viewpoints: two men as outgroup, one women as ingroup.\n\nFor the first \"men\" (outgroup): the text says \"Men who don't get 'choosing the bear'\". The image of the crying child (labeled \"BEARS\") is a common meme where the child is upset, so maybe they are portrayed as victims? But wait, the moral dimension: Victim is for ingroup. But men are outgroup here. Wait, maybe the role is Villain? Or Fool?\n\nWait, let's break down each identity.\n\nFirst identity: \"men\" (outgroup). The text says \"Men who don't get 'choosing the bear'\". The image is a crying child (labeled \"BEARS\"). The crying child is often used to show someone who is upset, maybe wrong or not understanding. So in the meme, men are portrayed as not getting the choice, so maybe they are the ones who are wrong. So in the Intellectual dimension: Fool (Inferior/Negative) because they are not getting it, so ignorant or mistaken.\n\nSecond identity: \"men\" (outgroup) – same as first? Wait, the input has two \"men\" as outgroup. Wait, the meme has two instances of men? Wait, the top panel has a child labeled \"BEARS\" (men) and the text says \"Men who don't get...\", so maybe the two \"men\" are the same? Wait, the input says two \"men\" as outgroup. Maybe the meme has two different men? Wait, the image shows one child (labeled \"BEARS\") and the text says \"Men who don't get...\", so maybe the two \"men\" are the same identity but two instances? Or maybe the meme has two different representations.\n\nWait, the bottom panel is \"Women who didn't get to choose\" with a skeleton. So for women (ingroup), the text says \"Women who didn't get to choose\", and the image is a skeleton in a wheelchair, which is a negative portrayal. So women (ingroup) are portrayed as having no choice, which is a negative portrayal. But since they are ingroup, maybe they are victims? Wait, the moral dimension: Victim is for ingroup. So if women are ingroup, and they are portrayed as victims (harmed, oppressed), then Victim.\n\nWait, let's check the roles for each identity.\n\nFirst, \"men\" (outgroup): the text says \"Men who don't get 'choosing the bear'\". The image of the crying child (labeled \"BEARS\") is a common meme where the child is upset, so they are portrayed as not understanding or being wrong. So in Intellectual dimension: Fool (Inferior/Negative) because they are ignorant or mistaken.\n\nSecond \"men\" (outgroup): same as first? Or maybe the meme has two different men? Wait, the input has two \"men\" as outgroup. Maybe the meme has two instances of men, but the text is the same. So both would have the same role.\n\nFor \"women\" (ingroup): the text says \"Women who didn't get to choose\", and the image is a skeleton in a wheelchair. The skeleton is a negative image, so they are portrayed as having no choice, which is a negative portrayal. But since they are ingroup, maybe they are victims. Wait, the moral dimension: Victim is for ingroup. So if women are ingroup and portrayed as oppressed (didn't get to choose), then Victim.\n\nWait, let's check the role framework.\n\nMoral dimension:\n\n- Hero: morally good, etc. (superior/positive)\n\n- Victim: harmed, oppressed, vulnerable (inferior/positive) – but note victims correspond to ingroup.\n\n- Villain: morally bad, etc. (inferior/negative)\n\nIntellectual:\n\n- Sage: knowledgeable, etc. (superior/positive)\n\n- Fool: ignorant, etc. (inferior/negative)\n\nPhysical:\n\n- Charmer: attractive, etc. (superior/positive)\n\n- Monster: repulsive, etc. (inferior/negative)\n\nPower:\n\n- Winner: successful, etc. (superior/positive)\n\n- Loser: defeated, etc. (inferior/negative)\n\nNow, for \"men\" (outgroup):\n\nThe text says \"Men who don't get 'choosing the bear'\". The image of the crying child (labeled \"BEARS\") is a common meme where the child is upset, so they are portrayed as not understanding, which is a negative portrayal. So Intellectual dimension: Fool (Inferior/Negative).\n\nFor the second \"men\" (outgroup): same as first, so also Fool.\n\nFor \"women\" (ingroup):\n\nThe text says \"Women who didn't get to choose\", and the image is a skeleton in a wheelchair. The skeleton is a negative image, so they are portrayed as having no choice, which is a negative portrayal. But since they are ingroup, maybe they are victims. Wait, the moral dimension: Victim is for ingroup. So if women are ingroup and portrayed as oppressed (didn't get to choose), then Victim (Inferior/Positive).\n\nWait, but the skeleton is a negative image, so maybe they are portrayed as losers? Wait, Power dimension: Loser (Inferior/Negative). But the text says \"didn't get to choose\", which is about being oppressed, so maybe Victim.\n\nWait, let's think about the meme's context. The \"choosing the bear\" is a reference to a game where you choose between a bear and a person, but in the context of gender, it's likely about men not understanding gender roles or something. The top panel: men (labeled \"BEARS\") are crying, so they are the ones who didn't get the choice, so they are portrayed as wrong. The bottom panel: women (labeled \"WOMEN\") are the ones who didn't get to choose, and the image is a skeleton, which is a negative portrayal.\n\nSo for women (ingroup), the portrayal is that they didn't get to choose, which is a negative portrayal, but since they are ingroup, they are victims. So Victim (Inferior/Positive).\n\nFor men (outgroup), they are portrayed as not getting the choice, which is a negative portrayal, so Fool (Inferior/Negative) in Intellectual dimension.\n\nWait, but the meme has two \"men\" as outgroup. So both would have the same role.\n\nLet's check the roles:\n\nFirst \"men\" (outgroup): Intellectual dimension, Fool (Inferior/Negative).\n\nSecond \"men\" (outgroup): same as first, so Fool.\n\n\"women\" (ingroup): Moral dimension, Victim (Inferior/Positive).\n\nWait, but the input says the viewpoints: two men as outgroup, one women as ingroup.\n\nSo the JSON should have three entries: two for men (outgroup) and one for women (ingroup).\n\nNow, check if the roles are supported.\n\nFor men (outgroup):\n\nThe text says \"Men who don't get 'choosing the bear'\". The image of the crying child (labeled \"BEARS\") is a common meme where the child is upset, so they are portrayed as not understanding, which is a negative portrayal. So Intellectual dimension: Fool (Inferior/Negative).\n\nFor women (ingroup):\n\nThe text says \"Women who didn't get to choose\", and the image is a skeleton in a wheelchair. The skeleton is a negative image, so they are portrayed as having no choice, which is a negative portrayal. But since they are ingroup, they are victims. So Moral dimension: Victim (Inferior/Positive).\n\nWait, but the skeleton is a negative image, so maybe they are portrayed as losers? But the text says \"didn't get to choose\", which is about being oppressed, so Victim.\n\nYes, Victim is for ingroup, so women (ingroup) are portrayed as victims.\n\nSo the roles:\n\n- First men (outgroup): [\"Fool\"]\n\n- Second men (outgroup): [\"Fool\"]\n\n- Women (ingroup): [\"Victim\"]\n\nWait, but the role framework says \"assign roles only when supported by the meme's text, imagery, or framing\".\n\nFor men (outgroup): the text says \"Men who don't get 'choosing the bear'\", which implies they are not understanding, so Fool (Inferior/Negative) in Intellectual dimension.\n\nFor women (ingroup): the text says \"Women who didn't get to choose\", which implies they are oppressed, so Victim (Inferior/Positive) in Moral dimension.\n\nYes, that makes sense.\n\nSo the JSON array would be:\n\n[\n\n{\"identity\": \"men\", \"roles\": [\"Fool\"]},\n\n{\"identity\": \"men\", \"roles\": [\"Fool\"]},\n\n{\"identity\": \"women\", \"roles\": [\"Victim\"]}\n\n]\n\nWait, but the input says the viewpoints are given as [{\"identity\": \"men\", \"viewpoint\": \"outgroup\"}, {\"identity\": \"men\", \"viewpoint\": \"outgroup\"}, {\"identity\": \"women\", \"viewpoint\": \"ingroup\"}], so we need to assign roles to each of these three entries.\n\nYes, so three entries in the JSON array.\n\nNow, check if there are other possible roles.\n\nFor men (outgroup): could they be Villain? But Villain is morally bad, but the meme is about not getting the choice, so maybe not. Fool is more about being ignorant.\n\nFor women (ingroup): Victim is correct because they are portrayed as oppressed (didn't get to choose), which is a positive portrayal (deserving sympathy) but negative in terms of their situation.\n\nYes, Victim is Inferior/Positive (harmed, oppressed, vulnerable, deserving sympathy).\n\nSo the roles are:\n\n- men (outgroup): Fool (Inferior/Negative)\n\n- men (outgroup): Fool (Inferior/Negative)\n\n- women (ingroup): Victim (Inferior/Positive)\n\nSo the JSON should be:\n\n[{\"identity\": \"men\", \"roles\": [\"Fool\"]}, {\"identity\": \"men\", \"roles\": [\"Fool\"]}, {\"identity\": \"women\", \"roles\": [\"Victim\"]}]\n</think>\n\n[{\"identity\": \"men\", \"roles\": [\"Fool\"]}, {\"identity\": \"men\", \"roles\": [\"Fool\"]}, {\"identity\": \"women\", \"roles\": [\"Victim\"]}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-thinking",
+        "usage": {
+          "completion_tokens": 2573,
+          "prompt_tokens": 3743,
+          "total_tokens": 6316,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Men",
+      "Women"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "men",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "men",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "women",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "men",
+      "roles": [
+        "Fool"
+      ]
+    },
+    {
+      "identity": "men",
+      "roles": [
+        "Fool"
+      ]
+    },
+    {
+      "identity": "women",
+      "roles": [
+        "Victim"
+      ]
+    }
+  ]
+}

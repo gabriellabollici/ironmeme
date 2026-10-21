@@ -1,0 +1,142 @@
+{
+  "image_stem": "1014",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T15:03:23.586249+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          " right wing",
+          "conservative",
+          "politicians/government",
+          "World leaders/elites",
+          "Media elites",
+          "Celebrity",
+          "Green party supporter",
+          "Libertarian",
+          "Citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \" right wing\",\n    \"conservative\",\n    \"politicians/government\",\n    \"World leaders/elites\",\n    \"Media elites\",\n    \"Celebrity\",\n    \"Green party supporter\",\n    \"Libertarian\",\n    \"Citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 63,
+          "prompt_tokens": 1208,
+          "total_tokens": 1271,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 9
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "citizens",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "politicians/government",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"citizens\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"politicians/government\", \"viewpoint\": \"ingroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 36,
+          "prompt_tokens": 909,
+          "total_tokens": 945,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "citizens",
+            "roles": [
+              "ingroup"
+            ]
+          },
+          {
+            "identity": "politicians/government",
+            "roles": [
+              "outgroup"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"citizens\",\n      \"roles\": [\"ingroup\"]\n    },\n    {\n      \"identity\": \"politicians/government\",\n      \"roles\": [\"outgroup\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 53,
+          "prompt_tokens": 1101,
+          "total_tokens": 1154,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      " right wing",
+      "conservative",
+      "politicians/government",
+      "World leaders/elites",
+      "Media elites",
+      "Celebrity",
+      "Green party supporter",
+      "Libertarian",
+      "Citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "citizens",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "politicians/government",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "citizens",
+        "roles": [
+          "ingroup"
+        ]
+      },
+      {
+        "identity": "politicians/government",
+        "roles": [
+          "outgroup"
+        ]
+      }
+    ]
+  }
+}

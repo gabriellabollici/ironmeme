@@ -1,0 +1,146 @@
+{
+  "image_stem": "532",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T17:08:36.621776+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Democrat",
+          "Green party supporter",
+          "LGTBQ+ rights supporter"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Democrat\",\n    \"Green party supporter\",\n    \"LGTBQ+ rights supporter\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 43,
+          "prompt_tokens": 1695,
+          "total_tokens": 2173,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Democrat",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Green party supporter",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "LGTBQ+ rights supporter",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[\n  {\n    \"identity\": \"Democrat\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"Green party supporter\",\n    \"viewpoint\": \"ingroup\"\n  },\n  {\n    \"identity\": \"LGTBQ+ rights supporter\",\n    \"viewpoint\": \"ingroup\"\n  }\n]",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 83,
+          "prompt_tokens": 1431,
+          "total_tokens": 1974,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Democrat",
+          "roles": [
+            "Villain"
+          ]
+        },
+        {
+          "identity": "Green party supporter",
+          "roles": [
+            "Hero"
+          ]
+        },
+        {
+          "identity": "LGTBQ+ rights supporter",
+          "roles": [
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Democrat\",\n    \"roles\": [\n      \"Villain\"\n    ]\n  },\n  {\n    \"identity\": \"Green party supporter\",\n    \"roles\": [\n      \"Hero\"\n    ]\n  },\n  {\n    \"identity\": \"LGTBQ+ rights supporter\",\n    \"roles\": [\n      \"Victim\"\n    ]\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 102,
+          "prompt_tokens": 1613,
+          "total_tokens": 2420,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Democrat",
+      "Green party supporter",
+      "LGTBQ+ rights supporter"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Democrat",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Green party supporter",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "LGTBQ+ rights supporter",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Democrat",
+      "roles": [
+        "Villain"
+      ]
+    },
+    {
+      "identity": "Green party supporter",
+      "roles": [
+        "Hero"
+      ]
+    },
+    {
+      "identity": "LGTBQ+ rights supporter",
+      "roles": [
+        "Victim"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "image_stem": "446",
+  "model": "deepseek-vl2",
+  "timestamp": "2026-08-21T12:52:55.654408+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Dystopian writers",
+          "Climate change"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Dystopian writers\",\"Climate change\"]}",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 17,
+          "prompt_tokens": 2445,
+          "total_tokens": 2462,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "climate disengaged",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "dystopian writers",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "any other scientifically implausible apocalypse",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"climate disengaged\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"dystopian writers\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"any other scientifically implausible apocalypse\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 59,
+          "prompt_tokens": 2133,
+          "total_tokens": 2192,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "climate disengaged",
+          "roles": [
+            "outgroup",
+            "victim"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"climate disengaged\",     \"roles\": [\"outgroup\", \"victim\"]   } ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 28,
+          "prompt_tokens": 2331,
+          "total_tokens": 2359,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Dystopian writers",
+      "Climate change"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "climate disengaged",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "dystopian writers",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "any other scientifically implausible apocalypse",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "climate disengaged",
+      "roles": [
+        "outgroup",
+        "victim"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "image_stem": "1101",
+  "model": "qwen3-vl-8b-instruct",
+  "timestamp": "2026-08-20T23:28:35.982772+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Men",
+          "Women"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Men\",\"Women\"]}",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 10,
+          "prompt_tokens": 1086,
+          "total_tokens": 1096,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "men",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "women",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"men\", \"viewpoint\": \"ingroup\"}, {\"identity\": \"women\", \"viewpoint\": \"outgroup\"}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 30,
+          "prompt_tokens": 779,
+          "total_tokens": 809,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "men",
+          "roles": [
+            "Villain",
+            "Loser"
+          ]
+        },
+        {
+          "identity": "women",
+          "roles": [
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "[{\"identity\": \"men\", \"roles\": [\"Villain\", \"Loser\"]}, {\"identity\": \"women\", \"roles\": [\"Victim\"]}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 35,
+          "prompt_tokens": 975,
+          "total_tokens": 1010,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Men",
+      "Women"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "men",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "women",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "men",
+      "roles": [
+        "Villain",
+        "Loser"
+      ]
+    },
+    {
+      "identity": "women",
+      "roles": [
+        "Victim"
+      ]
+    }
+  ]
+}

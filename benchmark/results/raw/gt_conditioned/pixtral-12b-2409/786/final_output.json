@@ -1,0 +1,122 @@
+{
+  "image_stem": "786",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T23:15:26.159427+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Politicians/government"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\"Politicians/government\"]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 20,
+          "prompt_tokens": 3219,
+          "total_tokens": 3239,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "climate activist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "politicians/government",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"climate activist\", \"viewpoint\": \"ingroup\"},\n    {\"identity\": \"politicians/government\", \"viewpoint\": \"outgroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 42,
+          "prompt_tokens": 2898,
+          "total_tokens": 2940,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "climate activist",
+          "roles": [
+            "Hero"
+          ]
+        },
+        {
+          "identity": "politicians/government",
+          "roles": [
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n    {\n        \"identity\": \"climate activist\",\n        \"roles\": [\"Hero\"]\n    },\n    {\n        \"identity\": \"politicians/government\",\n        \"roles\": [\"Villain\"]\n    }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 50,
+          "prompt_tokens": 3120,
+          "total_tokens": 3170,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Politicians/government"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "climate activist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "politicians/government",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "climate activist",
+      "roles": [
+        "Hero"
+      ]
+    },
+    {
+      "identity": "politicians/government",
+      "roles": [
+        "Villain"
+      ]
+    }
+  ]
+}

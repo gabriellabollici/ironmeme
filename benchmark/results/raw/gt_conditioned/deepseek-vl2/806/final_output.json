@@ -1,0 +1,114 @@
+{
+  "image_stem": "806",
+  "model": "deepseek-vl2",
+  "timestamp": "2026-08-21T13:03:27.180120+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "politicians/government",
+          "business and government leaders"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"politicians/government\",\"business and government leaders\"]}",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 19,
+          "prompt_tokens": 2067,
+          "total_tokens": 2086,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "corporativist/capitalist",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "politicians/government",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"corporativist/capitalist\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"politicians/government\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 41,
+          "prompt_tokens": 1773,
+          "total_tokens": 1814,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "business and government leaders",
+          "roles": [
+            "fool",
+            "villain"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"business and government leaders\",     \"roles\": [\"fool\", \"villain\"]   } ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 29,
+          "prompt_tokens": 1973,
+          "total_tokens": 2002,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "politicians/government",
+      "business and government leaders"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "corporativist/capitalist",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "politicians/government",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "business and government leaders",
+      "roles": [
+        "fool",
+        "villain"
+      ]
+    }
+  ]
+}

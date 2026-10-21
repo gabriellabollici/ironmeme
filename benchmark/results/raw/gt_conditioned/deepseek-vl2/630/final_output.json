@@ -1,0 +1,122 @@
+{
+  "image_stem": "630",
+  "model": "deepseek-vl2",
+  "timestamp": "2026-08-21T12:58:30.655679+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Men",
+          "Conspiracy theorist"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Men\",\"Conspiracy theorist\"]}",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 17,
+          "prompt_tokens": 1059,
+          "total_tokens": 1076,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "conspiracy theorist",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "woman",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "man",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"conspiracy theorist\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"woman\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"man\", \"viewpoint\": \"ingroup\"} ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 50,
+          "prompt_tokens": 751,
+          "total_tokens": 801,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "conspiracy theorist",
+          "roles": [
+            "Villain",
+            "Fool"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"conspiracy theorist\",     \"roles\": [\"Villain\", \"Fool\"]   } ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 31,
+          "prompt_tokens": 947,
+          "total_tokens": 978,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Men",
+      "Conspiracy theorist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "conspiracy theorist",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "woman",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "man",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "conspiracy theorist",
+      "roles": [
+        "Villain",
+        "Fool"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "image_stem": "457",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T23:06:32.208239+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Progressive",
+          "Right wing"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\"Progressive\", \"Right wing\"]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 22,
+          "prompt_tokens": 2965,
+          "total_tokens": 2987,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "national identity",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "progressive",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "republican",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"national identity\", \"viewpoint\": \"outgroup\"},\n    {\"identity\": \"progressive\", \"viewpoint\": \"outgroup\"},\n    {\"identity\": \"republican\", \"viewpoint\": \"ingroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 56,
+          "prompt_tokens": 2648,
+          "total_tokens": 2704,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "national identity (outgroup)",
+          "roles": [
+            "Villain"
+          ]
+        },
+        {
+          "identity": "progressive (outgroup)",
+          "roles": [
+            "Fool"
+          ]
+        },
+        {
+          "identity": "republican (ingroup)",
+          "roles": [
+            "Hero",
+            "Winner"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"national identity (outgroup)\",\n    \"roles\": [\"Villain\"]\n  },\n  {\n    \"identity\": \"progressive (outgroup)\",\n    \"roles\": [\"Fool\"]\n  },\n  {\n    \"identity\": \"republican (ingroup)\",\n    \"roles\": [\"Hero\", \"Winner\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 80,
+          "prompt_tokens": 2879,
+          "total_tokens": 2959,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Progressive",
+      "Right wing"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "national identity",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "progressive",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "republican",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "national identity (outgroup)",
+      "roles": [
+        "Villain"
+      ]
+    },
+    {
+      "identity": "progressive (outgroup)",
+      "roles": [
+        "Fool"
+      ]
+    },
+    {
+      "identity": "republican (ingroup)",
+      "roles": [
+        "Hero",
+        "Winner"
+      ]
+    }
+  ]
+}

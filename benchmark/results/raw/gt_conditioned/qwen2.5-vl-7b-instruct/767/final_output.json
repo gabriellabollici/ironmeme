@@ -1,0 +1,102 @@
+{
+  "image_stem": "767",
+  "model": "qwen2.5-vl-7b-instruct",
+  "timestamp": "2026-08-25T21:16:30.977268+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "White people",
+          "Anti racist"
+        ]
+      },
+      "raw_text": "{\"social_identities\": [\"White people\", \"Anti racist\"]}",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 14,
+          "prompt_tokens": 1193,
+          "total_tokens": 1207,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "nationalist/regionalist",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"nationalist/regionalist\", \"viewpoint\": \"outgroup\"}]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 21,
+          "prompt_tokens": 888,
+          "total_tokens": 909,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identity": "nationalist/regionalist",
+        "roles": [
+          "Villain",
+          "Loser"
+        ]
+      },
+      "raw_text": "[{\"identity\": \"nationalist/regionalist\", \"roles\": [\"Villain\", \"Loser\"]}]\"",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 25,
+          "prompt_tokens": 1072,
+          "total_tokens": 1097,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "White people",
+      "Anti racist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "nationalist/regionalist",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identity": "nationalist/regionalist",
+    "roles": [
+      "Villain",
+      "Loser"
+    ]
+  }
+}

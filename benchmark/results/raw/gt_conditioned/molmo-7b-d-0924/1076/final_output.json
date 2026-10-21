@@ -1,0 +1,170 @@
+{
+  "image_stem": "1076",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T15:24:25.403516+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          " right wing",
+          "Liberal",
+          " left wing",
+          "Politicians/government",
+          "World leaders/elites",
+          "Media elites",
+          "Celebrity",
+          "Green party supporter",
+          "Libertarian",
+          "Citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \" right wing\",\n    \"Liberal\",\n    \" left wing\",\n    \"Politicians/government\",\n    \"World leaders/elites\",\n    \"Media elites\",\n    \"Celebrity\",\n    \"Green party supporter\",\n    \"Libertarian\",\n    \"Citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 68,
+          "prompt_tokens": 1832,
+          "total_tokens": 1900,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 10
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "democrat",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "republican",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"democrat\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"republican\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 35,
+          "prompt_tokens": 1521,
+          "total_tokens": 1556,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": " democ rat",
+            "roles": [
+              "outgroup"
+            ]
+          },
+          {
+            "identity": "Colin Powell",
+            "roles": [
+              "sage",
+              "hero"
+            ]
+          },
+          {
+            "identity": "Lloyd Austin",
+            "roles": [
+              "hero"
+            ]
+          },
+          {
+            "identity": "corporate",
+            "roles": [
+              "outgroup"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \" democ rat\",\n      \"roles\": [\"outgroup\"]\n    },\n    {\n      \"identity\": \"Colin Powell\",\n      \"roles\": [\"sage\", \"hero\"]\n    },\n    {\n      \"identity\": \"Lloyd Austin\",\n      \"roles\": [\"hero\"]\n    },\n    {\n      \"identity\": \"corporate\",\n      \"roles\": [\"outgroup\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 96,
+          "prompt_tokens": 1709,
+          "total_tokens": 1805,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 4
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      " right wing",
+      "Liberal",
+      " left wing",
+      "Politicians/government",
+      "World leaders/elites",
+      "Media elites",
+      "Celebrity",
+      "Green party supporter",
+      "Libertarian",
+      "Citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "democrat",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "republican",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": " democ rat",
+        "roles": [
+          "outgroup"
+        ]
+      },
+      {
+        "identity": "Colin Powell",
+        "roles": [
+          "sage",
+          "hero"
+        ]
+      },
+      {
+        "identity": "Lloyd Austin",
+        "roles": [
+          "hero"
+        ]
+      },
+      {
+        "identity": "corporate",
+        "roles": [
+          "outgroup"
+        ]
+      }
+    ]
+  }
+}

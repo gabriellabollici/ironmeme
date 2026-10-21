@@ -1,0 +1,124 @@
+{
+  "image_stem": "185",
+  "model": "qwen2.5-vl-7b-instruct",
+  "timestamp": "2026-08-25T21:09:46.175813+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Feminist",
+          "Misogynist/male supremacist"
+        ]
+      },
+      "raw_text": "{\"social_identities\": [\"Feminist\", \"Misogynist/male supremacist\"]}",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 20,
+          "prompt_tokens": 1075,
+          "total_tokens": 1095,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "feminist",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "men",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"feminist\", \"viewpoint\": \"outgroup\"}, {\"identity\": \"men\", \"viewpoint\": \"outgroup\"}]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 33,
+          "prompt_tokens": 772,
+          "total_tokens": 805,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "feminist",
+          "roles": [
+            "Villain"
+          ]
+        },
+        {
+          "identity": "men",
+          "roles": [
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"feminist\",     \"roles\": [\"Villain\"]   },   {     \"identity\": \"men\",     \"roles\": [\"Victim\"]   } ]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 44,
+          "prompt_tokens": 966,
+          "total_tokens": 1010,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Feminist",
+      "Misogynist/male supremacist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "feminist",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "men",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "feminist",
+      "roles": [
+        "Villain"
+      ]
+    },
+    {
+      "identity": "men",
+      "roles": [
+        "Victim"
+      ]
+    }
+  ]
+}

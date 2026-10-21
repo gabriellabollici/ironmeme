@@ -1,0 +1,150 @@
+{
+  "image_stem": "1045",
+  "model": "deepseek-vl2",
+  "timestamp": "2026-08-21T12:43:09.373474+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Right wing",
+          "Left wing"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Right wing\",\"Left wing\"]}",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 15,
+          "prompt_tokens": 1661,
+          "total_tokens": 1676,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Poland, Czechia, Slovakia, Romania, Austria",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "UK, France, Belgium, The Netherlands",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "Spain",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"Poland, Czechia, Slovakia, Romania, Austria\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"UK, France, Belgium, The Netherlands\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"Spain\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 63,
+          "prompt_tokens": 1347,
+          "total_tokens": 1410,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Poland, Czechia, Slovakia, Romania, Austria",
+          "roles": [
+            "Victim",
+            "Ingroup"
+          ]
+        },
+        {
+          "identity": "UK, France, Belgium, The Netherlands",
+          "roles": [
+            "Victim",
+            "Ingroup"
+          ]
+        },
+        {
+          "identity": "Spain",
+          "roles": [
+            "Villain",
+            "Outgroup"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"Poland, Czechia, Slovakia, Romania, Austria\",     \"roles\": [\"Victim\", \"Ingroup\"]   },   {     \"identity\": \"UK, France, Belgium, The Netherlands\",     \"roles\": [\"Victim\", \"Ingroup\"]   },   {     \"identity\": \"Spain\",     \"roles\": [\"Villain\", \"Outgroup\"]   } ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 90,
+          "prompt_tokens": 1545,
+          "total_tokens": 1635,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Right wing",
+      "Left wing"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Poland, Czechia, Slovakia, Romania, Austria",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "UK, France, Belgium, The Netherlands",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "Spain",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Poland, Czechia, Slovakia, Romania, Austria",
+      "roles": [
+        "Victim",
+        "Ingroup"
+      ]
+    },
+    {
+      "identity": "UK, France, Belgium, The Netherlands",
+      "roles": [
+        "Victim",
+        "Ingroup"
+      ]
+    },
+    {
+      "identity": "Spain",
+      "roles": [
+        "Villain",
+        "Outgroup"
+      ]
+    }
+  ]
+}

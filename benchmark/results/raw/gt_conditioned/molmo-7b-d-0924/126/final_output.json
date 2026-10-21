@@ -1,0 +1,200 @@
+{
+  "image_stem": "126",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T15:37:20.222847+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "LGBTQ+ rights supporter",
+          "Anti LGTBQ+",
+          "进步派",
+          "反进阶派",
+          "政客",
+          "媒体精英",
+          "名人",
+          "环保主义者",
+          "反环保主义者",
+          "核能倡导者",
+          "公民"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \"LGBTQ+ rights supporter\",\n    \"Anti LGTBQ+\",\n    \"进步派\",\n    \"反进阶派\",\n    \"政客\",\n    \"媒体精英\",\n    \"名人\",\n    \"环保主义者\",\n    \"反环保主义者\",\n    \"核能倡导者\",\n    \"公民\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 77,
+          "prompt_tokens": 1600,
+          "total_tokens": 1677,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 11
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "lgbtq+ rights supporter",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "transgender person",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "non-binary person",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "bisexual person",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "homosexual person",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "asexual person",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "genderqueer person",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "cisgender person",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"lgbtq+ rights supporter\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"transgender person\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"non-binary person\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"bisexual person\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"homosexual person\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"asexual person\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"genderqueer person\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"cisgender person\", \"viewpoint\": \"ingroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 143,
+          "prompt_tokens": 1299,
+          "total_tokens": 1442,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 8
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "lgtbq+ rights supporter",
+            "roles": [
+              "Sage"
+            ]
+          },
+          {
+            "identity": "anti-transgender group",
+            "roles": [
+              "Villain"
+            ]
+          }
+        ],
+        "viewpoints": {
+          "lgtbq+ rights supporter": "outgroup"
+        }
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"lgtbq+ rights supporter\",\n      \"roles\": [\"Sage\"]\n    },\n    {\n      \"identity\": \"anti-transgender group\",\n      \"roles\": [\"Villain\"]\n    }\n  ],\n  \"viewpoints\": {\n    \"lgtbq+ rights supporter\": \"outgroup\"\n  }\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 81,
+          "prompt_tokens": 1482,
+          "total_tokens": 1563,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "LGBTQ+ rights supporter",
+      "Anti LGTBQ+",
+      "进步派",
+      "反进阶派",
+      "政客",
+      "媒体精英",
+      "名人",
+      "环保主义者",
+      "反环保主义者",
+      "核能倡导者",
+      "公民"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "lgbtq+ rights supporter",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "transgender person",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "non-binary person",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "bisexual person",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "homosexual person",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "asexual person",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "genderqueer person",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "cisgender person",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "lgtbq+ rights supporter",
+        "roles": [
+          "Sage"
+        ]
+      },
+      {
+        "identity": "anti-transgender group",
+        "roles": [
+          "Villain"
+        ]
+      }
+    ],
+    "viewpoints": {
+      "lgtbq+ rights supporter": "outgroup"
+    }
+  }
+}

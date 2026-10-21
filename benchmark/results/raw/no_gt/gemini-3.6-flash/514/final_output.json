@@ -1,0 +1,124 @@
+{
+  "image_stem": "514",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T17:00:04.774645+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Climate activist",
+          "Climate disengaged"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Climate activist\",\n    \"Climate disengaged\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 33,
+          "prompt_tokens": 1694,
+          "total_tokens": 2356,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Climate activist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "Climate disengaged",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[\n  {\n    \"identity\": \"Climate activist\",\n    \"viewpoint\": \"ingroup\"\n  },\n  {\n    \"identity\": \"Climate disengaged\",\n    \"viewpoint\": \"outgroup\"\n  }\n]",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 54,
+          "prompt_tokens": 1414,
+          "total_tokens": 1912,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Climate activist",
+          "roles": [
+            "Sage"
+          ]
+        },
+        {
+          "identity": "Climate disengaged",
+          "roles": [
+            "Fool"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Climate activist\",\n    \"roles\": [\n      \"Sage\"\n    ]\n  },\n  {\n    \"identity\": \"Climate disengaged\",\n    \"roles\": [\n      \"Fool\"\n    ]\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 67,
+          "prompt_tokens": 1593,
+          "total_tokens": 2152,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Climate activist",
+      "Climate disengaged"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Climate activist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "Climate disengaged",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Climate activist",
+      "roles": [
+        "Sage"
+      ]
+    },
+    {
+      "identity": "Climate disengaged",
+      "roles": [
+        "Fool"
+      ]
+    }
+  ]
+}

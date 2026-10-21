@@ -1,0 +1,124 @@
+{
+  "image_stem": "669",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T23:12:19.045787+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Climate change skeptic/denier"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\"Climate change skeptic/denier\"]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 23,
+          "prompt_tokens": 2785,
+          "total_tokens": 2808,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "climate change skeptic/denier",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "national identity",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"climate change skeptic/denier\", \"viewpoint\": \"outgroup\"},\n    {\"identity\": \"national identity\", \"viewpoint\": \"ingroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 44,
+          "prompt_tokens": 2468,
+          "total_tokens": 2512,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "climate change skeptic/denier",
+          "roles": [
+            "Fool",
+            "Loser"
+          ]
+        },
+        {
+          "identity": "national identity",
+          "roles": [
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"climate change skeptic/denier\",\n    \"roles\": [\"Fool\", \"Loser\"]\n  },\n  {\n    \"identity\": \"national identity\",\n    \"roles\": [\"Victim\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 56,
+          "prompt_tokens": 2688,
+          "total_tokens": 2744,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Climate change skeptic/denier"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "climate change skeptic/denier",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "national identity",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "climate change skeptic/denier",
+      "roles": [
+        "Fool",
+        "Loser"
+      ]
+    },
+    {
+      "identity": "national identity",
+      "roles": [
+        "Victim"
+      ]
+    }
+  ]
+}

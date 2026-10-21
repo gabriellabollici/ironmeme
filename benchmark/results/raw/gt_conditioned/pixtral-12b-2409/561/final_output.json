@@ -1,0 +1,124 @@
+{
+  "image_stem": "561",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T23:09:21.058855+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Green party supporter",
+          "Conservative"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Green party supporter\",\n    \"Conservative\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 28,
+          "prompt_tokens": 897,
+          "total_tokens": 925,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "conservative",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "green party supporter",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"conservative\", \"viewpoint\": \"outgroup\"},\n    {\"identity\": \"green party supporter\", \"viewpoint\": \"ingroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 41,
+          "prompt_tokens": 574,
+          "total_tokens": 615,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "conservative",
+          "roles": [
+            "Villain"
+          ]
+        },
+        {
+          "identity": "green party supporter",
+          "roles": [
+            "Hero"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"conservative\",\n    \"roles\": [\"Villain\"]\n  },\n  {\n    \"identity\": \"green party supporter\",\n    \"roles\": [\"Hero\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 49,
+          "prompt_tokens": 797,
+          "total_tokens": 846,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Green party supporter",
+      "Conservative"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "conservative",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "green party supporter",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "conservative",
+      "roles": [
+        "Villain"
+      ]
+    },
+    {
+      "identity": "green party supporter",
+      "roles": [
+        "Hero"
+      ]
+    }
+  ]
+}

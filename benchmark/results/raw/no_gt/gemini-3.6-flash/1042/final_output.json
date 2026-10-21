@@ -1,0 +1,126 @@
+{
+  "image_stem": "1042",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T14:17:31.804009+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Democrat",
+          "Conservative"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Democrat\",\n    \"Conservative\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 31,
+          "prompt_tokens": 1670,
+          "total_tokens": 2379,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Democrat",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Conservative",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Democrat\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"Conservative\",\n    \"viewpoint\": \"ingroup\"\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 57,
+          "prompt_tokens": 1386,
+          "total_tokens": 1769,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Democrat",
+          "roles": [
+            "Fool",
+            "Loser"
+          ]
+        },
+        {
+          "identity": "Conservative",
+          "roles": [
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Democrat\",\n    \"roles\": [\n      \"Fool\",\n      \"Loser\"\n    ]\n  },\n  {\n    \"identity\": \"Conservative\",\n    \"roles\": [\n      \"Victim\"\n    ]\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 72,
+          "prompt_tokens": 1567,
+          "total_tokens": 2585,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Democrat",
+      "Conservative"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Democrat",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Conservative",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Democrat",
+      "roles": [
+        "Fool",
+        "Loser"
+      ]
+    },
+    {
+      "identity": "Conservative",
+      "roles": [
+        "Victim"
+      ]
+    }
+  ]
+}

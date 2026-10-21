@@ -1,0 +1,114 @@
+{
+  "image_stem": "576",
+  "model": "deepseek-vl2",
+  "timestamp": "2026-08-21T12:56:45.018173+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "American people",
+          "Voter"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"American people\",\"Voter\"]}",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 15,
+          "prompt_tokens": 1059,
+          "total_tokens": 1074,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "American People",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "American People",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"American People\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"American People\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 34,
+          "prompt_tokens": 745,
+          "total_tokens": 779,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "American People",
+          "roles": [
+            "Victim",
+            "Loser"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"American People\",     \"roles\": [\"Victim\", \"Loser\"]   } ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 27,
+          "prompt_tokens": 943,
+          "total_tokens": 970,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "American people",
+      "Voter"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "American People",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "American People",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "American People",
+      "roles": [
+        "Victim",
+        "Loser"
+      ]
+    }
+  ]
+}

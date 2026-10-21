@@ -1,0 +1,128 @@
+{
+  "image_stem": "292",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T23:02:02.767625+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Republican",
+          "Democrat"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\"Republican\", \"Democrat\"]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 21,
+          "prompt_tokens": 903,
+          "total_tokens": 924,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "republican",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "republican",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"republican\", \"viewpoint\": \"outgroup\"},\n    {\"identity\": \"republican\", \"viewpoint\": \"outgroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 41,
+          "prompt_tokens": 580,
+          "total_tokens": 621,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "republican",
+          "viewpoint": "ingroup",
+          "roles": [
+            "Victim"
+          ]
+        },
+        {
+          "identity": "republican",
+          "viewpoint": "outgroup",
+          "roles": [
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"republican\",\n    \"viewpoint\": \"ingroup\",\n    \"roles\": [\"Victim\"]\n  },\n  {\n    \"identity\": \"republican\",\n    \"viewpoint\": \"outgroup\",\n    \"roles\": [\"Villain\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 68,
+          "prompt_tokens": 803,
+          "total_tokens": 871,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Republican",
+      "Democrat"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "republican",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "republican",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "republican",
+      "viewpoint": "ingroup",
+      "roles": [
+        "Victim"
+      ]
+    },
+    {
+      "identity": "republican",
+      "viewpoint": "outgroup",
+      "roles": [
+        "Villain"
+      ]
+    }
+  ]
+}

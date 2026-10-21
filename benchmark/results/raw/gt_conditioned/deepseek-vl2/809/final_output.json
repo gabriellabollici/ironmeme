@@ -1,0 +1,124 @@
+{
+  "image_stem": "809",
+  "model": "deepseek-vl2",
+  "timestamp": "2026-08-21T13:03:29.887471+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Climate change skeptic/denier",
+          "Climate disengaged",
+          "Climate activist",
+          "Clean energy advocate",
+          "Nuclear energy advocate",
+          "Plant based/vegan",
+          "Citizens"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Climate change skeptic/denier\",\"Climate disengaged\",\"Climate activist\",\"Clean energy advocate\",\"Nuclear energy advocate\",\"Plant based/vegan\",\"Citizens\"]}",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 40,
+          "prompt_tokens": 2655,
+          "total_tokens": 2695,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 7
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "clean energy advocate",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "nuclear energy advocate",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"clean energy advocate\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"nuclear energy advocate\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 37,
+          "prompt_tokens": 2355,
+          "total_tokens": 2392,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "clean energy advocate",
+          "roles": [
+            "Hero",
+            "Winner"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"clean energy advocate\",     \"roles\": [\"Hero\", \"Winner\"]   } ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 26,
+          "prompt_tokens": 2557,
+          "total_tokens": 2583,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Climate change skeptic/denier",
+      "Climate disengaged",
+      "Climate activist",
+      "Clean energy advocate",
+      "Nuclear energy advocate",
+      "Plant based/vegan",
+      "Citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "clean energy advocate",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "nuclear energy advocate",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "clean energy advocate",
+      "roles": [
+        "Hero",
+        "Winner"
+      ]
+    }
+  ]
+}

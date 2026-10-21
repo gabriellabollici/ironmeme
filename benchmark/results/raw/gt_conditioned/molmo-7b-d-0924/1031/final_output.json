@@ -1,0 +1,152 @@
+{
+  "image_stem": "1031",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T15:09:09.089642+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          " left wing",
+          " right wing",
+          " Conspiracy theorist",
+          " Anticapitalist",
+          " Climate activist",
+          " Green energy advocate",
+          " Plant based/vegan"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \" left wing\",\n    \" right wing\",\n    \" Conspiracy theorist\",\n    \" Anticapitalist\",\n    \" Climate activist\",\n    \" Green energy advocate\",\n    \" Plant based/vegan\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 54,
+          "prompt_tokens": 1824,
+          "total_tokens": 1878,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 7
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "conspiracy theorist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "non-conspiracy theorist",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"conspiracy theorist\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"non-conspiracy theorist\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 39,
+          "prompt_tokens": 1517,
+          "total_tokens": 1556,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "conspiracy theorist",
+            "roles": [
+              "ingroup"
+            ]
+          },
+          {
+            "identity": "Batman",
+            "roles": [
+              "hero",
+              "sage"
+            ]
+          },
+          {
+            "identity": "man being punched",
+            "roles": [
+              "victim"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"conspiracy theorist\",\n      \"roles\": [\"ingroup\"]\n    },\n    {\n      \"identity\": \"Batman\",\n      \"roles\": [\"hero\", \"sage\"]\n    },\n    {\n      \"identity\": \"man being punched\",\n      \"roles\": [\"victim\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 76,
+          "prompt_tokens": 1702,
+          "total_tokens": 1778,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      " left wing",
+      " right wing",
+      " Conspiracy theorist",
+      " Anticapitalist",
+      " Climate activist",
+      " Green energy advocate",
+      " Plant based/vegan"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "conspiracy theorist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "non-conspiracy theorist",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "conspiracy theorist",
+        "roles": [
+          "ingroup"
+        ]
+      },
+      {
+        "identity": "Batman",
+        "roles": [
+          "hero",
+          "sage"
+        ]
+      },
+      {
+        "identity": "man being punched",
+        "roles": [
+          "victim"
+        ]
+      }
+    ]
+  }
+}

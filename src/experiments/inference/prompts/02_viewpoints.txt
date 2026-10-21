@@ -1,0 +1,25 @@
+SYSTEM: You are an expert in semiotics and cultural analysis specializing in meme interpretation. Your task is to identify the viewpoint expressed by a meme relative to the social identities identified in the meme.
+Return valid JSON only. Do not include markdown, explanations, commentary, or any text outside the JSON object.
+
+USER: Analyze the attached meme and determine the viewpoint expressed by the meme toward ALL of the following identified social identities: {social_identities}.
+
+STRICT INSTRUCTION:
+You MUST evaluate and return a viewpoint entry for EVERY single identity listed in {social_identities}. Do not omit any identity.
+
+Return JSON array where each entry specifies an identity and its viewpoint:
+[
+  {"identity": "IDENTITY_NAME", "viewpoint": "ingroup"},
+  {"identity": "IDENTITY_NAME", "viewpoint": "outgroup"}
+]
+
+VIEWPOINT DEFINITION
+The ingroup is the social identity whose perspective, beliefs, values, actions, or position are expressed, supported, normalized, defended, or endorsed by the meme.
+The outgroup is the social identity that is criticized, mocked, blamed, rejected, attacked, negatively portrayed, or positioned as opposed to the meme's perspective.
+
+OUTPUT REQUIREMENTS
+Output valid JSON array only.
+Length of output array MUST equal the number of input identities provided.
+Every entity MUST have a 'viewpoint' field.
+Each object must have exactly two keys: "identity" and "viewpoint".
+Each "identity" key must have only one "viewpoint" assigned.
+"viewpoint" must be either "ingroup" or "outgroup".

@@ -1,0 +1,75 @@
+<think>Got it, let's analyze the meme step by step. First, identify the social identities: Climate activist (ingroup) and World leaders/elites (outgroup). Then, look at their narrative roles based on the meme's content.
+
+First, the meme shows a character finding "The Scroll of Truth" which says "People who earn more than $1000/mo are probably emitting too much CO2." The climate activist (ingroup) would be the one presenting this truth, so their role might be Hero or Sage. The world leaders/elites (outgroup) react with "NYEHHH" and seem dismissive, so their role could be Villain or Loser.
+
+Let's break down each identity:
+
+For "Climate activist" (ingroup):
+- Evaluative dimension: Moral (since it's about climate action, which is moral). The activist is presenting truth, so Hero (moral good) or Sage (intellectual). Let's check the roles. The activist is finding the truth, so Sage (intellectual) and Hero (moral) make sense. Because they're revealing the truth, which is moral and intellectual.
+
+For "World leaders/elites" (outgroup):
+- Evaluative dimension: Moral (they dismiss the truth, so Villain) or Power (Loser, since they're not accepting the truth). The reaction is dismissive ("NYEHHH"), so Villain (moral bad) or Loser (power). Let's see, they're not accepting the truth, so Villain (moral) or Loser (power). Since they're dismissing the climate truth, Villain is appropriate.
+
+Now, format into JSON array.
+
+First identity: Climate activist
+roles: ["Hero", "Sage"] (since they're presenting the truth, moral hero and intellectual sage)
+
+Second identity: World leaders/elites
+roles: ["Villain", "Loser"] (moral villain for dismissing truth, power loser for not accepting)
+
+Wait, let's check the meme again. The scroll is about high earners emitting too much CO2, which is a climate issue. The activist (ingroup) is the one who found the scroll, so they're the ones presenting the truth. The world leaders (outgroup) react negatively, so they're portrayed as villains or losers.
+
+So the JSON would be:
+
+[
+  {
+    "identity": "Climate activist",
+    "roles": ["Hero", "Sage"]
+  },
+  {
+    "identity": "World leaders/elites",
+    "roles": ["Villain", "Loser"]
+  }
+]
+
+Wait, need to make sure each role is assigned correctly. Let's confirm the dimensions:
+
+Moral dimension for Climate activist: Hero (since they're doing what's right, presenting truth). For World leaders: Villain (since they're not doing what's right, dismissing truth).
+
+Intellectual dimension for Climate activist: Sage (since they have the knowledge, the scroll is truth). For World leaders: Fool (since they're not accepting the truth, so ignorant).
+
+Power dimension for Climate activist: Winner (since they're empowered by the truth). For World leaders: Loser (since they're not in power over the truth, or dismiss it).
+
+But the question says to assign roles based on the meme's text, imagery, or framing. The meme shows the activist finding the scroll (hero), presenting it (sage), and the leaders dismissing it (villain, loser). So combining roles.
+
+Let me check the steps again. Step 1: Evaluative dimension (Moral, Intellectual, Physical, Power). Step 2: Superior/Positive or Inferior/Negative.
+
+For Climate activist:
+- Moral dimension: Hero (Superior/Positive) – because they're doing the right thing (presenting truth)
+- Intellectual dimension: Sage (Superior/Positive) – because they have the knowledge
+- Power dimension: Winner (Superior/Positive) – because they're empowered by the truth
+
+For World leaders:
+- Moral dimension: Villain (Inferior/Negative) – because they're dismissing the truth (unethical)
+- Intellectual dimension: Fool (Inferior/Negative) – because they're not accepting the truth (ignorant)
+- Power dimension: Loser (Inferior/Negative) – because they're not in control of the truth, or dismiss it (defeated)
+
+But the question says "assign narrative roles" – so each identity can have multiple roles from different dimensions. Let's pick the most appropriate ones.
+
+Climate activist:
+roles: ["Hero", "Sage"] (from moral and intellectual dimensions, both positive)
+
+World leaders:
+roles: ["Villain", "Loser"] (from moral and power dimensions, both negative)
+
+So the JSON would be as above.</think><answer>[
+  {
+    "identity": "Climate activist",
+    "roles": ["Hero", "Sage"]
+  },
+  {
+    "identity": "World leaders/elites",
+    "roles": ["Villain", "Loser"]
+  }
+]

@@ -1,0 +1,126 @@
+{
+  "image_stem": "53",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T23:08:31.285782+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Corporativist/capitalist",
+          "Climate change skeptic/denier"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\"Corporativist/capitalist\", \"Climate change skeptic/denier\"]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 33,
+          "prompt_tokens": 4179,
+          "total_tokens": 4212,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "climate activist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "climate change skeptic/denier",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"climate activist\", \"viewpoint\": \"ingroup\"},\n    {\"identity\": \"climate change skeptic/denier\", \"viewpoint\": \"outgroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 45,
+          "prompt_tokens": 3864,
+          "total_tokens": 3909,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "climate activist",
+          "roles": [
+            "Victim"
+          ]
+        },
+        {
+          "identity": "climate change skeptic/denier",
+          "roles": [
+            "Villain",
+            "Fool"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"climate activist\",\n    \"roles\": [\"Victim\"]\n  },\n  {\n    \"identity\": \"climate change skeptic/denier\",\n    \"roles\": [\"Villain\", \"Fool\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 58,
+          "prompt_tokens": 4083,
+          "total_tokens": 4141,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Corporativist/capitalist",
+      "Climate change skeptic/denier"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "climate activist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "climate change skeptic/denier",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "climate activist",
+      "roles": [
+        "Victim"
+      ]
+    },
+    {
+      "identity": "climate change skeptic/denier",
+      "roles": [
+        "Villain",
+        "Fool"
+      ]
+    }
+  ]
+}

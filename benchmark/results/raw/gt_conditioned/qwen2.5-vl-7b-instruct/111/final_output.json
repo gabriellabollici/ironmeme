@@ -1,0 +1,128 @@
+{
+  "image_stem": "111",
+  "model": "qwen2.5-vl-7b-instruct",
+  "timestamp": "2026-08-25T21:08:59.581753+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Progressive",
+          "Conservative"
+        ]
+      },
+      "raw_text": "{\"social_identities\": [\"Progressive\", \"Conservative\"]}",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 14,
+          "prompt_tokens": 1388,
+          "total_tokens": 1402,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "democrat",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "republican",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"democrat\", \"viewpoint\": \"ingroup\"}, {\"identity\": \"republican\", \"viewpoint\": \"outgroup\"}]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 33,
+          "prompt_tokens": 1087,
+          "total_tokens": 1120,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "democrat",
+          "roles": [
+            "Hero",
+            "Winner"
+          ]
+        },
+        {
+          "identity": "republican",
+          "roles": [
+            "Villain",
+            "Loser"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"democrat\",     \"roles\": [\"Hero\", \"Winner\"]   },   {     \"identity\": \"republican\",     \"roles\": [\"Villain\", \"Loser\"]   } ]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 51,
+          "prompt_tokens": 1280,
+          "total_tokens": 1331,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Progressive",
+      "Conservative"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "democrat",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "republican",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "democrat",
+      "roles": [
+        "Hero",
+        "Winner"
+      ]
+    },
+    {
+      "identity": "republican",
+      "roles": [
+        "Villain",
+        "Loser"
+      ]
+    }
+  ]
+}

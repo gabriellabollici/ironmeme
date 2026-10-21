@@ -1,0 +1,110 @@
+{
+  "image_stem": "36",
+  "model": "qwen2.5-vl-7b-instruct",
+  "timestamp": "2026-08-25T21:11:40.363692+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Green party supporter"
+        ]
+      },
+      "raw_text": "{\"social_identities\": [\"Green party supporter\"]}",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 11,
+          "prompt_tokens": 702,
+          "total_tokens": 713,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "green party supporter",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "green party supporter",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"green party supporter\", \"viewpoint\": \"ingroup\"}, {\"identity\": \"green party supporter\", \"viewpoint\": \"outgroup\"}]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 34,
+          "prompt_tokens": 393,
+          "total_tokens": 427,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "green party supporter",
+          "roles": [
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"green party supporter\",     \"roles\": [\"Victim\"]   } ]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 24,
+          "prompt_tokens": 580,
+          "total_tokens": 604,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Green party supporter"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "green party supporter",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "green party supporter",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "green party supporter",
+      "roles": [
+        "Victim"
+      ]
+    }
+  ]
+}

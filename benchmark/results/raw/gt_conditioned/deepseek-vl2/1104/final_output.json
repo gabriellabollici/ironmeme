@@ -1,0 +1,114 @@
+{
+  "image_stem": "1104",
+  "model": "deepseek-vl2",
+  "timestamp": "2026-08-21T12:44:29.490972+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "politicians/government",
+          "climate change skeptic/denier"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"politicians/government\",\"climate change skeptic/denier\"]}",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 21,
+          "prompt_tokens": 2067,
+          "total_tokens": 2088,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "politicians/government",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "politicians/government",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"politicians/government\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"politicians/government\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 39,
+          "prompt_tokens": 1757,
+          "total_tokens": 1796,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "politicians/government",
+          "roles": [
+            "Villain",
+            "Loser"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"politicians/government\",     \"roles\": [\"Villain\", \"Loser\"]   } ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 30,
+          "prompt_tokens": 1954,
+          "total_tokens": 1984,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "politicians/government",
+      "climate change skeptic/denier"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "politicians/government",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "politicians/government",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "politicians/government",
+      "roles": [
+        "Villain",
+        "Loser"
+      ]
+    }
+  ]
+}

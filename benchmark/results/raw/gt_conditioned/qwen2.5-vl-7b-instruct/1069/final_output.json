@@ -1,0 +1,124 @@
+{
+  "image_stem": "1069",
+  "model": "qwen2.5-vl-7b-instruct",
+  "timestamp": "2026-08-25T21:08:22.363325+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Republican",
+          "Democrat"
+        ]
+      },
+      "raw_text": "{\"social_identities\": [\"Republican\", \"Democrat\"]}",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 13,
+          "prompt_tokens": 2366,
+          "total_tokens": 2379,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "democrat",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "republican",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"democrat\", \"viewpoint\": \"outgroup\"}, {\"identity\": \"republican\", \"viewpoint\": \"ingroup\"}]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 33,
+          "prompt_tokens": 2065,
+          "total_tokens": 2098,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "democrat",
+          "roles": [
+            "Victim"
+          ]
+        },
+        {
+          "identity": "republican",
+          "roles": [
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "[{\"identity\": \"democrat\", \"roles\": [\"Victim\"]}, {\"identity\": \"republican\", \"roles\": [\"Villain\"]}]\"",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 34,
+          "prompt_tokens": 2258,
+          "total_tokens": 2292,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Republican",
+      "Democrat"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "democrat",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "republican",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "democrat",
+      "roles": [
+        "Victim"
+      ]
+    },
+    {
+      "identity": "republican",
+      "roles": [
+        "Villain"
+      ]
+    }
+  ]
+}

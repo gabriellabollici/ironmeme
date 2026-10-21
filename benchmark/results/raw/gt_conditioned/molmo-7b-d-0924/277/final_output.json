@@ -1,0 +1,152 @@
+{
+  "image_stem": "277",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T16:14:51.875588+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "White people",
+          " right wing",
+          "Liberal",
+          " left wing",
+          "Green party supporter"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \"White people\",\n    \" right wing\",\n    \"Liberal\",\n    \" left wing\",\n    \"Green party supporter\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 38,
+          "prompt_tokens": 944,
+          "total_tokens": 982,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 5
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "green party supporter",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Republican voter",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "Democratic voter",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Independent voter",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"green party supporter\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"Republican voter\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"Democratic voter\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"Independent voter\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 67,
+          "prompt_tokens": 635,
+          "total_tokens": 702,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 4
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "green party supporter",
+            "roles": [
+              "outgroup"
+            ]
+          },
+          {
+            "identity": "Trump",
+            "roles": [
+              "hero",
+              "winner"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"green party supporter\",\n      \"roles\": [\"outgroup\"]\n    },\n    {\n      \"identity\": \"Trump\",\n      \"roles\": [\"hero\", \"winner\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 53,
+          "prompt_tokens": 822,
+          "total_tokens": 875,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "White people",
+      " right wing",
+      "Liberal",
+      " left wing",
+      "Green party supporter"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "green party supporter",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Republican voter",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "Democratic voter",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Independent voter",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "green party supporter",
+        "roles": [
+          "outgroup"
+        ]
+      },
+      {
+        "identity": "Trump",
+        "roles": [
+          "hero",
+          "winner"
+        ]
+      }
+    ]
+  }
+}

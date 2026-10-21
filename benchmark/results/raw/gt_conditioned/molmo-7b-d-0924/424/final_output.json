@@ -1,0 +1,176 @@
+{
+  "image_stem": "424",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T17:04:29.318158+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          " right wing",
+          " climate activist",
+          " left wing",
+          " liberal",
+          " feminist",
+          " vegan",
+          " clean energy advocate"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \" right wing\",\n    \" climate activist\",\n    \" left wing\",\n    \" liberal\",\n    \" feminist\",\n    \" vegan\",\n    \" clean energy advocate\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 45,
+          "prompt_tokens": 1824,
+          "total_tokens": 1869,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 7
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "climate disengaged",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "climate activists",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "skeptics",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "deniers",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": " climate change deniers",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"climate disengaged\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"climate activists\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"skeptics\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"deniers\", \"viewpoint\": \"outgroup\"},   {\"identity\": \" climate change deniers\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 87,
+          "prompt_tokens": 1517,
+          "total_tokens": 1604,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 5
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "climate alarmist",
+            "roles": [
+              "Sage"
+            ]
+          },
+          {
+            "identity": "climate disengaged",
+            "roles": [
+              "Hero",
+              "Victim"
+            ]
+          },
+          {
+            "identity": "climate data",
+            "roles": [
+              "Sage"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"climate alarmist\",\n      \"roles\": [\"Sage\"]\n    },\n    {\n      \"identity\": \"climate disengaged\",\n      \"roles\": [\"Hero\", \"Victim\"]\n    },\n    {\n      \"identity\": \"climate data\",\n      \"roles\": [\"Sage\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 77,
+          "prompt_tokens": 1703,
+          "total_tokens": 1780,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      " right wing",
+      " climate activist",
+      " left wing",
+      " liberal",
+      " feminist",
+      " vegan",
+      " clean energy advocate"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "climate disengaged",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "climate activists",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "skeptics",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "deniers",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": " climate change deniers",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "climate alarmist",
+        "roles": [
+          "Sage"
+        ]
+      },
+      {
+        "identity": "climate disengaged",
+        "roles": [
+          "Hero",
+          "Victim"
+        ]
+      },
+      {
+        "identity": "climate data",
+        "roles": [
+          "Sage"
+        ]
+      }
+    ]
+  }
+}

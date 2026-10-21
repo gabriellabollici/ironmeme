@@ -1,0 +1,146 @@
+{
+  "image_stem": "1048",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T14:19:00.545523+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Voter",
+          "National identity",
+          "Women"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Voter\",\n    \"National identity\",\n    \"Women\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 37,
+          "prompt_tokens": 1686,
+          "total_tokens": 2490,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Voter",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "National identity",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Women",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[\n  {\n    \"identity\": \"Voter\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"National identity\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"Women\",\n    \"viewpoint\": \"ingroup\"\n  }\n]",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 77,
+          "prompt_tokens": 1410,
+          "total_tokens": 2013,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Voter",
+          "roles": [
+            "Fool"
+          ]
+        },
+        {
+          "identity": "National identity",
+          "roles": [
+            "Fool"
+          ]
+        },
+        {
+          "identity": "Women",
+          "roles": [
+            "Victim"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Voter\",\n    \"roles\": [\n      \"Fool\"\n    ]\n  },\n  {\n    \"identity\": \"National identity\",\n    \"roles\": [\n      \"Fool\"\n    ]\n  },\n  {\n    \"identity\": \"Women\",\n    \"roles\": [\n      \"Victim\"\n    ]\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 95,
+          "prompt_tokens": 1598,
+          "total_tokens": 2497,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Voter",
+      "National identity",
+      "Women"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Voter",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "National identity",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Women",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Voter",
+      "roles": [
+        "Fool"
+      ]
+    },
+    {
+      "identity": "National identity",
+      "roles": [
+        "Fool"
+      ]
+    },
+    {
+      "identity": "Women",
+      "roles": [
+        "Victim"
+      ]
+    }
+  ]
+}

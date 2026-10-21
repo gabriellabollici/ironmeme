@@ -1,0 +1,128 @@
+{
+  "image_stem": "669",
+  "model": "deepseek-vl2",
+  "timestamp": "2026-08-21T12:59:49.754479+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Climate change skeptic/denier",
+          "People who deny climate change"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Climate change skeptic/denier\",\"People who deny climate change\"]}",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 22,
+          "prompt_tokens": 1661,
+          "total_tokens": 1683,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "climate change skeptic/denier",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "national identity",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[  {\"identity\": \"climate change skeptic/denier\", \"viewpoint\": \"outgroup\"},  {\"identity\": \"national identity\", \"viewpoint\": \"ingroup\"} ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 38,
+          "prompt_tokens": 1363,
+          "total_tokens": 1401,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "France",
+          "roles": [
+            "Villain",
+            "Loser"
+          ]
+        },
+        {
+          "identity": "People who deny climate change",
+          "roles": [
+            "Victim",
+            "Fool"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"France\",     \"roles\": [\"Villain\", \"Loser\"]   },   {     \"identity\": \"People who deny climate change\",     \"roles\": [\"Victim\", \"Fool\"]   } ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 54,
+          "prompt_tokens": 1564,
+          "total_tokens": 1618,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Climate change skeptic/denier",
+      "People who deny climate change"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "climate change skeptic/denier",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "national identity",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "France",
+      "roles": [
+        "Villain",
+        "Loser"
+      ]
+    },
+    {
+      "identity": "People who deny climate change",
+      "roles": [
+        "Victim",
+        "Fool"
+      ]
+    }
+  ]
+}

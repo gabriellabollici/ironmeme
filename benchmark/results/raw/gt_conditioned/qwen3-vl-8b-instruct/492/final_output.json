@@ -1,0 +1,126 @@
+{
+  "image_stem": "492",
+  "model": "qwen3-vl-8b-instruct",
+  "timestamp": "2026-08-20T23:33:10.869951+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Democrat"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Democrat\"]}",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 9,
+          "prompt_tokens": 704,
+          "total_tokens": 713,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "democrat",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "nationalist/regionalist",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"democrat\", \"viewpoint\": \"outgroup\"}, {\"identity\": \"nationalist/regionalist\", \"viewpoint\": \"ingroup\"}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 35,
+          "prompt_tokens": 407,
+          "total_tokens": 442,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "democrat",
+          "roles": [
+            "Villain",
+            "Loser"
+          ]
+        },
+        {
+          "identity": "nationalist/regionalist",
+          "roles": [
+            "Hero",
+            "Winner"
+          ]
+        }
+      ],
+      "raw_text": "[{\"identity\": \"democrat\", \"roles\": [\"Villain\", \"Loser\"]}, {\"identity\": \"nationalist/regionalist\", \"roles\": [\"Hero\", \"Winner\"]}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 42,
+          "prompt_tokens": 598,
+          "total_tokens": 640,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Democrat"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "democrat",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "nationalist/regionalist",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "democrat",
+      "roles": [
+        "Villain",
+        "Loser"
+      ]
+    },
+    {
+      "identity": "nationalist/regionalist",
+      "roles": [
+        "Hero",
+        "Winner"
+      ]
+    }
+  ]
+}

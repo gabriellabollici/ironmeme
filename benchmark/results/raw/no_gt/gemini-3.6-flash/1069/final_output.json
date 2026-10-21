@@ -1,0 +1,148 @@
+{
+  "image_stem": "1069",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T14:29:30.155719+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Republican",
+          "Democrat",
+          "Conspiracy theorist"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Republican\",\n    \"Democrat\",\n    \"Conspiracy theorist\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 38,
+          "prompt_tokens": 1670,
+          "total_tokens": 2184,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Republican",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "Democrat",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Conspiracy theorist",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Republican\",\n    \"viewpoint\": \"ingroup\"\n  },\n  {\n    \"identity\": \"Democrat\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"Conspiracy theorist\",\n    \"viewpoint\": \"outgroup\"\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 83,
+          "prompt_tokens": 1396,
+          "total_tokens": 2458,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Republican",
+          "roles": [
+            "Winner"
+          ]
+        },
+        {
+          "identity": "Democrat",
+          "roles": [
+            "Fool",
+            "Loser"
+          ]
+        },
+        {
+          "identity": "Conspiracy theorist",
+          "roles": [
+            "Fool"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Republican\",\n    \"roles\": [\n      \"Winner\"\n    ]\n  },\n  {\n    \"identity\": \"Democrat\",\n    \"roles\": [\n      \"Fool\",\n      \"Loser\"\n    ]\n  },\n  {\n    \"identity\": \"Conspiracy theorist\",\n    \"roles\": [\n      \"Fool\"\n    ]\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 101,
+          "prompt_tokens": 1583,
+          "total_tokens": 2672,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Republican",
+      "Democrat",
+      "Conspiracy theorist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Republican",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "Democrat",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Conspiracy theorist",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Republican",
+      "roles": [
+        "Winner"
+      ]
+    },
+    {
+      "identity": "Democrat",
+      "roles": [
+        "Fool",
+        "Loser"
+      ]
+    },
+    {
+      "identity": "Conspiracy theorist",
+      "roles": [
+        "Fool"
+      ]
+    }
+  ]
+}

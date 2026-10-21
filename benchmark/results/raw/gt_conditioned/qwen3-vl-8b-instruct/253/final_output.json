@@ -1,0 +1,128 @@
+{
+  "image_stem": "253",
+  "model": "qwen3-vl-8b-instruct",
+  "timestamp": "2026-08-20T23:30:14.870555+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Feminist",
+          "Anti racist",
+          "people of color",
+          "Racist"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Feminist\",\"Anti racist\",\"people of color\",\"Racist\"]}",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 20,
+          "prompt_tokens": 958,
+          "total_tokens": 978,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 4
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "feminist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "people of color",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"feminist\", \"viewpoint\": \"ingroup\"}, {\"identity\": \"people of color\", \"viewpoint\": \"outgroup\"}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 34,
+          "prompt_tokens": 659,
+          "total_tokens": 693,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "feminist",
+          "roles": [
+            "Victim"
+          ]
+        },
+        {
+          "identity": "people of color",
+          "roles": [
+            "Hero"
+          ]
+        }
+      ],
+      "raw_text": "[{\"identity\": \"feminist\", \"roles\": [\"Victim\"]}, {\"identity\": \"people of color\", \"roles\": [\"Hero\"]}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 33,
+          "prompt_tokens": 852,
+          "total_tokens": 885,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Feminist",
+      "Anti racist",
+      "people of color",
+      "Racist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "feminist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "people of color",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "feminist",
+      "roles": [
+        "Victim"
+      ]
+    },
+    {
+      "identity": "people of color",
+      "roles": [
+        "Hero"
+      ]
+    }
+  ]
+}

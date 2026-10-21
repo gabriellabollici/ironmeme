@@ -1,0 +1,132 @@
+{
+  "image_stem": "440",
+  "model": "qwen3-vl-8b-instruct",
+  "timestamp": "2026-08-20T23:32:31.231486+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Liberal",
+          "Corporativist/capitalist",
+          "Climate activist",
+          "Climate change skeptic/denier"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Liberal\",\"Corporativist/capitalist\",\"Climate activist\",\"Climate change skeptic/denier\"]}",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 28,
+          "prompt_tokens": 885,
+          "total_tokens": 913,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 4
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "corporativist/capitalist",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "liberal",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"corporativist/capitalist\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"liberal\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 41,
+          "prompt_tokens": 594,
+          "total_tokens": 635,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "corporativist/capitalist",
+          "roles": [
+            "Villain",
+            "Fool"
+          ]
+        },
+        {
+          "identity": "liberal",
+          "roles": [
+            "Villain",
+            "Fool"
+          ]
+        }
+      ],
+      "raw_text": "[{\"identity\": \"corporativist/capitalist\", \"roles\": [\"Villain\", \"Fool\"]}, {\"identity\": \"liberal\", \"roles\": [\"Villain\", \"Fool\"]}]",
+      "metadata": {
+        "model": "qwen3-vl-8b-instruct",
+        "usage": {
+          "completion_tokens": 48,
+          "prompt_tokens": 783,
+          "total_tokens": 831,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Liberal",
+      "Corporativist/capitalist",
+      "Climate activist",
+      "Climate change skeptic/denier"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "corporativist/capitalist",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "liberal",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "corporativist/capitalist",
+      "roles": [
+        "Villain",
+        "Fool"
+      ]
+    },
+    {
+      "identity": "liberal",
+      "roles": [
+        "Villain",
+        "Fool"
+      ]
+    }
+  ]
+}

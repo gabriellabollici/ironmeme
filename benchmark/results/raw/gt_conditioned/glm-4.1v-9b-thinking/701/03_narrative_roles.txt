@@ -1,0 +1,78 @@
+<think>Got it, let's analyze the meme step by step. First, identify the two identities: climate activist (ingroup) and corporativist/capitalist (outgroup). Then, determine their narrative roles based on the meme's content.
+
+First, the climate activist (ingroup) viewpoint. The meme shows the blue character (let's say the activist role) arguing for taking responsibility, pointing out that western companies outsource emissions to China. The pink character (maybe representing the outgroup's perspective) initially argues that since China pollutes more, we shouldn't do anything. But the blue character reveals that western companies' outsourcing causes emissions in China, so the climate activist is portrayed as someone who's exposing the truth. 
+
+For the climate activist identity:
+- Evaluative dimension: Moral (since it's about ethical responsibility for pollution)
+- Portrayal: Superior/Positive (as they're exposing the truth and advocating for responsibility)
+- Narrative roles: Hero (morally good, exposing truth), Sage (intellectual, knowledgeable about emissions), Victim? Wait, no. Wait, the climate activist is the one with the viewpoint of "ingroup" – in the meme, the blue character is presenting facts, so Sage (intellectual) and Hero (moral) make sense.
+
+For the corporativist/capitalist (outgroup) identity:
+- The pink character initially argues not to do anything about pollution because China pollutes more, then agrees when shown that western companies' actions contribute. But the meme seems to critique the outgroup's perspective as deflective. 
+- Evaluative dimension: Moral (since it's about responsibility)
+- Portrayal: Inferior/Negative (as they're deflecting blame, not taking responsibility)
+- Narrative roles: Villain (moral bad, deflecting blame), Fool (intellectual, maybe not understanding the connection), Loser (power, maybe not having the power to take action but blaming others).
+
+Wait, let's check the meme panels:
+- The blue character (activist) says "We don't have much time for solving climate change, let's all pitch in for our own emissions" – that's taking responsibility.
+- The pink character says "No, Pollution good because China pollutes more" – then "If China's doing nothing, we're doing nothing!" – this is deflecting.
+- Then the blue character shows American brands (Nike, Gap, Apple) with factories in China, and the pink character agrees ("Yep"). Then the blue character says "And does industry, regardless of the company's origin, contribute to the co2 emissions of the country the factories are in?" Pink agrees ("Yep"). Then the blue character says "Well these western companies outsource their factories into China, which drives up their emissions." Then shows a source saying "Western demand for goods from China is killing 100,000 a year" – pink says "I also have a source that confirms this...". Then blue says "So if that's the case we must export some of our pollution to China, and we should blame the companies doing this for doing so." Pink says "That makes sense to me." Then blue says "Then let's do something to tackle the emissions from our companies." Pink says "Stop blaming America! Nothing's ever our fault!"
+
+So the climate activist (blue character) is portrayed as exposing the truth, taking responsibility, so their roles would be Hero (moral) and Sage (intellectual). The corporativist/capitalist (pink character) is portrayed as deflecting blame, not understanding the connection, so Villain (moral) and Fool (intellectual), maybe Loser (power) too.
+
+Now, let's structure the JSON:
+
+For climate activist:
+{
+  "identity": "climate activist",
+  "roles": ["Hero", "Sage"]
+}
+
+For corporativist/capitalist:
+{
+  "identity": "corporativist/capitalist",
+  "roles": ["Villain", "Fool", "Loser"]
+}
+
+Wait, need to make sure each identity has roles based on the meme. Let's confirm the evaluative dimensions:
+
+Moral dimension: Hero (Superior/Positive) for climate activist (they're doing what's right, exposing truth). Villain (Inferior/Negative) for corporativist (deflecting blame, not ethical).
+
+Intellectual dimension: Sage (Superior/Positive) for climate activist (they have the knowledge about emissions). Fool (Inferior/Negative) for corporativist (they don't understand the connection between outsourcing and emissions).
+
+Power dimension: Winner (Superior/Positive) for climate activist (they're taking action, being influential). Loser (Inferior/Negative) for corporativist (they're not taking responsibility, being marginalized).
+
+So combining, the roles would be:
+
+For climate activist: ["Hero", "Sage", "Winner"]
+For corporativist/capitalist: ["Villain", "Fool", "Loser"]
+
+Wait, but need to check if the meme supports each role. The climate activist is shown as the one with the correct information, so Sage is appropriate. They're also portrayed as the one with the moral high ground, so Hero. They're taking action, so Winner. 
+
+The corporativist/capitalist is shown as the one deflecting blame, so Villain (moral bad). They don't understand the connection, so Fool (intellectual bad). They're not taking responsibility, so Loser (power bad).
+
+So the final JSON array would be:
+
+[
+  {
+    "identity": "climate activist",
+    "roles": ["Hero", "Sage", "Winner"]
+  },
+  {
+    "identity": "corporativist/capitalist",
+    "roles": ["Villain", "Fool", "Loser"]
+  }
+]
+
+Wait, but let's make sure we're not adding roles that aren't supported. The meme shows the climate activist as the one with the facts, so Sage is right. The corporativist is the one who's wrong, so Fool and Villain. Also, the corporativist is portrayed as not taking responsibility, so Loser. 
+
+Yes, that seems to fit.</think><answer>[
+  {
+    "identity": "climate activist",
+    "roles": ["Hero", "Sage", "Winner"]
+  },
+  {
+    "identity": "corporativist/capitalist",
+    "roles": ["Villain", "Fool", "Loser"]
+  }
+]

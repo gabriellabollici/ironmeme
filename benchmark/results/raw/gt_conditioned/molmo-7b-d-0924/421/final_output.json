@@ -1,0 +1,126 @@
+{
+  "image_stem": "421",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T17:03:55.890500+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Feminist",
+          "Anti feminist",
+          "Women",
+          "Men"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \"Feminist\",\n    \"Anti feminist\",\n    \"Women\",\n    \"Men\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 31,
+          "prompt_tokens": 1600,
+          "total_tokens": 1631,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 4
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "feminist",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"feminist\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 20,
+          "prompt_tokens": 1291,
+          "total_tokens": 1311,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "feminist",
+            "roles": [
+              "outgroup"
+            ]
+          },
+          {
+            "identity": "white male",
+            "roles": [
+              "hero",
+              "sage"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"feminist\",\n      \"roles\": [\"outgroup\"]\n    },\n    {\n      \"identity\": \"white male\",\n      \"roles\": [\"hero\", \"sage\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 55,
+          "prompt_tokens": 1478,
+          "total_tokens": 1533,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Feminist",
+      "Anti feminist",
+      "Women",
+      "Men"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "feminist",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "feminist",
+        "roles": [
+          "outgroup"
+        ]
+      },
+      {
+        "identity": "white male",
+        "roles": [
+          "hero",
+          "sage"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+# Lenient-score aliases. NOT used for the main results.
+#
+# Only read when recompute_all_metrics.py / format_predictions.py is run with
+# --aliases src/dataset_construction/labels/aliases.yaml; that score goes to
+# benchmark/results/metrics/gt_conditioned_lenient/ and is reported separately.
+#
+# Keys are raw model strings (matched with the same case/hyphen/underscore/
+# space/plural rule as the strict score); values must be inventory labels.
+# Unlike the strict IDENTITY_ALIASES in labels/__init__.py, entries here may be
+# semantic mappings.
+#
+# Candidates, commented out: the step-1 prompt's own MAPPING & ABSTRACTION
+# examples, which are among the most frequent strings the strict rule discards
+# (see benchmark/results/diagnostics/discarded_labels_top20.csv). Where the prompt
+# offers two umbrella labels, pick one or leave it out.
+
+identities: {}
+  # "Extinction Rebellion": "Climate activist"
+  # "Eco-activist": "Climate activist"
+  # "Climate Striker": "Climate activist"
+  # "Neoconservative": "Conservative"
+  # "Alt-Lite": "Conservative"
+  # "Neoliberal": "Liberal"                  # prompt: "Liberal" or "Corporativist/capitalist"
+  # "Classical Liberal": "Liberal"
+  # "Capitalist": "Corporativist/capitalist" # prompt: "Liberal" or "Corporativist/capitalist"
+  # "Communist": "Left wing"                 # prompt: "Left wing" or "Anticapitalist"
+  # "Fascist": "Right wing"                  # prompt: "Right-wing" or "Authoritarian"
+  # "Government": "Politicians/government"
+  # "Politicians": "Politicians/government"
+
+viewpoints: {}
+
+roles: {}

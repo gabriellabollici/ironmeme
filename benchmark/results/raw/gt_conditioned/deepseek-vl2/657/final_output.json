@@ -1,0 +1,114 @@
+{
+  "image_stem": "657",
+  "model": "deepseek-vl2",
+  "timestamp": "2026-08-21T12:59:20.471383+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "White people",
+          "Anti racist"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"White people\",\"Anti racist\"]}",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 15,
+          "prompt_tokens": 2067,
+          "total_tokens": 2082,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "anti-racist",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "white people",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"anti-racist\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"white people\", \"viewpoint\": \"ingroup\"} ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 36,
+          "prompt_tokens": 1765,
+          "total_tokens": 1801,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "anti-racist",
+          "roles": [
+            "Villain",
+            "Loser"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"anti-racist\",     \"roles\": [\"Villain\", \"Loser\"]   } ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 30,
+          "prompt_tokens": 1968,
+          "total_tokens": 1998,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "White people",
+      "Anti racist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "anti-racist",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "white people",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "anti-racist",
+      "roles": [
+        "Villain",
+        "Loser"
+      ]
+    }
+  ]
+}

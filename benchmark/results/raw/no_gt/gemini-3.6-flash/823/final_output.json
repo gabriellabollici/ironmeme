@@ -1,0 +1,124 @@
+{
+  "image_stem": "823",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T18:35:01.374092+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Politicians/government",
+          "Climate activist"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Politicians/government\",\n    \"Climate activist\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 34,
+          "prompt_tokens": 1662,
+          "total_tokens": 2084,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Politicians/government",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Climate activist",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[\n  {\n    \"identity\": \"Politicians/government\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"Climate activist\",\n    \"viewpoint\": \"ingroup\"\n  }\n]",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 55,
+          "prompt_tokens": 1384,
+          "total_tokens": 1759,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Politicians/government",
+          "roles": [
+            "Villain"
+          ]
+        },
+        {
+          "identity": "Climate activist",
+          "roles": [
+            "Hero"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Politicians/government\",\n    \"roles\": [\n      \"Villain\"\n    ]\n  },\n  {\n    \"identity\": \"Climate activist\",\n    \"roles\": [\n      \"Hero\"\n    ]\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 69,
+          "prompt_tokens": 1562,
+          "total_tokens": 2266,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Politicians/government",
+      "Climate activist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Politicians/government",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Climate activist",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Politicians/government",
+      "roles": [
+        "Villain"
+      ]
+    },
+    {
+      "identity": "Climate activist",
+      "roles": [
+        "Hero"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+[project]
+name = "iron-meme-benchmark"
+version = "0.1.0"
+description = "IRONMeme: a benchmark for social identity, viewpoint and narrative-role understanding in memes"
+readme = "README.md"
+requires-python = ">=3.14"
+# Only what both environments below can share; the numeric stack lives in the
+# `analysis` group because vLLM caps numpy/transformers below its versions.
+dependencies = [
+    "beautifulsoup4>=4.12.3",
+    "pyyaml>=6.0.2",
+    "requests>=2.34.2",
+    "ruff>=0.15.22",
+    "tqdm>=4.66.0",
+]
+
+[dependency-groups]
+# Local environment: dataset creation, template identification, evaluation and
+# analysis. Installed by default (`uv sync`, `uv run`).
+analysis = [
+    "accelerate>=1.14.0",
+    "faiss-cpu>=1.14.3",
+    "imagehash>=4.3.2",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.1",
+    "pandas>=2.2.0",
+    "pillow>=12.3.0",
+    "pyarrow>=16.0.0",
+    "scikit-learn>=1.9.0",
+    "seaborn>=0.13.2",
+    "torch>=2.13.0",
+    "torchvision>=0.28.0",
+    "transformers>=5.14.1",
+]
+# OpenAI-compatible client for the inference pipeline. Part of both
+# environments: locally for hosted-API runs (src/slurm/run_gemini_no_gt.sh,
+# run_kimi_k3.sh), on the cluster for talking to the local vLLM server.
+api = [
+    # vllm's tool_parsers imports NamespaceTool from openai.types.responses,
+    # added in openai-python 2.41.0. The floor makes pip upgrade an older
+    # already-installed openai instead of leaving it as-is.
+    "openai>=2.41.0",
+    "python-dotenv",
+]
+# OCR (dataset_construction/extract_ocr.py), opt-in: `uv sync --group ocr`.
+ocr = [
+    "easyocr>=1.7",
+]
+# Tests (src/tests): `uv run pytest`.
+dev = [
+    "pytest>=8",
+]
+# Cluster environment: running the VLMs (experiments.inference and
+# src/slurm/). Installed there with `pip install --group inference`, see
+# src/slurm/install_inference_deps.sh.
+inference = [
+    { include-group = "api" },
+    "requests",
+    "Pillow",
+    "pyyaml",
+    # vLLM rather than sglang: sglang's precompiled sgl-kernel wheels dropped
+    # SM80 (A100) support in every release that serves Qwen3-VL
+    # (sgl-project/sglang#11421); vLLM is the backend Qwen recommends for
+    # Qwen3-VL on A100 (https://github.com/QwenLM/Qwen3-VL: "vllm>=0.11.0").
+    "vllm>=0.11.0",
+]
+
+[tool.uv]
+default-groups = ["analysis", "api", "dev"]
+# vLLM needs numpy<2.5 and its own transformers/torch pins, so the two groups
+# are resolved as separate environments in uv.lock and never installed together.
+conflicts = [[{ group = "analysis" }, { group = "inference" }]]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+# src/ holds the three packages and paths.py directly (no wrapper package).
+only-include = ["src/dataset_construction", "src/experiments", "src/benchmark_analysis", "src/paths.py"]
+sources = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["src/tests"]
+markers = ["slow: recomputes every reported metric (~45 s); skip with -m 'not slow'"]

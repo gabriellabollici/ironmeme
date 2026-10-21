@@ -1,0 +1,174 @@
+{
+  "image_stem": "865",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T19:25:20.091176+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          " right wing",
+          " climate activist",
+          " climate skeptic/denier",
+          " left wing"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \" right wing\",\n    \" climate activist\",\n    \" climate skeptic/denier\",\n    \" left wing\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 35,
+          "prompt_tokens": 1600,
+          "total_tokens": 1635,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 4
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "corporativist/capitalist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "corporativist/capitalist",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"corporativist/capitalist\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"corporativist/capitalist\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 46,
+          "prompt_tokens": 1301,
+          "total_tokens": 1347,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          "corporativist/capitalist",
+          "environmentalist",
+          "public",
+          "Exxon"
+        ],
+        "roles": [
+          {
+            "identity": "corporativist/capitalist",
+            "roles": [
+              "Villain",
+              "Outgroup"
+            ]
+          },
+          {
+            "identity": "environmentalist",
+            "roles": [
+              "Hero",
+              "Ingroup"
+            ]
+          },
+          {
+            "identity": "public",
+            "roles": [
+              "Outgroup"
+            ]
+          },
+          {
+            "identity": "Exxon",
+            "roles": [
+              "Villain",
+              "Outgroup"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    \"corporativist/capitalist\",\n    \"environmentalist\",\n    \"public\",\n    \"Exxon\"\n  ],\n  \"roles\": [\n    {\n      \"identity\": \"corporativist/capitalist\",\n      \"roles\": [\"Villain\", \"Outgroup\"]\n    },\n    {\n      \"identity\": \"environmentalist\",\n      \"roles\": [\"Hero\", \"Ingroup\"]\n    },\n    {\n      \"identity\": \"public\",\n      \"roles\": [\"Outgroup\"]\n    },\n    {\n      \"identity\": \"Exxon\",\n      \"roles\": [\"Villain\", \"Outgroup\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 141,
+          "prompt_tokens": 1483,
+          "total_tokens": 1624,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      " right wing",
+      " climate activist",
+      " climate skeptic/denier",
+      " left wing"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "corporativist/capitalist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "corporativist/capitalist",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      "corporativist/capitalist",
+      "environmentalist",
+      "public",
+      "Exxon"
+    ],
+    "roles": [
+      {
+        "identity": "corporativist/capitalist",
+        "roles": [
+          "Villain",
+          "Outgroup"
+        ]
+      },
+      {
+        "identity": "environmentalist",
+        "roles": [
+          "Hero",
+          "Ingroup"
+        ]
+      },
+      {
+        "identity": "public",
+        "roles": [
+          "Outgroup"
+        ]
+      },
+      {
+        "identity": "Exxon",
+        "roles": [
+          "Villain",
+          "Outgroup"
+        ]
+      }
+    ]
+  }
+}

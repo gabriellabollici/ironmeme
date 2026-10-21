@@ -1,0 +1,19 @@
+*.pyc
+*.log
+# raw data (annotations, scraped/reused memes, templates): local only
+benchmark/source_datasets/
+.DS_Store
+__pycache__/
+# raw per-image outputs of iron_meme_benchmark.experiments.inference.run_pipeline
+benchmark/out/
+benchmark/out_no_gt/
+# slurm job logs and model caches
+logs/
+.hf_cache/
+benchmark/results/raw/gt_conditioned/vllm_logs/
+hf_home/
+
+# Secrets (API keys) -- never commit
+.env
+# temporary folder of an interrupted build_benchmark run
+benchmark/*.building/

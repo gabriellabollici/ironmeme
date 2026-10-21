@@ -1,0 +1,144 @@
+{
+  "image_stem": "643",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T18:06:55.145820+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          " right wing",
+          " climate activist",
+          " clean energy advocate",
+          " left wing"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \" right wing\",\n    \" climate activist\",\n    \" clean energy advocate\",\n    \" left wing\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 33,
+          "prompt_tokens": 1544,
+          "total_tokens": 1577,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 4
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "nuclear energy advocate",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "environmentalist",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"nuclear energy advocate\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"environmentalist\", \"viewpoint\": \"ingroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 36,
+          "prompt_tokens": 1237,
+          "total_tokens": 1273,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "nuclear energy advocate",
+            "roles": [
+              "Ingroup"
+            ]
+          },
+          {
+            "identity": "wind energy",
+            "roles": [
+              "Outgroup"
+            ]
+          }
+        ],
+        "narrative_framework": {
+          "moral_dimension": "Moral",
+          "intellectual_dimension": "Intellectual",
+          "physical_dimension": "Physical",
+          "power_dimension": "Power"
+        }
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"nuclear energy advocate\",\n      \"roles\": [\"Ingroup\"]\n    },\n    {\n      \"identity\": \"wind energy\",\n      \"roles\": [\"Outgroup\"]\n    }\n  ],\n  \"narrative_framework\": {\n    \"moral_dimension\": \"Moral\",\n    \"intellectual_dimension\": \"Intellectual\",\n    \"physical_dimension\": \"Physical\",\n    \"power_dimension\": \"Power\"\n  }\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 99,
+          "prompt_tokens": 1422,
+          "total_tokens": 1521,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      " right wing",
+      " climate activist",
+      " clean energy advocate",
+      " left wing"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "nuclear energy advocate",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "environmentalist",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "nuclear energy advocate",
+        "roles": [
+          "Ingroup"
+        ]
+      },
+      {
+        "identity": "wind energy",
+        "roles": [
+          "Outgroup"
+        ]
+      }
+    ],
+    "narrative_framework": {
+      "moral_dimension": "Moral",
+      "intellectual_dimension": "Intellectual",
+      "physical_dimension": "Physical",
+      "power_dimension": "Power"
+    }
+  }
+}

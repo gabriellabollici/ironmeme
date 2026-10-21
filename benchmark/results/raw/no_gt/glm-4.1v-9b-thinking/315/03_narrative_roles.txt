@@ -1,0 +1,73 @@
+<think>Got it, let's analyze the meme step by step. First, identify the social identities: Citizens (labeled "CONSUMERS") and Corporativist/capitalist (labeled "OIL CORPORATIONS"). Their viewpoints are ingroup and outgroup respectively.
+
+First, for "Citizens" (CONSUMERS) with viewpoint "ingroup":
+- Evaluate the evaluative dimension. The meme shows them pointing at oil corporations to stop buying oil. So from the citizens' perspective, they're taking action against corporations. The dimension could be Moral (since it's about stopping extraction/buying, which is a moral stance). Then, the portrayal: citizens are probably seen as Hero (Superior/Positive) because they're taking a stand, or Victim? Wait, no—ingroup usually has Victim or Hero. Here, citizens are the ones demanding change, so maybe Hero. Wait, let's check the dimensions.
+
+Moral dimension: Hero (Superior/Positive) is for morally good. Citizens are urging to stop oil, which is a moral stance. So role could be Hero. Also, Power dimension: Winner? If they're successful in their demand, but the meme shows them confronting corporations, so maybe Winner. Wait, need to check the roles.
+
+For "Citizens" (CONSUMERS):
+Viewpoint is ingroup. The meme has them pointing at corporations to stop buying oil. So their role could be Hero (Moral, Superior/Positive) because they're advocating for a moral cause. Also, maybe Sage (Intellectual) if they're knowledgeable about the issue, but the meme doesn't show that. Let's focus on what's clear.
+
+For "Corporativist/capitalist" (OIL CORPORATIONS) with viewpoint "outgroup":
+They're the ones being told to stop extracting oil, and consumers are telling them to stop buying. So the corporations are the target of the demand. The evaluative dimension could be Moral (since they're extracting oil, which might be seen as harmful). The portrayal would be Villain (Inferior/Negative) because they're the ones being told to stop, implying they're doing something wrong. Also, Power dimension: Loser (Inferior/Negative) because they're being told what to do, maybe seen as defeated.
+
+Wait, let's structure each identity:
+
+First identity: "Citizens" (CONSUMERS)
+- Evaluative dimension: Moral (since it's about stopping extraction/buying, which is a moral issue)
+- Portrayal: Superior/Positive → Hero
+- Also, maybe Power dimension: Winner (if they're successful in their demand)
+So roles: ["Hero", "Winner"]
+
+Second identity: "Corporativist/capitalist" (OIL CORPORATIONS)
+- Evaluative dimension: Moral (extracting oil might be seen as harmful)
+- Portrayal: Inferior/Negative → Villain
+- Also, Power dimension: Loser (being told to stop, so not in power)
+So roles: ["Villain", "Loser"]
+
+Wait, but need to check if the meme supports these. The meme shows consumers (citizens) confronting oil corporations, telling them to stop buying/selling. So citizens are the ones taking action, so they're heroes. Corporations are the ones being told to stop, so they're villains. That makes sense.
+
+Now, format into JSON array:
+
+[
+  {
+    "identity": "Citizens",
+    "roles": ["Hero", "Winner"]
+  },
+  {
+    "identity": "Corporativist/capitalist",
+    "roles": ["Villain", "Loser"]
+  }
+]
+
+Wait, but the identity names are "Citizens" (from the label "CONSUMERS") and "Corporativist/capitalist" (from "OIL CORPORATIONS"). Let's confirm the labels:
+
+The meme has "CONSUMERS" labeled on the left Spider-Man (NYPD truck) and "OIL CORPORATIONS" on the right Spider-Man. So the identities are "Citizens" (since consumers are citizens) and "Corporativist/capitalist" (oil corporations are part of capitalism/corporatism).
+
+So the JSON should be:
+
+[
+  {
+    "identity": "Citizens",
+    "roles": ["Hero", "Winner"]
+  },
+  {
+    "identity": "Corporativist/capitalist",
+    "roles": ["Villain", "Loser"]
+  }
+]
+
+Wait, but let's check the viewpoint. Citizens have ingroup viewpoint, so their role as Hero (ingroup usually has Victim or Hero; Hero is positive, Victim is positive but oppressed). Here, citizens are taking action, so Hero. Corporations have outgroup viewpoint, so Villain (outgroup usually has Villain or Loser; Villain is negative, Loser is negative). So that fits.
+
+Is there any other role? Let's see. For Citizens, could they be Sage? The meme doesn't show them as knowledgeable, just demanding action. So maybe not. For Corporations, could they be Monster? The meme doesn't dehumanize them, just portrays them as the target of the demand. So Villain and Loser are better.
+
+So the final JSON should be as above.</think><answer>[
+  {
+    "identity": "Citizens",
+    "roles": ["Hero", "Winner"]
+  },
+  {
+    "identity": "Corporativist/capitalist",
+    "roles": ["Villain", "Loser"]
+  }
+]

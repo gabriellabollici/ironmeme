@@ -1,0 +1,124 @@
+{
+  "image_stem": "638",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T23:11:28.742696+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Corporativist/capitalist",
+          "Climate activist"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\"Corporativist/capitalist\", \"Climate activist\"]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 29,
+          "prompt_tokens": 4829,
+          "total_tokens": 4858,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "anticapitalist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "corporativist/capitalist",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"anticapitalist\", \"viewpoint\": \"ingroup\"},\n    {\"identity\": \"corporativist/capitalist\", \"viewpoint\": \"outgroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 47,
+          "prompt_tokens": 4518,
+          "total_tokens": 4565,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "anticapitalist",
+          "roles": [
+            "Victim"
+          ]
+        },
+        {
+          "identity": "corporativist/capitalist",
+          "roles": [
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"anticapitalist\",\n    \"roles\": [\"Victim\"]\n  },\n  {\n    \"identity\": \"corporativist/capitalist\",\n    \"roles\": [\"Villain\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 56,
+          "prompt_tokens": 4735,
+          "total_tokens": 4791,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Corporativist/capitalist",
+      "Climate activist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "anticapitalist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "corporativist/capitalist",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "anticapitalist",
+      "roles": [
+        "Victim"
+      ]
+    },
+    {
+      "identity": "corporativist/capitalist",
+      "roles": [
+        "Villain"
+      ]
+    }
+  ]
+}

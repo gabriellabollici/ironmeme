@@ -1,0 +1,138 @@
+{
+  "image_stem": "478",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T17:19:10.761429+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          " left wing",
+          " climate activist",
+          " left wing",
+          " climate activist"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \" left wing\",\n    \" climate activist\",\n    \" left wing\",\n    \" climate activist\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 32,
+          "prompt_tokens": 1368,
+          "total_tokens": 1400,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 4
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "corporativist/capitalist",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "corporativist/capitalist",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"corporativist/capitalist\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"corporativist/capitalist\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 46,
+          "prompt_tokens": 1069,
+          "total_tokens": 1115,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "corporativist/capitalist",
+            "roles": [
+              "villain",
+              "outgroup"
+            ]
+          },
+          {
+            "identity": "environmentalist",
+            "roles": [
+              "hero",
+              "ingroup"
+            ]
+          }
+        ],
+        "evaluationFramework": "Moral"
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"corporativist/capitalist\",\n      \"roles\": [\"villain\", \"outgroup\"]\n    },\n    {\n      \"identity\": \"environmentalist\",\n      \"roles\": [\"hero\", \"ingroup\"]\n    }\n  ],\n  \"evaluationFramework\": \"Moral\"\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 74,
+          "prompt_tokens": 1251,
+          "total_tokens": 1325,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      " left wing",
+      " climate activist",
+      " left wing",
+      " climate activist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "corporativist/capitalist",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "corporativist/capitalist",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "corporativist/capitalist",
+        "roles": [
+          "villain",
+          "outgroup"
+        ]
+      },
+      {
+        "identity": "environmentalist",
+        "roles": [
+          "hero",
+          "ingroup"
+        ]
+      }
+    ],
+    "evaluationFramework": "Moral"
+  }
+}

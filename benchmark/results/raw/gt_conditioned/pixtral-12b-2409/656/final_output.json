@@ -1,0 +1,124 @@
+{
+  "image_stem": "656",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T23:11:57.518930+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Racist",
+          "Anti racist"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\"Racist\", \"Anti racist\"]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 23,
+          "prompt_tokens": 1263,
+          "total_tokens": 1286,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "people of color",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "racist",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"people of color\", \"viewpoint\": \"outgroup\"},\n    {\"identity\": \"racist\", \"viewpoint\": \"ingroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 40,
+          "prompt_tokens": 938,
+          "total_tokens": 978,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "people of color",
+          "roles": [
+            "Victim"
+          ]
+        },
+        {
+          "identity": "racist",
+          "roles": [
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"people of color\",\n    \"roles\": [\"Victim\"]\n  },\n  {\n    \"identity\": \"racist\",\n    \"roles\": [\"Villain\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 49,
+          "prompt_tokens": 1162,
+          "total_tokens": 1211,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Racist",
+      "Anti racist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "people of color",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "racist",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "people of color",
+      "roles": [
+        "Victim"
+      ]
+    },
+    {
+      "identity": "racist",
+      "roles": [
+        "Villain"
+      ]
+    }
+  ]
+}

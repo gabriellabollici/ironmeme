@@ -1,0 +1,102 @@
+{
+  "image_stem": "765",
+  "model": "qwen2.5-vl-7b-instruct",
+  "timestamp": "2026-08-25T21:16:29.919697+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Anti-racist",
+          "Racist"
+        ]
+      },
+      "raw_text": "{\"social_identities\": [\"Anti-racist\", \"Racist\"]}",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 15,
+          "prompt_tokens": 1971,
+          "total_tokens": 1986,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "conspiracy theorist",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"conspiracy theorist\", \"viewpoint\": \"ingroup\"}]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 19,
+          "prompt_tokens": 1664,
+          "total_tokens": 1683,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identity": "conspiracy theorist",
+        "roles": [
+          "Villain",
+          "Loser"
+        ]
+      },
+      "raw_text": "[{\"identity\": \"conspiracy theorist\", \"roles\": [\"Villain\", \"Loser\"]}]\"",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 24,
+          "prompt_tokens": 1849,
+          "total_tokens": 1873,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Anti-racist",
+      "Racist"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "conspiracy theorist",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identity": "conspiracy theorist",
+    "roles": [
+      "Villain",
+      "Loser"
+    ]
+  }
+}

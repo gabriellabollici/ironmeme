@@ -1,0 +1,196 @@
+{
+  "image_stem": "776",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T18:51:44.072011+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          " right wing",
+          "Liberal",
+          "Media elites",
+          "Celebrity",
+          "Climate activist",
+          "Climate disengaged"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \" right wing\",\n    \"Liberal\",\n    \"Media elites\",\n    \"Celebrity\",\n    \"Climate activist\",\n    \"Climate disengaged\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 44,
+          "prompt_tokens": 1600,
+          "total_tokens": 1644,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 6
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "media elites",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "celebrities",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "mainstream media",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "climate crisis",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "literary mate dating",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"media elites\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"celebrities\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"mainstream media\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"climate crisis\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"literary mate dating\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 83,
+          "prompt_tokens": 1289,
+          "total_tokens": 1372,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 5
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "media elites",
+            "roles": [
+              "Moral",
+              "Intellectual"
+            ],
+            "viewpoint": "outgroup"
+          },
+          {
+            "identity": "climate crisis",
+            "roles": [
+              "Physical"
+            ],
+            "viewpoint": "outgroup"
+          },
+          {
+            "identity": "celebrities",
+            "roles": [
+              "Moral",
+              "Intellectual"
+            ],
+            "viewpoint": "outgroup"
+          },
+          {
+            "identity": "daters",
+            "roles": [
+              "Physical"
+            ],
+            "viewpoint": "ingroup"
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"media elites\",\n      \"roles\": [\"Moral\", \"Intellectual\"],\n      \"viewpoint\": \"outgroup\"\n    },\n    {\n      \"identity\": \"climate crisis\",\n      \"roles\": [\"Physical\"],\n      \"viewpoint\": \"outgroup\"\n    },\n    {\n      \"identity\": \"celebrities\",\n      \"roles\": [\"Moral\", \"Intellectual\"],\n      \"viewpoint\": \"outgroup\"\n    },\n    {\n      \"identity\": \"daters\",\n      \"roles\": [\"Physical\"],\n      \"viewpoint\": \"ingroup\"\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 132,
+          "prompt_tokens": 1477,
+          "total_tokens": 1609,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 4
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      " right wing",
+      "Liberal",
+      "Media elites",
+      "Celebrity",
+      "Climate activist",
+      "Climate disengaged"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "media elites",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "celebrities",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "mainstream media",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "climate crisis",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "literary mate dating",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "media elites",
+        "roles": [
+          "Moral",
+          "Intellectual"
+        ],
+        "viewpoint": "outgroup"
+      },
+      {
+        "identity": "climate crisis",
+        "roles": [
+          "Physical"
+        ],
+        "viewpoint": "outgroup"
+      },
+      {
+        "identity": "celebrities",
+        "roles": [
+          "Moral",
+          "Intellectual"
+        ],
+        "viewpoint": "outgroup"
+      },
+      {
+        "identity": "daters",
+        "roles": [
+          "Physical"
+        ],
+        "viewpoint": "ingroup"
+      }
+    ]
+  }
+}

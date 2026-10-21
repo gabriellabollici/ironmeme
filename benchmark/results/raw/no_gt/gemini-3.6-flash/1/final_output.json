@@ -1,0 +1,142 @@
+{
+  "image_stem": "1",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T13:57:32.609372+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Politicians/government",
+          "Democrat",
+          "Republican"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Politicians/government\",\n    \"Democrat\",\n    \"Republican\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 39,
+          "prompt_tokens": 1686,
+          "total_tokens": 2214,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Politicians/government",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Democrat",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Republican",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Politicians/government\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"Democrat\",\n    \"viewpoint\": \"outgroup\"\n  },\n  {\n    \"identity\": \"Republican\",\n    \"viewpoint\": \"ingroup\"\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 84,
+          "prompt_tokens": 1414,
+          "total_tokens": 2692,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Politicians/government",
+          "roles": []
+        },
+        {
+          "identity": "Democrat",
+          "roles": [
+            "Fool"
+          ]
+        },
+        {
+          "identity": "Republican",
+          "roles": [
+            "Winner"
+          ]
+        }
+      ],
+      "raw_text": "[\n  {\n    \"identity\": \"Politicians/government\",\n    \"roles\": []\n  },\n  {\n    \"identity\": \"Democrat\",\n    \"roles\": [\n      \"Fool\"\n    ]\n  },\n  {\n    \"identity\": \"Republican\",\n    \"roles\": [\n      \"Winner\"\n    ]\n  }\n]",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 83,
+          "prompt_tokens": 1600,
+          "total_tokens": 2736,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Politicians/government",
+      "Democrat",
+      "Republican"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Politicians/government",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Democrat",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Republican",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Politicians/government",
+      "roles": []
+    },
+    {
+      "identity": "Democrat",
+      "roles": [
+        "Fool"
+      ]
+    },
+    {
+      "identity": "Republican",
+      "roles": [
+        "Winner"
+      ]
+    }
+  ]
+}

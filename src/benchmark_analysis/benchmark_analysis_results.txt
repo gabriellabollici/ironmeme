@@ -1,0 +1,483 @@
+================================================================================
+FULL BENCHMARK DATAFRAME (all columns and rows after processing):
+================================================================================
+     image_filename  ... narrative_roles_gt
+0             1.png  ...              loser
+1             1.png  ...             winner
+2             2.jpg  ...               fool
+3             2.jpg  ...              loser
+4             3.jpg  ...             winner
+...             ...  ...                ...
+1433      1108.jpeg  ...            villain
+1434      1108.jpeg  ...             victim
+1435      1109.jpeg  ...              loser
+1436      1109.jpeg  ...               sage
+1437      1110.jpeg  ...            villain
+
+[1438 rows x 7 columns]
+
+================================================================================
+FIRST 5 ROWS (preview):
+================================================================================
+  image_filename                ground_truth  ... viewpoint_gt narrative_roles_gt
+0          1.png    democrat-out_group-loser  ...    out_group              loser
+1          1.png  republican-in_group-winner  ...     in_group             winner
+2          2.jpg        women-out_group-fool  ...    out_group               fool
+3          2.jpg       women-out_group-loser  ...    out_group              loser
+4          3.jpg         men-in_group-winner  ...     in_group             winner
+
+[5 rows x 7 columns]
+
+================================================================================
+COLUMN NAMES IN THE DATAFRAME:
+================================================================================
+['image_filename', 'ground_truth', 'origin', 'template_name', 'social_identity_gt', 'viewpoint_gt', 'narrative_roles_gt']
+
+================================================================================
+TEMPLATES PER SOURCE ORIGIN (how many samples come from each source dataset):
+================================================================================
+origin
+MAMI                   513
+r/ClimateMemes         375
+Constraint22           204
+r/ConservativeMemes    114
+FigMemes                84
+Clime                   79
+r/TrollXChromosomes     69
+Name: count, dtype: int64
+
+================================================================================
+MEMES PER DISCUSSION DOMAIN (each meme counted once, percentage relative to the whole benchmark):
+================================================================================
+Total memes in benchmark: 1110
+gender discussions --> 448 memes (40.36%)
+climate discussions --> 352 memes (31.71%)
+political discussions --> 241 memes (21.71%)
+other/undetermined --> 69 memes (6.22%)
+
+Breakdown by source origin within each domain:
+
+--- gender discussions ---
+  MAMI --> 411 memes
+  r/TrollXChromosomes --> 37 memes
+
+--- climate discussions ---
+  r/ClimateMemes --> 286 memes
+  Clime --> 66 memes
+
+--- political discussions ---
+  Constraint22 --> 162 memes
+  r/ConservativeMemes --> 79 memes
+
+--- other/undetermined ---
+  FigMemes --> 69 memes
+
+================================================================================
+REUSED BENCHMARKS vs SCRAPED SOURCES (each meme counted once, percentage relative to the whole benchmark):
+================================================================================
+Reused benchmarks --> 708 memes (63.78%)
+Scraped (subreddits) --> 402 memes (36.22%)
+
+Breakdown by source origin:
+  MAMI (reused benchmark) --> 411 memes
+  r/ClimateMemes (scraped) --> 286 memes
+  Constraint22 (reused benchmark) --> 162 memes
+  r/ConservativeMemes (scraped) --> 79 memes
+  FigMemes (reused benchmark) --> 69 memes
+  Clime (reused benchmark) --> 66 memes
+  r/TrollXChromosomes (scraped) --> 37 memes
+
+================================================================================
+TOP 10 MOST COMMON TEMPLATES (how many memes use each template):
+================================================================================
+Steven Crowder's "Change My Mind" Campus Sign --> 28 memes
+Drakeposting --> 28 memes
+Distracted Boyfriend --> 26 memes
+Socially Awesome Awkward Penguin --> 25 memes
+Confession Bear --> 25 memes
+Angry NPC Wojak --> 25 memes
+Expanding Brain --> 17 memes
+This Is Fine --> 17 memes
+My Parents Are Dead / Batman Slapping Robin --> 15 memes
+Two Buttons --> 14 memes
+
+================================================================================
+TOTAL UNIQUE TEMPLATES (how many distinct template names exist across the entire benchmark):
+================================================================================
+Total unique templates: 347
+
+================================================================================
+SAMPLES PER TEMPLATE (how many images use each template):
+================================================================================
+template_name
+Angry NPC Wojak                            39
+Socially Awesome Awkward Penguin           35
+Distracted Boyfriend                       34
+Confession Bear                            32
+Drakeposting                               32
+                                           ..
+David Beckham's "Be Honest. Thank You."     1
+Skeletor Facts                              1
+Hard Pill to Swallow                        1
+Train Hitting School Bus                    1
+Ima Keep It Real With U Chief               1
+Name: count, Length: 347, dtype: int64
+
+================================================================================
+SOCIAL IDENTITY COUNTS PER ORIGIN DATASET (how many times each social identity appears, broken down by source):
+================================================================================
+
+--- Clime ---
+  climate activist --> 34 times
+  corporativist/capitalist --> 10 times
+  climate change skeptic/denier --> 8 times
+  anticapitalist --> 8 times
+  national identity --> 3 times
+  americans --> 2 times
+  politicians/government --> 2 times
+  climate disengaged --> 2 times
+  citizens --> 2 times
+  clean energy advocate --> 2 times
+  world leaders/elites --> 1 times
+  media elites --> 1 times
+  racist --> 1 times
+  celebrity --> 1 times
+  democrat --> 1 times
+  plant based/vegan --> 1 times
+
+--- Constraint22 ---
+  democrat --> 41 times
+  climate activist --> 36 times
+  republican --> 27 times
+  corporativist/capitalist --> 15 times
+  green party supporter --> 11 times
+  climate disengaged --> 8 times
+  libertarian --> 7 times
+  left-wing --> 7 times
+  liberal --> 5 times
+  voter --> 5 times
+  citizens --> 4 times
+  national identity --> 4 times
+  politicians/government --> 4 times
+  climate change skeptic/denier --> 4 times
+  conservative --> 3 times
+  politically disillusioned --> 3 times
+  media elites --> 3 times
+  plant based/vegan --> 3 times
+  progressive --> 2 times
+  people of color --> 2 times
+  anticapitalist --> 2 times
+  world leaders/elites --> 2 times
+  abstentionist --> 1 times
+  right-wing --> 1 times
+  nationalist/regionalist --> 1 times
+  anti-racist --> 1 times
+  women --> 1 times
+  anti-lgtbq+ --> 1 times
+
+--- FigMemes ---
+  national identity --> 13 times
+  republican --> 9 times
+  lgtbq+ rights supporter --> 8 times
+  democrat --> 7 times
+  people of color --> 6 times
+  women --> 5 times
+  conservative --> 5 times
+  white people --> 4 times
+  racist --> 3 times
+  anti-lgtbq+ --> 3 times
+  left-wing --> 3 times
+  corporativist/capitalist --> 3 times
+  liberal --> 2 times
+  men --> 2 times
+  conspiracy theorist --> 2 times
+  progressive --> 1 times
+  misogynist/male supremacist --> 1 times
+  anti-racist --> 1 times
+  feminist --> 1 times
+  politicians/government --> 1 times
+  right-wing --> 1 times
+  authoritarian --> 1 times
+  anticapitalist --> 1 times
+  nationalist/regionalist --> 1 times
+
+--- MAMI ---
+  women --> 274 times
+  men --> 96 times
+  feminist --> 46 times
+  sex-worker --> 26 times
+  lgtbq+ rights supporter --> 11 times
+  national identity --> 9 times
+  democrat --> 6 times
+  misogynist/male supremacist --> 6 times
+  anti-feminist --> 5 times
+  anti-lgtbq+ --> 5 times
+  republican --> 5 times
+  politicians/government --> 4 times
+  corporativist/capitalist --> 4 times
+  people of color --> 3 times
+  politically disillusioned --> 2 times
+  liberal --> 2 times
+  conservative --> 1 times
+  progressive --> 1 times
+  climate activist --> 1 times
+  citizens --> 1 times
+  right-wing --> 1 times
+  anti-racist --> 1 times
+  media elites --> 1 times
+  conspiracy theorist --> 1 times
+  nuclear energy advocate --> 1 times
+
+--- r/ClimateMemes ---
+  climate activist --> 144 times
+  corporativist/capitalist --> 68 times
+  climate disengaged --> 28 times
+  climate change skeptic/denier --> 26 times
+  politicians/government --> 19 times
+  national identity --> 15 times
+  citizens --> 9 times
+  anticapitalist --> 7 times
+  liberal --> 7 times
+  nuclear energy advocate --> 7 times
+  republican --> 6 times
+  left-wing --> 6 times
+  media elites --> 6 times
+  clean energy advocate --> 5 times
+  plant based/vegan --> 5 times
+  world leaders/elites --> 4 times
+  right-wing --> 3 times
+  democrat --> 3 times
+  conservative --> 2 times
+  conspiracy theorist --> 2 times
+  white people --> 1 times
+  men --> 1 times
+  celebrity --> 1 times
+
+--- r/ConservativeMemes ---
+  democrat --> 41 times
+  republican --> 21 times
+  left-wing --> 6 times
+  corporativist/capitalist --> 6 times
+  politicians/government --> 5 times
+  national identity --> 5 times
+  liberal --> 4 times
+  media elites --> 4 times
+  feminist --> 3 times
+  progressive --> 2 times
+  world leaders/elites --> 2 times
+  people of color --> 2 times
+  lgtbq+ rights supporter --> 2 times
+  men --> 2 times
+  conservative --> 2 times
+  climate activist --> 1 times
+  right-wing --> 1 times
+  libertarian --> 1 times
+  white people --> 1 times
+  conspiracy theorist --> 1 times
+  racist --> 1 times
+  anti-lgtbq+ --> 1 times
+
+--- r/TrollXChromosomes ---
+  men --> 29 times
+  women --> 28 times
+  feminist --> 4 times
+  national identity --> 2 times
+  republican --> 2 times
+  right-wing --> 1 times
+  liberal --> 1 times
+  progressive --> 1 times
+  misogynist/male supremacist --> 1 times
+
+================================================================================
+TOP 10 MOST COMMON SOCIAL IDENTITIES ACROSS ALL DATASETS (the most frequently occurring social identity labels):
+================================================================================
+women --> 308 times
+climate activist --> 216 times
+men --> 130 times
+corporativist/capitalist --> 106 times
+democrat --> 99 times
+republican --> 70 times
+feminist --> 54 times
+national identity --> 51 times
+climate change skeptic/denier --> 38 times
+climate disengaged --> 38 times
+
+================================================================================
+ALL 9 NARRATIVE ROLES (how many times each narrative role appears):
+================================================================================
+villain --> 379 times
+loser --> 259 times
+fool --> 234 times
+sage --> 202 times
+victim --> 175 times
+winner --> 74 times
+monster --> 46 times
+hero --> 46 times
+charmer --> 23 times
+
+================================================================================
+TOP 10 MOST COMMON IDENTITY-ROLE ASSOCIATIONS (most frequent combinations of social identity + narrative role):
+================================================================================
+women as loser --> 140 times
+climate activist as sage --> 123 times
+corporativist/capitalist as villain --> 82 times
+women as villain --> 57 times
+men as victim --> 46 times
+democrat as villain --> 44 times
+climate activist as victim --> 38 times
+women as monster --> 33 times
+climate change skeptic/denier as fool --> 30 times
+women as fool --> 30 times
+
+================================================================================
+TOP 10 IDENTITY-VIEWPOINT ASSOCIATIONS PER DATASET (most frequent combinations of social identity + viewpoint, broken down by source):
+================================================================================
+
+--- Clime ---
+  climate activist (in_group) --> 33 times
+  corporativist/capitalist (out_group) --> 9 times
+  climate change skeptic/denier (out_group) --> 8 times
+  anticapitalist (in_group) --> 8 times
+  americans (out_group) --> 2 times
+
+--- Constraint22 ---
+  democrat (out_group) --> 37 times
+  climate activist (in_group) --> 31 times
+  republican (out_group) --> 19 times
+  corporativist/capitalist (out_group) --> 13 times
+  republican (in_group) --> 6 times
+
+--- FigMemes ---
+  national identity (out_group) --> 10 times
+  republican (out_group) --> 7 times
+  people of color (out_group) --> 5 times
+  democrat (out_group) --> 5 times
+  women (out_group) --> 4 times
+
+--- MAMI ---
+  women (out_group) --> 270 times
+  men (in_group) --> 89 times
+  feminist (out_group) --> 41 times
+  sex-worker (out_group) --> 26 times
+  lgtbq+ rights supporter (out_group) --> 10 times
+
+--- r/ClimateMemes ---
+  climate activist (in_group) --> 128 times
+  corporativist/capitalist (out_group) --> 66 times
+  climate disengaged (out_group) --> 28 times
+  climate change skeptic/denier (out_group) --> 25 times
+  politicians/government (out_group) --> 16 times
+
+--- r/ConservativeMemes ---
+  democrat (out_group) --> 41 times
+  republican (in_group) --> 17 times
+  left-wing (out_group) --> 6 times
+  corporativist/capitalist (in_group) --> 5 times
+  politicians/government (out_group) --> 5 times
+
+--- r/TrollXChromosomes ---
+  men (out_group) --> 28 times
+  women (in_group) --> 27 times
+  feminist (in_group) --> 4 times
+  national identity (out_group) --> 2 times
+  republican (out_group) --> 2 times
+
+================================================================================
+LEAST COMMON IDENTITIES (the 10 least frequently occurring social identities):
+================================================================================
+voter --> 5 times
+politically disillusioned --> 5 times
+anti-feminist --> 5 times
+racist --> 5 times
+anti-racist --> 3 times
+americans --> 2 times
+celebrity --> 2 times
+nationalist/regionalist --> 2 times
+abstentionist --> 1 times
+authoritarian --> 1 times
+
+================================================================================
+LEAST COMMON ROLES (the 10 least frequently occurring narrative roles):
+================================================================================
+villain --> 379 times
+loser --> 259 times
+fool --> 234 times
+sage --> 202 times
+victim --> 175 times
+winner --> 74 times
+monster --> 46 times
+hero --> 46 times
+charmer --> 23 times
+
+================================================================================
+TOP 15 MOST COMMON IDENTITY-VIEWPOINT-ROLE ASSOCIATIONS ACROSS THE ENTIRE DATASET:
+================================================================================
+women (out_group) as loser --> 140 times
+climate activist (in_group) as sage --> 123 times
+corporativist/capitalist (out_group) as villain --> 79 times
+women (out_group) as villain --> 57 times
+men (in_group) as victim --> 46 times
+democrat (out_group) as villain --> 43 times
+climate activist (in_group) as victim --> 38 times
+women (out_group) as monster --> 33 times
+women (out_group) as fool --> 30 times
+climate change skeptic/denier (out_group) as fool --> 30 times
+politicians/government (out_group) as villain --> 26 times
+men (in_group) as winner --> 25 times
+democrat (out_group) as loser --> 25 times
+climate disengaged (out_group) as fool --> 24 times
+climate activist (in_group) as hero --> 24 times
+
+================================================================================
+TOP 15 MOST COMMON IDENTITY-VIEWPOINT-TEMPLATE ASSOCIATIONS ACROSS THE ENTIRE DATASET:
+================================================================================
+men (in_group) in 'Socially Awesome Awkward Penguin' --> 17 times
+women (out_group) in 'Confession Bear' --> 13 times
+women (out_group) in 'Socially Awesome Awkward Penguin' --> 12 times
+climate activist (in_group) in 'My Parents Are Dead / Batman Slapping Robin' --> 10 times
+men (in_group) in 'Confession Bear' --> 9 times
+corporativist/capitalist (out_group) in 'Drakeposting' --> 9 times
+climate activist (in_group) in 'Running Away Balloon' --> 8 times
+women (out_group) in 'I Bet Hes Thinking About Other Women' --> 7 times
+men (out_group) in 'Angry NPC Wojak' --> 7 times
+men (in_group) in 'I Bet Hes Thinking About Other Women' --> 7 times
+sex-worker (out_group) in 'Confession Bear' --> 7 times
+women (out_group) in 'Lucy Pinder swimming pool' --> 6 times
+democrat (out_group) in 'Angry NPC Wojak' --> 6 times
+women (out_group) in 'First World Problems' --> 6 times
+climate activist (in_group) in 'Boardroom Suggestion' --> 6 times
+
+================================================================================
+TOP 5 MOST COMMON IDENTITY-VIEWPOINT-ROLE-TEMPLATE ASSOCIATIONS ACROSS THE ENTIRE DATASET:
+================================================================================
+climate activist (in_group) as sage in 'My Parents Are Dead / Batman Slapping Robin' --> 10 times
+men (in_group) as victim in 'Socially Awesome Awkward Penguin' --> 9 times
+women (out_group) as villain in 'Socially Awesome Awkward Penguin' --> 9 times
+women (out_group) as villain in 'Confession Bear' --> 8 times
+men (in_group) as victim in 'Confession Bear' --> 7 times
+
+================================================================================
+TOP 15 MOST COMMON TEMPLATE-ROLE ASSOCIATIONS ACROSS THE ENTIRE DATASET:
+================================================================================
+'Drakeposting' → villain --> 16 times
+'This Is Fine' → fool --> 15 times
+'Distracted Boyfriend' → villain --> 13 times
+'My Parents Are Dead / Batman Slapping Robin' → sage --> 12 times
+'Two Buttons' → villain --> 11 times
+'Socially Awesome Awkward Penguin' → villain --> 11 times
+'Steven Crowder's "Change My Mind" Campus Sign' → sage --> 11 times
+'Confession Bear' → villain --> 11 times
+'Expanding Brain' → sage --> 11 times
+'Angry NPC Wojak' → fool --> 11 times
+'UNO Draw 25 Cards' → villain --> 10 times
+'Who killed Hannibal?' → victim --> 9 times
+'Socially Awesome Awkward Penguin' → victim --> 9 times
+'Confession Bear' → victim --> 9 times
+'Disaster Girl' → villain --> 8 times
+
+================================================================================
+POSITIVE vs NEGATIVE ROLE ANALYSIS (comparing images with more negative roles vs positive roles):
+================================================================================
+Total unique images: 1110
+Images with more negative than positive roles: 654
+Percentage: 58.92%

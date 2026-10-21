@@ -1,0 +1,124 @@
+{
+  "image_stem": "399",
+  "model": "pixtral-12b-2409",
+  "timestamp": "2026-08-25T23:04:56.793841+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Politically disillusioned",
+          "Libertarian"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\"Politically disillusioned\", \"Libertarian\"]\n}\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 27,
+          "prompt_tokens": 897,
+          "total_tokens": 924,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "libertarian",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "voter",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "```json\n[\n    {\"identity\": \"libertarian\", \"viewpoint\": \"outgroup\"},\n    {\"identity\": \"voter\", \"viewpoint\": \"outgroup\"}\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 40,
+          "prompt_tokens": 572,
+          "total_tokens": 612,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "libertarian",
+          "roles": [
+            "Victim"
+          ]
+        },
+        {
+          "identity": "voter",
+          "roles": [
+            "Fool"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"libertarian\",\n    \"roles\": [\"Victim\"]\n  },\n  {\n    \"identity\": \"voter\",\n    \"roles\": [\"Fool\"]\n  }\n]\n```",
+      "metadata": {
+        "model": "pixtral-12b-2409",
+        "usage": {
+          "completion_tokens": 48,
+          "prompt_tokens": 796,
+          "total_tokens": 844,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Politically disillusioned",
+      "Libertarian"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "libertarian",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "voter",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "libertarian",
+      "roles": [
+        "Victim"
+      ]
+    },
+    {
+      "identity": "voter",
+      "roles": [
+        "Fool"
+      ]
+    }
+  ]
+}

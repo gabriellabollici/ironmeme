@@ -1,0 +1,100 @@
+{
+  "image_stem": "621",
+  "model": "qwen2.5-vl-7b-instruct",
+  "timestamp": "2026-08-25T21:14:50.696818+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Conservative",
+          "Left wing"
+        ]
+      },
+      "raw_text": "{\"social_identities\": [\"Conservative\", \"Left wing\"]}",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 14,
+          "prompt_tokens": 1463,
+          "total_tokens": 1477,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "national identity",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[{\"identity\": \"national identity\", \"viewpoint\": \"outgroup\"}]",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 18,
+          "prompt_tokens": 1152,
+          "total_tokens": 1170,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identity": "national identity",
+        "roles": [
+          "Villain"
+        ]
+      },
+      "raw_text": "[{\"identity\": \"national identity\", \"roles\": [\"Villain\"]}]\"",
+      "metadata": {
+        "model": "qwen2.5-vl-7b-instruct",
+        "usage": {
+          "completion_tokens": 18,
+          "prompt_tokens": 1340,
+          "total_tokens": 1358,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": false,
+          "item_count": 0
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Conservative",
+      "Left wing"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "national identity",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identity": "national identity",
+    "roles": [
+      "Villain"
+    ]
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "image_stem": "292",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T16:19:49.055426+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Republican",
+          " right wing",
+          "Conservative",
+          "Voter",
+          "Politicians/government",
+          "Media elites",
+          "Celebrity",
+          "Climate activist",
+          "Libertarian",
+          "Citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \"Republican\",\n    \" right wing\",\n    \"Conservative\",\n    \"Voter\",\n    \"Politicians/government\",\n    \"Media elites\",\n    \"Celebrity\",\n    \"Climate activist\",\n    \"Libertarian\",\n    \"Citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 64,
+          "prompt_tokens": 944,
+          "total_tokens": 1008,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 10
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "republican",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "republican",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"republican\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"republican\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 36,
+          "prompt_tokens": 645,
+          "total_tokens": 681,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "republican",
+            "roles": [
+              "outgroup"
+            ]
+          },
+          {
+            "identity": "republican",
+            "roles": [
+              "ingroup"
+            ]
+          },
+          {
+            "identity": "Trump",
+            "roles": [
+              "outgroup"
+            ]
+          },
+          {
+            "identity": "Republican Party",
+            "roles": [
+              "ingroup"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"republican\",\n      \"roles\": [\"outgroup\"]\n    },\n    {\n      \"identity\": \"republican\",\n      \"roles\": [\"ingroup\"]\n    },\n    {\n      \"identity\": \"Trump\",\n      \"roles\": [\"outgroup\"]\n    },\n    {\n      \"identity\": \"Republican Party\",\n      \"roles\": [\"ingroup\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 90,
+          "prompt_tokens": 837,
+          "total_tokens": 927,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 4
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Republican",
+      " right wing",
+      "Conservative",
+      "Voter",
+      "Politicians/government",
+      "Media elites",
+      "Celebrity",
+      "Climate activist",
+      "Libertarian",
+      "Citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "republican",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "republican",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "republican",
+        "roles": [
+          "outgroup"
+        ]
+      },
+      {
+        "identity": "republican",
+        "roles": [
+          "ingroup"
+        ]
+      },
+      {
+        "identity": "Trump",
+        "roles": [
+          "outgroup"
+        ]
+      },
+      {
+        "identity": "Republican Party",
+        "roles": [
+          "ingroup"
+        ]
+      }
+    ]
+  }
+}

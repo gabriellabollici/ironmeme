@@ -1,0 +1,126 @@
+{
+  "image_stem": "229",
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-30T15:12:05.224937+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Sex worker",
+          "Men"
+        ]
+      },
+      "raw_text": "```json\n{\n  \"social_identities\": [\n    \"Sex worker\",\n    \"Men\"\n  ]\n}\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 31,
+          "prompt_tokens": 1708,
+          "total_tokens": 2270,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "Sex worker",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "Men",
+          "viewpoint": "ingroup"
+        }
+      ],
+      "raw_text": "```json\n[\n  {\"identity\": \"Sex worker\", \"viewpoint\": \"outgroup\"},\n  {\"identity\": \"Men\", \"viewpoint\": \"ingroup\"}\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 41,
+          "prompt_tokens": 1424,
+          "total_tokens": 1859,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "Sex worker",
+          "roles": [
+            "Victim",
+            "Loser"
+          ]
+        },
+        {
+          "identity": "Men",
+          "roles": [
+            "Villain"
+          ]
+        }
+      ],
+      "raw_text": "```json\n[\n  {\n    \"identity\": \"Sex worker\",\n    \"roles\": [\n      \"Victim\",\n      \"Loser\"\n    ]\n  },\n  {\n    \"identity\": \"Men\",\n    \"roles\": [\n      \"Villain\"\n    ]\n  }\n]\n```",
+      "metadata": {
+        "model": "gemini-3.6-flash",
+        "usage": {
+          "completion_tokens": 73,
+          "prompt_tokens": 1605,
+          "total_tokens": 2423,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Sex worker",
+      "Men"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "Sex worker",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "Men",
+      "viewpoint": "ingroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "Sex worker",
+      "roles": [
+        "Victim",
+        "Loser"
+      ]
+    },
+    {
+      "identity": "Men",
+      "roles": [
+        "Villain"
+      ]
+    }
+  ]
+}

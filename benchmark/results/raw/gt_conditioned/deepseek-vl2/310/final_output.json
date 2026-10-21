@@ -1,0 +1,116 @@
+{
+  "image_stem": "310",
+  "model": "deepseek-vl2",
+  "timestamp": "2026-08-21T12:48:38.734802+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Climate change deniers",
+          "Climate disengaged",
+          "Climate skeptic/denier"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"Climate change deniers\",\"Climate disengaged\",\"Climate skeptic/denier\"]}",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 24,
+          "prompt_tokens": 2655,
+          "total_tokens": 2679,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "climate change skeptic/denier",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "climate change skeptic/denier",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"climate change skeptic/denier\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"climate change skeptic/denier\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 42,
+          "prompt_tokens": 2349,
+          "total_tokens": 2391,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "climate change skeptic/denier",
+          "roles": [
+            "Villain",
+            "Fool"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"climate change skeptic/denier\",     \"roles\": [\"Villain\", \"Fool\"]   } ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 32,
+          "prompt_tokens": 2544,
+          "total_tokens": 2576,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Climate change deniers",
+      "Climate disengaged",
+      "Climate skeptic/denier"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "climate change skeptic/denier",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "climate change skeptic/denier",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "climate change skeptic/denier",
+      "roles": [
+        "Villain",
+        "Fool"
+      ]
+    }
+  ]
+}

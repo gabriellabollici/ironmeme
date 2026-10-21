@@ -1,0 +1,114 @@
+{
+  "image_stem": "792",
+  "model": "deepseek-vl2",
+  "timestamp": "2026-08-21T13:03:05.345461+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "governments",
+          "clean energy advocate"
+        ]
+      },
+      "raw_text": "{\"social_identities\":[\"governments\",\"clean energy advocate\"]}",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 17,
+          "prompt_tokens": 1661,
+          "total_tokens": 1678,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "clean energy advocate",
+          "viewpoint": "outgroup"
+        },
+        {
+          "identity": "politicians/government",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"clean energy advocate\", \"viewpoint\": \"outgroup\"},   {\"identity\": \"politicians/government\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 38,
+          "prompt_tokens": 1361,
+          "total_tokens": 1399,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": [
+        {
+          "identity": "clean energy advocate",
+          "roles": [
+            "Victim",
+            "Hero"
+          ]
+        }
+      ],
+      "raw_text": "[   {     \"identity\": \"clean energy advocate\",     \"roles\": [\"Victim\", \"Hero\"]   } ]",
+      "metadata": {
+        "model": "deepseek-vl2",
+        "usage": {
+          "completion_tokens": 27,
+          "prompt_tokens": 1563,
+          "total_tokens": 1590,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 1
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "governments",
+      "clean energy advocate"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "clean energy advocate",
+      "viewpoint": "outgroup"
+    },
+    {
+      "identity": "politicians/government",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": [
+    {
+      "identity": "clean energy advocate",
+      "roles": [
+        "Victim",
+        "Hero"
+      ]
+    }
+  ]
+}

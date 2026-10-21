@@ -1,0 +1,162 @@
+{
+  "image_stem": "239",
+  "model": "molmo-7b-d-0924",
+  "timestamp": "2026-08-25T16:05:20.284858+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "step_name": "01_social_identities",
+      "parsed_json": {
+        "social_identities": [
+          "Republican",
+          "Conservative",
+          " right wing",
+          "Liberal",
+          " left wing",
+          "Voter",
+          "Politicians/government",
+          "Media elites",
+          "Green party supporter",
+          "Climate activist",
+          "Climate change skeptic/denier",
+          "Citizens"
+        ]
+      },
+      "raw_text": "{\n  \"social_identities\": [\n    \"Republican\",\n    \"Conservative\",\n    \" right wing\",\n    \"Liberal\",\n    \" left wing\",\n    \"Voter\",\n    \"Politicians/government\",\n    \"Media elites\",\n    \"Green party supporter\",\n    \"Climate activist\",\n    \"Climate change skeptic/denier\",\n    \"Citizens\"\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 78,
+          "prompt_tokens": 944,
+          "total_tokens": 1022,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 12
+        }
+      }
+    },
+    {
+      "step": 2,
+      "step_name": "02_viewpoints",
+      "parsed_json": [
+        {
+          "identity": "republican",
+          "viewpoint": "ingroup"
+        },
+        {
+          "identity": "republican",
+          "viewpoint": "outgroup"
+        }
+      ],
+      "raw_text": "[   {\"identity\": \"republican\", \"viewpoint\": \"ingroup\"},   {\"identity\": \"republican\", \"viewpoint\": \"outgroup\"} ]",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 36,
+          "prompt_tokens": 635,
+          "total_tokens": 671,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 2
+        }
+      }
+    },
+    {
+      "step": 3,
+      "step_name": "03_narrative_roles",
+      "parsed_json": {
+        "identities": [
+          {
+            "identity": "republican",
+            "roles": [
+              "outgroup"
+            ]
+          },
+          {
+            "identity": "Putin",
+            "roles": [
+              "villain"
+            ]
+          },
+          {
+            "identity": "Trump",
+            "roles": [
+              "hero",
+              "sage"
+            ]
+          }
+        ]
+      },
+      "raw_text": "{\n  \"identities\": [\n    {\n      \"identity\": \"republican\",\n      \"roles\": [\"outgroup\"]\n    },\n    {\n      \"identity\": \"Putin\",\n      \"roles\": [\"villain\"]\n    },\n    {\n      \"identity\": \"Trump\",\n      \"roles\": [\"hero\", \"sage\"]\n    }\n  ]\n}",
+      "metadata": {
+        "model": "molmo-7b-d-0924",
+        "usage": {
+          "completion_tokens": 74,
+          "prompt_tokens": 822,
+          "total_tokens": 896,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "validation": {
+          "valid": true,
+          "item_count": 3
+        }
+      }
+    }
+  ],
+  "01_social_identities": {
+    "social_identities": [
+      "Republican",
+      "Conservative",
+      " right wing",
+      "Liberal",
+      " left wing",
+      "Voter",
+      "Politicians/government",
+      "Media elites",
+      "Green party supporter",
+      "Climate activist",
+      "Climate change skeptic/denier",
+      "Citizens"
+    ]
+  },
+  "02_viewpoints": [
+    {
+      "identity": "republican",
+      "viewpoint": "ingroup"
+    },
+    {
+      "identity": "republican",
+      "viewpoint": "outgroup"
+    }
+  ],
+  "03_narrative_roles": {
+    "identities": [
+      {
+        "identity": "republican",
+        "roles": [
+          "outgroup"
+        ]
+      },
+      {
+        "identity": "Putin",
+        "roles": [
+          "villain"
+        ]
+      },
+      {
+        "identity": "Trump",
+        "roles": [
+          "hero",
+          "sage"
+        ]
+      }
+    ]
+  }
+}
